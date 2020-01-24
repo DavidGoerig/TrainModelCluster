@@ -1,0 +1,66 @@
+sonar
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.1827
+
+
+
+Time taken to build model: 96.09 seconds
+Time taken to test model on training data: 1.2 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         208              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.1044
+Root mean squared error                  0.1291
+Relative absolute error                 20.9819 %
+Root relative squared error             25.8836 %
+Total Number of Instances              208     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        Rock
+                 1         0          1         1         1          1        Mine
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  97   0 |   a = Rock
+   0 111 |   b = Mine
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         167               80.2885 %
+Incorrectly Classified Instances        41               19.7115 %
+Kappa statistic                          0.6011
+Mean absolute error                      0.289 
+Root mean squared error                  0.3547
+Relative absolute error                 58.0635 %
+Root relative squared error             71.0875 %
+Total Number of Instances              208     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.732     0.135      0.826     0.732     0.776      0.919    Rock
+                 0.865     0.268      0.787     0.865     0.824      0.919    Mine
+Weighted Avg.    0.803     0.206      0.805     0.803     0.802      0.919
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 71 26 |  a = Rock
+ 15 96 |  b = Mine
+
