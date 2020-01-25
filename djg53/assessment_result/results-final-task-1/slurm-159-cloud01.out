@@ -1,0 +1,70 @@
+tae
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.2914
+
+
+
+Time taken to build model: 9.19 seconds
+Time taken to test model on training data: 2.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         146               96.6887 %
+Incorrectly Classified Instances         5                3.3113 %
+Kappa statistic                          0.9503
+Mean absolute error                      0.1166
+Root mean squared error                  0.172 
+Relative absolute error                 26.2462 %
+Root relative squared error             36.4869 %
+Total Number of Instances              151     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.98      0.02       0.96      0.98      0.97       0.999    1
+                 0.92      0          1         0.92      0.958      0.997    2
+                 1         0.03       0.945     1         0.972      0.997    3
+Weighted Avg.    0.967     0.017      0.968     0.967     0.967      0.998
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 48  0  1 |  a = 1
+  2 46  2 |  b = 2
+  0  0 52 |  c = 3
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         105               69.5364 %
+Incorrectly Classified Instances        46               30.4636 %
+Kappa statistic                          0.5429
+Mean absolute error                      0.2866
+Root mean squared error                  0.3922
+Relative absolute error                 64.5008 %
+Root relative squared error             83.1902 %
+Total Number of Instances              151     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.714     0.167      0.673     0.714     0.693      0.826    1
+                 0.6       0.149      0.667     0.6       0.632      0.777    2
+                 0.769     0.141      0.741     0.769     0.755      0.85     3
+Weighted Avg.    0.695     0.152      0.694     0.695     0.694      0.818
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 35  8  6 |  a = 1
+ 12 30  8 |  b = 2
+  5  7 40 |  c = 3
+

@@ -1,0 +1,70 @@
+trains
+
+J48 pruned tree
+------------------
+
+Rectangle_next_to_triangle = 0: west (6.0/1.0)
+Rectangle_next_to_triangle = 1: east (4.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances           9               90      %
+Incorrectly Classified Instances         1               10      %
+Kappa statistic                          0.8   
+Mean absolute error                      0.1667
+Root mean squared error                  0.2887
+Relative absolute error                 33.3333 %
+Root relative squared error             57.735  %
+Total Number of Instances               10     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.8       0          1         0.8       0.889      0.9      east
+                 1         0.2        0.833     1         0.909      0.9      west
+Weighted Avg.    0.9       0.1        0.917     0.9       0.899      0.9  
+
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 4 1 | a = east
+ 0 5 | b = west
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances           9               90      %
+Incorrectly Classified Instances         1               10      %
+Kappa statistic                          0.8   
+Mean absolute error                      0.2   
+Root mean squared error                  0.3464
+Relative absolute error                 36.6667 %
+Root relative squared error             63.5085 %
+Total Number of Instances               10     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.8       0          1         0.8       0.889      0.8      east
+                 1         0.2        0.833     1         0.909      0.8      west
+Weighted Avg.    0.9       0.1        0.917     0.9       0.899      0.8  
+
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 4 1 | a = east
+ 0 5 | b = west
+

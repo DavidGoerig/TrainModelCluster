@@ -1,0 +1,300 @@
+splice
+
+J48 pruned tree
+------------------
+
+attribute_30 = G
+|   attribute_29 = A
+|   |   attribute_32 = T
+|   |   |   attribute_31 = G
+|   |   |   |   attribute_35 = G
+|   |   |   |   |   attribute_28 = C: EI (144.0/16.0)
+|   |   |   |   |   attribute_28 = A: EI (110.0)
+|   |   |   |   |   attribute_28 = G: EI (52.0)
+|   |   |   |   |   attribute_28 = T
+|   |   |   |   |   |   attribute_24 = C: IE (6.0)
+|   |   |   |   |   |   attribute_24 = G: EI (10.0)
+|   |   |   |   |   |   attribute_24 = A: EI (0.0)
+|   |   |   |   |   |   attribute_24 = T: EI (0.0)
+|   |   |   |   |   |   attribute_24 = N: EI (0.0)
+|   |   |   |   |   attribute_28 = N: EI (0.0)
+|   |   |   |   attribute_35 = T
+|   |   |   |   |   attribute_33 = C: IE (5.0/1.0)
+|   |   |   |   |   attribute_33 = G
+|   |   |   |   |   |   attribute_22 = A: EI (4.0)
+|   |   |   |   |   |   attribute_22 = C: IE (3.0)
+|   |   |   |   |   |   attribute_22 = T: IE (9.0)
+|   |   |   |   |   |   attribute_22 = G: IE (0.0)
+|   |   |   |   |   |   attribute_22 = N: IE (0.0)
+|   |   |   |   |   attribute_33 = A: EI (30.0/5.0)
+|   |   |   |   |   attribute_33 = N: EI (0.0)
+|   |   |   |   |   attribute_33 = T: IE (7.0/1.0)
+|   |   |   |   attribute_35 = A
+|   |   |   |   |   attribute_28 = C
+|   |   |   |   |   |   attribute_49 = C: IE (8.0/1.0)
+|   |   |   |   |   |   attribute_49 = G
+|   |   |   |   |   |   |   attribute_22 = A: IE (0.0)
+|   |   |   |   |   |   |   attribute_22 = C: EI (2.0)
+|   |   |   |   |   |   |   attribute_22 = T: IE (6.0)
+|   |   |   |   |   |   |   attribute_22 = G: IE (1.0)
+|   |   |   |   |   |   |   attribute_22 = N: IE (0.0)
+|   |   |   |   |   |   attribute_49 = T: EI (6.0)
+|   |   |   |   |   |   attribute_49 = A: IE (6.0/1.0)
+|   |   |   |   |   |   attribute_49 = N: IE (0.0)
+|   |   |   |   |   attribute_28 = A: EI (12.0/1.0)
+|   |   |   |   |   attribute_28 = G: EI (7.0/1.0)
+|   |   |   |   |   attribute_28 = T: IE (5.0/1.0)
+|   |   |   |   |   attribute_28 = N: EI (0.0)
+|   |   |   |   attribute_35 = C
+|   |   |   |   |   attribute_33 = C: IE (13.0)
+|   |   |   |   |   attribute_33 = G
+|   |   |   |   |   |   attribute_19 = G: EI (6.0/1.0)
+|   |   |   |   |   |   attribute_19 = A: EI (5.0)
+|   |   |   |   |   |   attribute_19 = C: IE (9.0/1.0)
+|   |   |   |   |   |   attribute_19 = T: IE (5.0/1.0)
+|   |   |   |   |   |   attribute_19 = N: IE (0.0)
+|   |   |   |   |   attribute_33 = A: EI (20.0/2.0)
+|   |   |   |   |   attribute_33 = N: IE (0.0)
+|   |   |   |   |   attribute_33 = T: IE (11.0/2.0)
+|   |   |   |   attribute_35 = N: EI (0.0)
+|   |   |   |   attribute_35 = R: EI (0.0)
+|   |   |   attribute_31 = N: EI (0.0)
+|   |   |   attribute_31 = C: IE (56.0/5.0)
+|   |   |   attribute_31 = T
+|   |   |   |   attribute_28 = C: IE (22.0)
+|   |   |   |   attribute_28 = A: N (2.0)
+|   |   |   |   attribute_28 = G: N (2.0)
+|   |   |   |   attribute_28 = T: IE (6.0)
+|   |   |   |   attribute_28 = N: IE (0.0)
+|   |   |   attribute_31 = A: IE (66.0/4.0)
+|   |   attribute_32 = N: IE (0.0)
+|   |   attribute_32 = C
+|   |   |   attribute_28 = C: IE (145.0/13.0)
+|   |   |   attribute_28 = A
+|   |   |   |   attribute_19 = G: N (2.0)
+|   |   |   |   attribute_19 = A: N (5.0)
+|   |   |   |   attribute_19 = C: IE (1.0)
+|   |   |   |   attribute_19 = T
+|   |   |   |   |   attribute_48 = T: IE (0.0)
+|   |   |   |   |   attribute_48 = G: IE (4.0)
+|   |   |   |   |   attribute_48 = C: N (3.0/1.0)
+|   |   |   |   |   attribute_48 = A: IE (0.0)
+|   |   |   |   |   attribute_48 = N: IE (0.0)
+|   |   |   |   attribute_19 = N: N (0.0)
+|   |   |   attribute_28 = G: N (9.0/2.0)
+|   |   |   attribute_28 = T: IE (27.0/3.0)
+|   |   |   attribute_28 = N: IE (0.0)
+|   |   attribute_32 = G
+|   |   |   attribute_28 = C: IE (154.0/10.0)
+|   |   |   attribute_28 = A
+|   |   |   |   attribute_34 = T: IE (1.0)
+|   |   |   |   attribute_34 = A: IE (2.0)
+|   |   |   |   attribute_34 = C: N (3.0)
+|   |   |   |   attribute_34 = G: N (7.0)
+|   |   |   |   attribute_34 = N: N (0.0)
+|   |   |   attribute_28 = G: N (9.0/1.0)
+|   |   |   attribute_28 = T: IE (28.0/4.0)
+|   |   |   attribute_28 = N: IE (0.0)
+|   |   attribute_32 = A
+|   |   |   attribute_28 = C
+|   |   |   |   attribute_18 = G
+|   |   |   |   |   attribute_20 = C
+|   |   |   |   |   |   attribute_14 = A: IE (0.0)
+|   |   |   |   |   |   attribute_14 = G: IE (2.0)
+|   |   |   |   |   |   attribute_14 = T: N (2.0)
+|   |   |   |   |   |   attribute_14 = C: IE (0.0)
+|   |   |   |   |   |   attribute_14 = N: IE (0.0)
+|   |   |   |   |   attribute_20 = G: IE (0.0)
+|   |   |   |   |   attribute_20 = A: N (4.0)
+|   |   |   |   |   attribute_20 = T: IE (6.0)
+|   |   |   |   |   attribute_20 = N: IE (0.0)
+|   |   |   |   attribute_18 = T: IE (57.0/2.0)
+|   |   |   |   attribute_18 = A
+|   |   |   |   |   attribute_17 = A: N (1.0)
+|   |   |   |   |   attribute_17 = G: N (3.0/1.0)
+|   |   |   |   |   attribute_17 = T: IE (0.0)
+|   |   |   |   |   attribute_17 = C: IE (6.0)
+|   |   |   |   attribute_18 = C: IE (59.0)
+|   |   |   attribute_28 = A: N (16.0/3.0)
+|   |   |   attribute_28 = G: N (17.0/1.0)
+|   |   |   attribute_28 = T: IE (51.0/4.0)
+|   |   |   attribute_28 = N: IE (0.0)
+|   attribute_29 = G
+|   |   attribute_32 = T
+|   |   |   attribute_31 = G
+|   |   |   |   attribute_35 = G: EI (76.0)
+|   |   |   |   attribute_35 = T
+|   |   |   |   |   attribute_20 = C: EI (4.0)
+|   |   |   |   |   attribute_20 = G: N (3.0)
+|   |   |   |   |   attribute_20 = A: N (2.0)
+|   |   |   |   |   attribute_20 = T: N (1.0)
+|   |   |   |   |   attribute_20 = N: N (0.0)
+|   |   |   |   attribute_35 = A: EI (3.0/1.0)
+|   |   |   |   attribute_35 = C: EI (6.0/1.0)
+|   |   |   |   attribute_35 = N: EI (0.0)
+|   |   |   |   attribute_35 = R: EI (0.0)
+|   |   |   attribute_31 = N: EI (0.0)
+|   |   |   attribute_31 = C: N (10.0)
+|   |   |   attribute_31 = T: N (3.0)
+|   |   |   attribute_31 = A: N (3.0)
+|   |   attribute_32 = N: N (0.0)
+|   |   attribute_32 = C: N (36.0/1.0)
+|   |   attribute_32 = G: N (37.0/1.0)
+|   |   attribute_32 = A: N (33.0/1.0)
+|   attribute_29 = C
+|   |   attribute_32 = T
+|   |   |   attribute_31 = G: EI (62.0/2.0)
+|   |   |   attribute_31 = N: EI (0.0)
+|   |   |   attribute_31 = C: N (4.0)
+|   |   |   attribute_31 = T: N (3.0)
+|   |   |   attribute_31 = A: EI (0.0)
+|   |   attribute_32 = N: EI (0.0)
+|   |   attribute_32 = C: N (10.0)
+|   |   attribute_32 = G: N (13.0)
+|   |   attribute_32 = A: N (12.0)
+|   attribute_29 = T
+|   |   attribute_32 = T
+|   |   |   attribute_31 = G: EI (93.0/7.0)
+|   |   |   attribute_31 = N: EI (0.0)
+|   |   |   attribute_31 = C: N (11.0)
+|   |   |   attribute_31 = T: N (11.0)
+|   |   |   attribute_31 = A: N (3.0)
+|   |   attribute_32 = N: N (0.0)
+|   |   attribute_32 = C: N (28.0/1.0)
+|   |   attribute_32 = G: N (41.0/1.0)
+|   |   attribute_32 = A: N (34.0)
+|   attribute_29 = N: IE (0.0)
+attribute_30 = C
+|   attribute_31 = G
+|   |   attribute_32 = T
+|   |   |   attribute_35 = G: EI (26.0/3.0)
+|   |   |   attribute_35 = T: N (3.0)
+|   |   |   attribute_35 = A: N (1.0)
+|   |   |   attribute_35 = C: N (3.0)
+|   |   |   attribute_35 = N: EI (0.0)
+|   |   |   attribute_35 = R: EI (0.0)
+|   |   attribute_32 = N: N (0.0)
+|   |   attribute_32 = C: N (13.0)
+|   |   attribute_32 = G: N (13.0)
+|   |   attribute_32 = A: N (7.0)
+|   attribute_31 = N: N (0.0)
+|   attribute_31 = C: N (118.0)
+|   attribute_31 = T: N (133.0)
+|   attribute_31 = A: N (125.0/1.0)
+attribute_30 = A
+|   attribute_32 = T
+|   |   attribute_31 = G
+|   |   |   attribute_35 = G
+|   |   |   |   attribute_34 = T
+|   |   |   |   |   attribute_29 = A: EI (4.0)
+|   |   |   |   |   attribute_29 = G: N (2.0)
+|   |   |   |   |   attribute_29 = C: EI (0.0)
+|   |   |   |   |   attribute_29 = T: EI (0.0)
+|   |   |   |   |   attribute_29 = N: EI (0.0)
+|   |   |   |   attribute_34 = A: EI (55.0/1.0)
+|   |   |   |   attribute_34 = C: N (1.0)
+|   |   |   |   attribute_34 = G: N (1.0)
+|   |   |   |   attribute_34 = N: EI (0.0)
+|   |   |   attribute_35 = T: N (5.0/1.0)
+|   |   |   attribute_35 = A: N (6.0/1.0)
+|   |   |   attribute_35 = C: N (8.0)
+|   |   |   attribute_35 = N: EI (0.0)
+|   |   |   attribute_35 = R: EI (0.0)
+|   |   attribute_31 = N: N (0.0)
+|   |   attribute_31 = C: N (28.0)
+|   |   attribute_31 = T: N (24.0)
+|   |   attribute_31 = A: N (23.0)
+|   attribute_32 = N: N (0.0)
+|   attribute_32 = C: N (102.0)
+|   attribute_32 = G: N (97.0/1.0)
+|   attribute_32 = A: N (118.0/1.0)
+attribute_30 = T
+|   attribute_35 = G
+|   |   attribute_31 = G
+|   |   |   attribute_32 = T
+|   |   |   |   attribute_34 = T: N (2.0)
+|   |   |   |   attribute_34 = A: EI (52.0)
+|   |   |   |   attribute_34 = C: EI (4.0/1.0)
+|   |   |   |   attribute_34 = G: N (3.0/1.0)
+|   |   |   |   attribute_34 = N: EI (0.0)
+|   |   |   attribute_32 = N: EI (0.0)
+|   |   |   attribute_32 = C: N (6.0)
+|   |   |   attribute_32 = G: N (6.0)
+|   |   |   attribute_32 = A: N (8.0)
+|   |   attribute_31 = N: N (0.0)
+|   |   attribute_31 = C: N (22.0)
+|   |   attribute_31 = T: N (19.0)
+|   |   attribute_31 = A: N (13.0)
+|   attribute_35 = T: N (116.0)
+|   attribute_35 = A: N (106.0)
+|   attribute_35 = C: N (94.0/1.0)
+|   attribute_35 = N: N (0.0)
+|   attribute_35 = R: N (0.0)
+attribute_30 = N: EI (1.0)
+
+Number of Leaves  : 	184
+
+Size of the tree : 	229
+
+
+Time taken to build model: 0.31 seconds
+Time taken to test model on training data: 0.1 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3073               96.3323 %
+Incorrectly Classified Instances       117                3.6677 %
+Kappa statistic                          0.9408
+Mean absolute error                      0.0437
+Root mean squared error                  0.1478
+Relative absolute error                 10.647  %
+Root relative squared error             32.6311 %
+Total Number of Instances             3190     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.98      0.017      0.947     0.98      0.963      0.996    EI
+                 0.954     0.022      0.931     0.954     0.943      0.99     IE
+                 0.96      0.014      0.987     0.96      0.973      0.99     N
+Weighted Avg.    0.963     0.017      0.964     0.963     0.963      0.991
+
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  752    6    9 |    a = EI
+   23  733   12 |    b = IE
+   19   48 1588 |    c = N
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3001               94.0752 %
+Incorrectly Classified Instances       189                5.9248 %
+Kappa statistic                          0.9044
+Mean absolute error                      0.0602
+Root mean squared error                  0.1916
+Relative absolute error                 14.6868 %
+Root relative squared error             42.309  %
+Total Number of Instances             3190     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.961     0.031      0.909     0.961     0.934      0.97     EI
+                 0.914     0.03       0.906     0.914     0.91       0.963    IE
+                 0.944     0.027      0.974     0.944     0.959      0.962    N
+Weighted Avg.    0.941     0.029      0.942     0.941     0.941      0.964
+
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  737   14   16 |    a = EI
+   40  702   26 |    b = IE
+   34   59 1562 |    c = N
+

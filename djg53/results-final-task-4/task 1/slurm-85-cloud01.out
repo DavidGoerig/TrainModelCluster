@@ -1,0 +1,98 @@
+kdd_ipums_la_97-small
+
+J48 pruned tree
+------------------
+: Driver (2744.0/628.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.56 seconds
+Time taken to test model on training data: 0.46 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        2116               77.1137 %
+Incorrectly Classified Instances       628               22.8863 %
+Kappa statistic                          0     
+Mean absolute error                      0.0873
+Root mean squared error                  0.2089
+Relative absolute error                 99.5888 %
+Root relative squared error             99.9993 %
+Total Number of Instances             2744     
+Ignored Class Unknown Instances               4275     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.5      Bus_or_streetcar
+                 1         1          0.771     1         0.871      0.5      Driver
+                 0         0          0         0         0          0.5      Other
+                 0         0          0         0         0          0.5      Passenger
+                 0         0          0         0         0          0.5      Railroad
+                 0         0          0         0         0          0.5      Subway_or_elevated
+                 0         0          0         0         0          0.5      Taxicab
+                 0         0          0         0         0          0.5      Walked_only
+                 0         0          0         0         0          0.5      Worked_at_home
+Weighted Avg.    0.771     0.771      0.595     0.771     0.671      0.5  
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+    0  150    0    0    0    0    0    0    0 |    a = Bus_or_streetcar
+    0 2116    0    0    0    0    0    0    0 |    b = Driver
+    0   66    0    0    0    0    0    0    0 |    c = Other
+    0  218    0    0    0    0    0    0    0 |    d = Passenger
+    0    4    0    0    0    0    0    0    0 |    e = Railroad
+    0    1    0    0    0    0    0    0    0 |    f = Subway_or_elevated
+    0    2    0    0    0    0    0    0    0 |    g = Taxicab
+    0  130    0    0    0    0    0    0    0 |    h = Walked_only
+    0   57    0    0    0    0    0    0    0 |    i = Worked_at_home
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        2116               77.1137 %
+Incorrectly Classified Instances       628               22.8863 %
+Kappa statistic                          0     
+Mean absolute error                      0.0873
+Root mean squared error                  0.2089
+Relative absolute error                 99.5435 %
+Root relative squared error             99.9992 %
+Total Number of Instances             2744     
+Ignored Class Unknown Instances               4275     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.5      Bus_or_streetcar
+                 1         1          0.771     1         0.871      0.499    Driver
+                 0         0          0         0         0          0.482    Other
+                 0         0          0         0         0          0.496    Passenger
+                 0         0          0         0         0          0.2      Railroad
+                 0         0          0         0         0          0.05     Subway_or_elevated
+                 0         0          0         0         0          0.1      Taxicab
+                 0         0          0         0         0          0.5      Walked_only
+                 0         0          0         0         0          0.481    Worked_at_home
+Weighted Avg.    0.771     0.771      0.595     0.771     0.671      0.497
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+    0  150    0    0    0    0    0    0    0 |    a = Bus_or_streetcar
+    0 2116    0    0    0    0    0    0    0 |    b = Driver
+    0   66    0    0    0    0    0    0    0 |    c = Other
+    0  218    0    0    0    0    0    0    0 |    d = Passenger
+    0    4    0    0    0    0    0    0    0 |    e = Railroad
+    0    1    0    0    0    0    0    0    0 |    f = Subway_or_elevated
+    0    2    0    0    0    0    0    0    0 |    g = Taxicab
+    0  130    0    0    0    0    0    0    0 |    h = Walked_only
+    0   57    0    0    0    0    0    0    0 |    i = Worked_at_home
+

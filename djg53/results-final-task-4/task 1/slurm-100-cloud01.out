@@ -1,0 +1,118 @@
+liver-disorders
+
+J48 pruned tree
+------------------
+
+gammagt <= 20
+|   sgpt <= 19
+|   |   gammagt <= 7: 1 (4.0)
+|   |   gammagt > 7
+|   |   |   alkphos <= 77: 2 (42.0/6.0)
+|   |   |   alkphos > 77
+|   |   |   |   mcv <= 90
+|   |   |   |   |   sgpt <= 16: 2 (3.0)
+|   |   |   |   |   sgpt > 16
+|   |   |   |   |   |   sgpt <= 17: 1 (2.0)
+|   |   |   |   |   |   sgpt > 17
+|   |   |   |   |   |   |   mcv <= 89: 2 (2.0)
+|   |   |   |   |   |   |   mcv > 89: 1 (2.0)
+|   |   |   |   mcv > 90: 1 (5.0)
+|   sgpt > 19
+|   |   sgot <= 20
+|   |   |   drinks <= 3: 1 (31.0/1.0)
+|   |   |   drinks > 3
+|   |   |   |   sgpt <= 23: 2 (3.0)
+|   |   |   |   sgpt > 23: 1 (5.0)
+|   |   sgot > 20
+|   |   |   drinks <= 5
+|   |   |   |   sgpt <= 26: 2 (21.0/8.0)
+|   |   |   |   sgpt > 26: 1 (15.0/3.0)
+|   |   |   drinks > 5: 1 (5.0)
+gammagt > 20
+|   drinks <= 5
+|   |   drinks <= 3
+|   |   |   alkphos <= 65: 2 (42.0/6.0)
+|   |   |   alkphos > 65
+|   |   |   |   sgot <= 24
+|   |   |   |   |   gammagt <= 29: 1 (12.0/1.0)
+|   |   |   |   |   gammagt > 29
+|   |   |   |   |   |   mcv <= 87: 2 (7.0/1.0)
+|   |   |   |   |   |   mcv > 87
+|   |   |   |   |   |   |   mcv <= 92: 1 (9.0/2.0)
+|   |   |   |   |   |   |   mcv > 92: 2 (2.0)
+|   |   |   |   sgot > 24
+|   |   |   |   |   sgpt <= 39: 2 (12.0)
+|   |   |   |   |   sgpt > 39
+|   |   |   |   |   |   sgpt <= 48: 1 (7.0/2.0)
+|   |   |   |   |   |   sgpt > 48: 2 (4.0)
+|   |   drinks > 3: 2 (41.0/3.0)
+|   drinks > 5
+|   |   drinks <= 12
+|   |   |   sgpt <= 21: 2 (10.0/1.0)
+|   |   |   sgpt > 21
+|   |   |   |   sgot <= 22: 1 (11.0/1.0)
+|   |   |   |   sgot > 22: 2 (44.0/18.0)
+|   |   drinks > 12: 1 (4.0)
+
+Number of Leaves  : 	26
+
+Size of the tree : 	51
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         292               84.6377 %
+Incorrectly Classified Instances        53               15.3623 %
+Kappa statistic                          0.6746
+Mean absolute error                      0.2237
+Root mean squared error                  0.3344
+Relative absolute error                 45.9016 %
+Root relative squared error             67.7557 %
+Total Number of Instances              345     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.703     0.05       0.911     0.703     0.794      0.907    1
+                 0.95      0.297      0.815     0.95      0.878      0.907    2
+Weighted Avg.    0.846     0.193      0.855     0.846     0.842      0.907
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 102  43 |   a = 1
+  10 190 |   b = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         237               68.6957 %
+Incorrectly Classified Instances       108               31.3043 %
+Kappa statistic                          0.3401
+Mean absolute error                      0.3673
+Root mean squared error                  0.5025
+Relative absolute error                 75.3511 %
+Root relative squared error            101.8061 %
+Total Number of Instances              345     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.531     0.2        0.658     0.531     0.588      0.665    1
+                 0.8       0.469      0.702     0.8       0.748      0.665    2
+Weighted Avg.    0.687     0.356      0.683     0.687     0.68       0.665
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  77  68 |   a = 1
+  40 160 |   b = 2
+

@@ -1,0 +1,104 @@
+zoo
+
+J48 pruned tree
+------------------
+
+feathers = false
+|   milk = false
+|   |   backbone = false
+|   |   |   airborne = false
+|   |   |   |   predator = false
+|   |   |   |   |   legs <= 2: invertebrate (2.0)
+|   |   |   |   |   legs > 2: insect (2.0)
+|   |   |   |   predator = true: invertebrate (8.0)
+|   |   |   airborne = true: insect (6.0)
+|   |   backbone = true
+|   |   |   fins = false
+|   |   |   |   tail = false: amphibian (3.0)
+|   |   |   |   tail = true: reptile (6.0/1.0)
+|   |   |   fins = true: fish (13.0)
+|   milk = true: mammal (41.0)
+feathers = true: bird (20.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         100               99.0099 %
+Incorrectly Classified Instances         1                0.9901 %
+Kappa statistic                          0.987 
+Mean absolute error                      0.0047
+Root mean squared error                  0.0486
+Relative absolute error                  2.1552 %
+Root relative squared error             14.7377 %
+Total Number of Instances              101     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        mammal
+                 1         0          1         1         1          1        bird
+                 1         0.01       0.833     1         0.909      0.995    reptile
+                 1         0          1         1         1          1        fish
+                 0.75      0          1         0.75      0.857      0.994    amphibian
+                 1         0          1         1         1          1        insect
+                 1         0          1         1         1          1        invertebrate
+Weighted Avg.    0.99      0.001      0.992     0.99      0.99       0.999
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 41  0  0  0  0  0  0 |  a = mammal
+  0 20  0  0  0  0  0 |  b = bird
+  0  0  5  0  0  0  0 |  c = reptile
+  0  0  0 13  0  0  0 |  d = fish
+  0  0  1  0  3  0  0 |  e = amphibian
+  0  0  0  0  0  8  0 |  f = insect
+  0  0  0  0  0  0 10 |  g = invertebrate
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          93               92.0792 %
+Incorrectly Classified Instances         8                7.9208 %
+Kappa statistic                          0.8955
+Mean absolute error                      0.0225
+Root mean squared error                  0.14  
+Relative absolute error                 10.2478 %
+Root relative squared error             42.4398 %
+Total Number of Instances              101     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        mammal
+                 1         0          1         1         1          1        bird
+                 0.6       0.01       0.75      0.6       0.667      0.793    reptile
+                 1         0.011      0.929     1         0.963      0.994    fish
+                 0.75      0          1         0.75      0.857      0.872    amphibian
+                 0.625     0.032      0.625     0.625     0.625      0.92     insect
+                 0.8       0.033      0.727     0.8       0.762      0.986    invertebrate
+Weighted Avg.    0.921     0.008      0.922     0.921     0.92       0.976
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 41  0  0  0  0  0  0 |  a = mammal
+  0 20  0  0  0  0  0 |  b = bird
+  0  0  3  1  0  1  0 |  c = reptile
+  0  0  0 13  0  0  0 |  d = fish
+  0  0  1  0  3  0  0 |  e = amphibian
+  0  0  0  0  0  5  3 |  f = insect
+  0  0  0  0  0  2  8 |  g = invertebrate
+

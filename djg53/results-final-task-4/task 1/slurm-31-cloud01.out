@@ -1,0 +1,73 @@
+colic
+
+J48 pruned tree
+------------------
+
+surgery = yes: yes (215.17/26.0)
+surgery = no
+|   outcome = lived: no (110.6/13.6)
+|   outcome = died: yes (23.13/7.0)
+|   outcome = euthanized: yes (19.1/6.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	6
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         316               85.8696 %
+Incorrectly Classified Instances        52               14.1304 %
+Kappa statistic                          0.6843
+Mean absolute error                      0.238 
+Root mean squared error                  0.344 
+Relative absolute error                 51.0458 %
+Root relative squared error             71.274  %
+Total Number of Instances              368     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.944     0.287      0.849     0.944     0.894      0.854    yes
+                 0.713     0.056      0.882     0.713     0.789      0.854    no
+Weighted Avg.    0.859     0.201      0.861     0.859     0.855      0.854
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 219  13 |   a = yes
+  39  97 |   b = no
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         314               85.3261 %
+Incorrectly Classified Instances        54               14.6739 %
+Kappa statistic                          0.6732
+Mean absolute error                      0.2413
+Root mean squared error                  0.3548
+Relative absolute error                 51.7675 %
+Root relative squared error             73.5013 %
+Total Number of Instances              368     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.935     0.287      0.848     0.935     0.889      0.813    yes
+                 0.713     0.065      0.866     0.713     0.782      0.813    no
+Weighted Avg.    0.853     0.205      0.854     0.853     0.85       0.813
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 217  15 |   a = yes
+  39  97 |   b = no
+

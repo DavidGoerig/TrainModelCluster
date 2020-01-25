@@ -1,0 +1,70 @@
+postoperative-patient-data
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.3889
+
+
+
+Time taken to build model: 5.19 seconds
+Time taken to test model on training data: 0.75 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          84               93.3333 %
+Incorrectly Classified Instances         6                6.6667 %
+Kappa statistic                          0.8385
+Mean absolute error                      0.1299
+Root mean squared error                  0.2053
+Relative absolute error                 45.2526 %
+Root relative squared error             54.6866 %
+Total Number of Instances               90     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.969     0.154      0.939     0.969     0.954      0.988    A
+                 1         0          1         1         1          1        I
+                 0.833     0.03       0.909     0.833     0.87       0.987    S
+Weighted Avg.    0.933     0.117      0.933     0.933     0.932      0.988
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 62  0  2 |  a = A
+  0  2  0 |  b = I
+  4  0 20 |  c = S
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          56               62.2222 %
+Incorrectly Classified Instances        34               37.7778 %
+Kappa statistic                         -0.1333
+Mean absolute error                      0.2926
+Root mean squared error                  0.4302
+Relative absolute error                101.5372 %
+Root relative squared error            114.322  %
+Total Number of Instances               90     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.875     0.962      0.691     0.875     0.772      0.475    A
+                 0         0          0         0         0          0.063    I
+                 0         0.136      0         0         0          0.352    S
+Weighted Avg.    0.622     0.72       0.492     0.622     0.549      0.433
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 56  0  8 |  a = A
+  1  0  1 |  b = I
+ 24  0  0 |  c = S
+

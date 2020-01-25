@@ -1,0 +1,78 @@
+vote
+
+J48 pruned tree
+------------------
+
+physician-fee-freeze = n: democrat (253.41/3.75)
+physician-fee-freeze = y
+|   synfuels-corporation-cutback = n: republican (145.71/4.0)
+|   synfuels-corporation-cutback = y
+|   |   mx-missile = n
+|   |   |   adoption-of-the-budget-resolution = n: republican (22.61/3.32)
+|   |   |   adoption-of-the-budget-resolution = y
+|   |   |   |   anti-satellite-test-ban = n: democrat (5.04/0.02)
+|   |   |   |   anti-satellite-test-ban = y: republican (2.21)
+|   |   mx-missile = y: democrat (6.03/1.03)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         423               97.2414 %
+Incorrectly Classified Instances        12                2.7586 %
+Kappa statistic                          0.9418
+Mean absolute error                      0.0519
+Root mean squared error                  0.1506
+Relative absolute error                 10.9481 %
+Root relative squared error             30.9353 %
+Total Number of Instances              435     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.036      0.978     0.978     0.978      0.986    democrat
+                 0.964     0.022      0.964     0.964     0.964      0.986    republican
+Weighted Avg.    0.972     0.031      0.972     0.972     0.972      0.986
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 261   6 |   a = democrat
+   6 162 |   b = republican
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         419               96.3218 %
+Incorrectly Classified Instances        16                3.6782 %
+Kappa statistic                          0.9224
+Mean absolute error                      0.0611
+Root mean squared error                  0.1748
+Relative absolute error                 12.887  %
+Root relative squared error             35.9085 %
+Total Number of Instances              435     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.97      0.048      0.97      0.97      0.97       0.971    democrat
+                 0.952     0.03       0.952     0.952     0.952      0.971    republican
+Weighted Avg.    0.963     0.041      0.963     0.963     0.963      0.971
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 259   8 |   a = democrat
+   8 160 |   b = republican
+

@@ -1,0 +1,70 @@
+iris
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.06
+
+
+
+Time taken to build model: 5.83 seconds
+Time taken to test model on training data: 0.35 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0145
+Root mean squared error                  0.0595
+Relative absolute error                  3.2573 %
+Root relative squared error             12.6162 %
+Total Number of Instances              150     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        Iris-setosa
+                 1         0          1         1         1          1        Iris-versicolor
+                 1         0          1         1         1          1        Iris-virginica
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 50  0 |  b = Iris-versicolor
+  0  0 50 |  c = Iris-virginica
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         143               95.3333 %
+Incorrectly Classified Instances         7                4.6667 %
+Kappa statistic                          0.93  
+Mean absolute error                      0.0395
+Root mean squared error                  0.1606
+Relative absolute error                  8.8956 %
+Root relative squared error             34.0593 %
+Total Number of Instances              150     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        Iris-setosa
+                 0.94      0.04       0.922     0.94      0.931      0.992    Iris-versicolor
+                 0.92      0.03       0.939     0.92      0.929      0.992    Iris-virginica
+Weighted Avg.    0.953     0.023      0.953     0.953     0.953      0.994
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 47  3 |  b = Iris-versicolor
+  0  4 46 |  c = Iris-virginica
+

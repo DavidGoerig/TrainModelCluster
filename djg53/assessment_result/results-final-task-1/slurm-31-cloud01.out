@@ -1,0 +1,66 @@
+colic
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.1413
+
+
+
+Time taken to build model: 49.66 seconds
+Time taken to test model on training data: 5.31 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         367               99.7283 %
+Incorrectly Classified Instances         1                0.2717 %
+Kappa statistic                          0.9942
+Mean absolute error                      0.0892
+Root mean squared error                  0.1491
+Relative absolute error                 19.1363 %
+Root relative squared error             30.8859 %
+Total Number of Instances              368     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.007      0.996     1         0.998      0.998    yes
+                 0.993     0          1         0.993     0.996      0.998    no
+Weighted Avg.    0.997     0.005      0.997     0.997     0.997      0.998
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 232   0 |   a = yes
+   1 135 |   b = no
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         314               85.3261 %
+Incorrectly Classified Instances        54               14.6739 %
+Kappa statistic                          0.6812
+Mean absolute error                      0.2034
+Root mean squared error                  0.3363
+Relative absolute error                 43.6296 %
+Root relative squared error             69.6682 %
+Total Number of Instances              368     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.901     0.228      0.871     0.901     0.886      0.905    yes
+                 0.772     0.099      0.82      0.772     0.795      0.905    no
+Weighted Avg.    0.853     0.18       0.852     0.853     0.852      0.905
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 209  23 |   a = yes
+  31 105 |   b = no
+

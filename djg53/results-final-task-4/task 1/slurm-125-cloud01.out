@@ -1,0 +1,166 @@
+page-blocks
+
+J48 pruned tree
+------------------
+
+height <= 3
+|   mean_tr <= 1.35
+|   |   blackpix <= 44: 1 (50.0/1.0)
+|   |   blackpix > 44: 2 (4.0)
+|   mean_tr > 1.35
+|   |   lenght <= 7
+|   |   |   height <= 2
+|   |   |   |   blackpix <= 7: 1 (7.0/2.0)
+|   |   |   |   blackpix > 7: 2 (2.0)
+|   |   |   height > 2: 1 (20.0)
+|   |   lenght > 7
+|   |   |   mean_tr <= 4.08
+|   |   |   |   height <= 1
+|   |   |   |   |   wb_trans <= 2
+|   |   |   |   |   |   mean_tr <= 3.75: 1 (3.0)
+|   |   |   |   |   |   mean_tr > 3.75: 2 (4.0/1.0)
+|   |   |   |   |   wb_trans > 2: 2 (45.0/5.0)
+|   |   |   |   height > 1
+|   |   |   |   |   height <= 2
+|   |   |   |   |   |   blackpix <= 16: 1 (9.0/1.0)
+|   |   |   |   |   |   blackpix > 16: 2 (3.0)
+|   |   |   |   |   height > 2: 1 (8.0/1.0)
+|   |   |   mean_tr > 4.08: 2 (244.0/10.0)
+height > 3
+|   eccen <= 0.222: 4 (89.0/9.0)
+|   eccen > 0.222
+|   |   height <= 27
+|   |   |   mean_tr <= 21.29
+|   |   |   |   blackpix <= 14
+|   |   |   |   |   p_black <= 0.241
+|   |   |   |   |   |   wb_trans <= 5
+|   |   |   |   |   |   |   mean_tr <= 1.5: 1 (2.0)
+|   |   |   |   |   |   |   mean_tr > 1.5
+|   |   |   |   |   |   |   |   blackpix <= 8: 5 (11.0/2.0)
+|   |   |   |   |   |   |   |   blackpix > 8
+|   |   |   |   |   |   |   |   |   p_black <= 0.149: 5 (8.0/2.0)
+|   |   |   |   |   |   |   |   |   p_black > 0.149: 1 (7.0/2.0)
+|   |   |   |   |   |   wb_trans > 5
+|   |   |   |   |   |   |   p_black <= 0.158
+|   |   |   |   |   |   |   |   p_black <= 0.15: 1 (5.0/1.0)
+|   |   |   |   |   |   |   |   p_black > 0.15: 5 (2.0)
+|   |   |   |   |   |   |   p_black > 0.158: 1 (10.0)
+|   |   |   |   |   p_black > 0.241: 1 (159.0/17.0)
+|   |   |   |   blackpix > 14
+|   |   |   |   |   p_and <= 0.519
+|   |   |   |   |   |   height <= 12
+|   |   |   |   |   |   |   mean_tr <= 5.2: 1 (166.0/3.0)
+|   |   |   |   |   |   |   mean_tr > 5.2
+|   |   |   |   |   |   |   |   eccen <= 4.077: 1 (8.0/1.0)
+|   |   |   |   |   |   |   |   eccen > 4.077
+|   |   |   |   |   |   |   |   |   height <= 6: 2 (3.0)
+|   |   |   |   |   |   |   |   |   height > 6
+|   |   |   |   |   |   |   |   |   |   mean_tr <= 7.42: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   mean_tr > 7.42: 2 (3.0/1.0)
+|   |   |   |   |   |   height > 12
+|   |   |   |   |   |   |   wb_trans <= 34
+|   |   |   |   |   |   |   |   p_black <= 0.221: 5 (17.0/3.0)
+|   |   |   |   |   |   |   |   p_black > 0.221: 1 (6.0)
+|   |   |   |   |   |   |   wb_trans > 34: 1 (14.0)
+|   |   |   |   |   p_and > 0.519: 1 (4395.0/8.0)
+|   |   |   mean_tr > 21.29
+|   |   |   |   eccen <= 1.254: 1 (19.0)
+|   |   |   |   eccen > 1.254
+|   |   |   |   |   height <= 18
+|   |   |   |   |   |   p_black <= 0.152: 5 (3.0/1.0)
+|   |   |   |   |   |   p_black > 0.152: 2 (19.0/1.0)
+|   |   |   |   |   height > 18
+|   |   |   |   |   |   height <= 21: 1 (2.0)
+|   |   |   |   |   |   height > 21: 2 (3.0/1.0)
+|   |   height > 27
+|   |   |   p_black <= 0.331
+|   |   |   |   p_black <= 0.23
+|   |   |   |   |   eccen <= 3.342: 5 (43.0/1.0)
+|   |   |   |   |   eccen > 3.342
+|   |   |   |   |   |   mean_tr <= 3.27: 1 (2.0)
+|   |   |   |   |   |   mean_tr > 3.27: 5 (8.0/2.0)
+|   |   |   |   p_black > 0.23
+|   |   |   |   |   height <= 82: 1 (17.0/4.0)
+|   |   |   |   |   height > 82: 5 (5.0)
+|   |   |   p_black > 0.331
+|   |   |   |   height <= 87
+|   |   |   |   |   eccen <= 1.333
+|   |   |   |   |   |   mean_tr <= 6.11: 1 (2.0)
+|   |   |   |   |   |   mean_tr > 6.11: 3 (15.0/2.0)
+|   |   |   |   |   eccen > 1.333: 1 (15.0/1.0)
+|   |   |   |   height > 87: 3 (14.0)
+
+Number of Leaves  : 	44
+
+Size of the tree : 	87
+
+
+Time taken to build model: 0.92 seconds
+Time taken to test model on training data: 0.12 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5390               98.4835 %
+Incorrectly Classified Instances        83                1.5165 %
+Kappa statistic                          0.9192
+Mean absolute error                      0.0108
+Root mean squared error                  0.0736
+Relative absolute error                 14.2302 %
+Root relative squared error             37.7782 %
+Total Number of Instances             5473     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.994     0.075      0.991     0.994     0.993      0.989    1
+                 0.945     0.004      0.942     0.945     0.944      0.994    2
+                 0.964     0          0.931     0.964     0.947      1        3
+                 0.909     0.002      0.899     0.909     0.904      0.997    4
+                 0.765     0.002      0.889     0.765     0.822      0.974    5
+Weighted Avg.    0.985     0.068      0.985     0.985     0.985      0.989
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 4884   18    2    3    6 |    a = 1
+    9  311    0    4    5 |    b = 2
+    1    0   27    0    0 |    c = 3
+    7    1    0   80    0 |    d = 4
+   25    0    0    2   88 |    e = 5
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5302               96.8756 %
+Incorrectly Classified Instances       171                3.1244 %
+Kappa statistic                          0.8319
+Mean absolute error                      0.0162
+Root mean squared error                  0.1068
+Relative absolute error                 21.2092 %
+Root relative squared error             54.8294 %
+Total Number of Instances             5473     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.986     0.164      0.981     0.986     0.984      0.94     1
+                 0.888     0.007      0.896     0.888     0.892      0.947    2
+                 0.821     0.001      0.793     0.821     0.807      0.964    3
+                 0.898     0.002      0.888     0.898     0.893      0.985    4
+                 0.539     0.005      0.681     0.539     0.602      0.836    5
+Weighted Avg.    0.969     0.148      0.967     0.969     0.968      0.939
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 4846   30    6    4   27 |    a = 1
+   31  292    0    4    2 |    b = 2
+    5    0   23    0    0 |    c = 3
+    8    1    0   79    0 |    d = 4
+   48    3    0    2   62 |    e = 5
+

@@ -1,0 +1,84 @@
+bridges_version2
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.581
+
+
+
+Time taken to build model: 5.14 seconds
+Time taken to test model on training data: 0.77 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         105              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0931
+Root mean squared error                  0.1314
+Relative absolute error                 36.809  %
+Root relative squared error             37.0274 %
+Total Number of Instances              105     
+Ignored Class Unknown Instances                  2     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        WOOD
+                 1         0          1         1         1          1        SUSPEN
+                 1         0          1         1         1          1        SIMPLE-T
+                 1         0          1         1         1          1        ARCH
+                 1         0          1         1         1          1        CANTILEV
+                 1         0          1         1         1          1        CONT-T
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 16  0  0  0  0  0 |  a = WOOD
+  0 11  0  0  0  0 |  b = SUSPEN
+  0  0 44  0  0  0 |  c = SIMPLE-T
+  0  0  0 13  0  0 |  d = ARCH
+  0  0  0  0 11  0 |  e = CANTILEV
+  0  0  0  0  0 10 |  f = CONT-T
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          44               41.9048 %
+Incorrectly Classified Instances        61               58.0952 %
+Kappa statistic                          0     
+Mean absolute error                      0.2519
+Root mean squared error                  0.3551
+Relative absolute error                 99.3873 %
+Root relative squared error             99.9887 %
+Total Number of Instances              105     
+Ignored Class Unknown Instances                  2     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.421    WOOD
+                 0         0          0         0         0          0.448    SUSPEN
+                 1         1          0.419     1         0.591      0.461    SIMPLE-T
+                 0         0          0         0         0          0.399    ARCH
+                 0         0          0         0         0          0.448    CANTILEV
+                 0         0          0         0         0          0.492    CONT-T
+Weighted Avg.    0.419     0.419      0.176     0.419     0.247      0.447
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+  0  0 16  0  0  0 |  a = WOOD
+  0  0 11  0  0  0 |  b = SUSPEN
+  0  0 44  0  0  0 |  c = SIMPLE-T
+  0  0 13  0  0  0 |  d = ARCH
+  0  0 11  0  0  0 |  e = CANTILEV
+  0  0 10  0  0  0 |  f = CONT-T
+

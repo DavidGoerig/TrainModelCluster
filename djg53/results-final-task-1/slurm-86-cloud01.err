@@ -1,0 +1,4 @@
+slurmstepd-cloud04: error: Job 110963 exceeded memory limit (1072076 > 1048576), being killed
+slurmstepd-cloud04: error: *** JOB 110963 ON cloud04 CANCELLED AT 2020-01-24T19:50:27 ***
+slurmstepd-cloud04: error: Exceeded job memory limit
+slurmstepd-cloud04: error: Step 110963.4294967294 hit memory+swap limit at least once during execution. This may or may not result in some failure.

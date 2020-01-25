@@ -1,0 +1,68 @@
+shuttle-landing-control
+
+J48 pruned tree
+------------------
+: 1 (15.0/1.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          14               93.3333 %
+Incorrectly Classified Instances         1                6.6667 %
+Kappa statistic                          0     
+Mean absolute error                      0.1244
+Root mean squared error                  0.2494
+Relative absolute error                 73.7984 %
+Root relative squared error             97.9747 %
+Total Number of Instances               15     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.933     1         0.966      0.5      1
+                 0         0          0         0         0          0.5      2
+Weighted Avg.    0.933     0.933      0.871     0.933     0.901      0.5  
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  0 |  a = 1
+  1  0 |  b = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          14               93.3333 %
+Incorrectly Classified Instances         1                6.6667 %
+Kappa statistic                          0     
+Mean absolute error                      0.1315
+Root mean squared error                  0.2674
+Relative absolute error                 73.2828 %
+Root relative squared error             98.9425 %
+Total Number of Instances               15     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.933     1         0.966      0.036    1
+                 0         0          0         0         0          0.036    2
+Weighted Avg.    0.933     0.933      0.871     0.933     0.901      0.036
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  0 |  a = 1
+  1  0 |  b = 2
+

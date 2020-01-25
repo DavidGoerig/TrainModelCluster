@@ -1,0 +1,68 @@
+monks-problems-1_train
+
+J48 pruned tree
+------------------
+: 2 (124.0/56.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          68               54.8387 %
+Incorrectly Classified Instances        56               45.1613 %
+Kappa statistic                          0     
+Mean absolute error                      0.4953
+Root mean squared error                  0.4977
+Relative absolute error                 99.985  %
+Root relative squared error             99.9999 %
+Total Number of Instances              124     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.5      1
+                 1         1          0.548     1         0.708      0.5      2
+Weighted Avg.    0.548     0.548      0.301     0.548     0.388      0.5  
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  0 56 |  a = 1
+  0 68 |  b = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          54               43.5484 %
+Incorrectly Classified Instances        70               56.4516 %
+Kappa statistic                         -0.1768
+Mean absolute error                      0.531 
+Root mean squared error                  0.5622
+Relative absolute error                107.14   %
+Root relative squared error            112.9116 %
+Total Number of Instances              124     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.196     0.368      0.306     0.196     0.239      0.375    1
+                 0.632     0.804      0.489     0.632     0.551      0.375    2
+Weighted Avg.    0.435     0.607      0.406     0.435     0.41       0.375
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 11 45 |  a = 1
+ 25 43 |  b = 2
+

@@ -1,0 +1,68 @@
+colic.ORIG
+
+J48 pruned tree
+------------------
+: 2 (368.0/124.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         244               66.3043 %
+Incorrectly Classified Instances       124               33.6957 %
+Kappa statistic                          0     
+Mean absolute error                      0.4468
+Root mean squared error                  0.4727
+Relative absolute error                 99.9357 %
+Root relative squared error             99.9998 %
+Total Number of Instances              368     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.663     1         0.797      0.5      2
+                 0         0          0         0         0          0.5      1
+Weighted Avg.    0.663     0.663      0.44      0.663     0.529      0.5  
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 244   0 |   a = 2
+ 124   0 |   b = 1
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         244               66.3043 %
+Incorrectly Classified Instances       124               33.6957 %
+Kappa statistic                          0     
+Mean absolute error                      0.4469
+Root mean squared error                  0.4727
+Relative absolute error                 99.9287 %
+Root relative squared error             99.9998 %
+Total Number of Instances              368     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.663     1         0.797      0.485    2
+                 0         0          0         0         0          0.485    1
+Weighted Avg.    0.663     0.663      0.44      0.663     0.529      0.485
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 244   0 |   a = 2
+ 124   0 |   b = 1
+

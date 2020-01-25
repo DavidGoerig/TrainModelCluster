@@ -1,0 +1,99 @@
+bridges_version2
+
+J48 pruned tree
+------------------
+
+MATERIAL = WOOD: WOOD (16.0)
+MATERIAL = IRON: SIMPLE-T (11.0/3.0)
+MATERIAL = STEEL
+|   PURPOSE = WALK: SUSPEN (1.0)
+|   PURPOSE = AQUEDUCT: SIMPLE-T (0.0)
+|   PURPOSE = RR: SIMPLE-T (26.0/3.0)
+|   PURPOSE = HIGHWAY
+|   |   T-OR-D = THROUGH: SIMPLE-T (39.78/27.0)
+|   |   T-OR-D = DECK
+|   |   |   ERECTED = CRAFTS: CONT-T (0.0)
+|   |   |   ERECTED = EMERGING: CONT-T (0.0)
+|   |   |   ERECTED = MATURE: CANTILEV (5.22/2.22)
+|   |   |   ERECTED = MODERN: CONT-T (6.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	14
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          69               65.7143 %
+Incorrectly Classified Instances        36               34.2857 %
+Kappa statistic                          0.4812
+Mean absolute error                      0.1357
+Root mean squared error                  0.2603
+Relative absolute error                 53.6313 %
+Root relative squared error             73.3805 %
+Total Number of Instances              105     
+Ignored Class Unknown Instances                  2     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        WOOD
+                 0.091     0          1         0.091     0.167      0.83     SUSPEN
+                 0.977     0.541      0.566     0.977     0.717      0.878    SIMPLE-T
+                 0         0.011      0         0         0          0.843    ARCH
+                 0.273     0.021      0.6       0.273     0.375      0.792    CANTILEV
+                 0.6       0          1         0.6       0.75       0.885    CONT-T
+Weighted Avg.    0.657     0.23       0.652     0.657     0.581      0.879
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 16  0  0  0  0  0 |  a = WOOD
+  0  1 10  0  0  0 |  b = SUSPEN
+  0  0 43  1  0  0 |  c = SIMPLE-T
+  0  0 12  0  1  0 |  d = ARCH
+  0  0  8  0  3  0 |  e = CANTILEV
+  0  0  3  0  1  6 |  f = CONT-T
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          59               56.1905 %
+Incorrectly Classified Instances        46               43.8095 %
+Kappa statistic                          0.392 
+Mean absolute error                      0.1643
+Root mean squared error                  0.3124
+Relative absolute error                 64.836  %
+Root relative squared error             87.9681 %
+Total Number of Instances              105     
+Ignored Class Unknown Instances                  2     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        WOOD
+                 0         0.043      0         0         0          0.694    SUSPEN
+                 0.727     0.377      0.582     0.727     0.646      0.777    SIMPLE-T
+                 0.385     0.152      0.263     0.385     0.313      0.747    ARCH
+                 0.182     0.021      0.5       0.182     0.267      0.696    CANTILEV
+                 0.4       0.032      0.571     0.4       0.471      0.707    CONT-T
+Weighted Avg.    0.562     0.187      0.536     0.562     0.535      0.783
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 16  0  0  0  0  0 |  a = WOOD
+  0  0  7  4  0  0 |  b = SUSPEN
+  0  2 32  8  0  2 |  c = SIMPLE-T
+  0  0  7  5  1  0 |  d = ARCH
+  0  2  5  1  2  1 |  e = CANTILEV
+  0  0  4  1  1  4 |  f = CONT-T
+

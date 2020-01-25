@@ -1,0 +1,209 @@
+tic-tac-toe
+
+J48 pruned tree
+------------------
+
+middle-middle-square = b
+|   top-left-square = b
+|   |   bottom-right-square = b: positive (0.0)
+|   |   bottom-right-square = o: negative (8.0)
+|   |   bottom-right-square = x: positive (20.0)
+|   top-left-square = o
+|   |   bottom-right-square = b: negative (8.0)
+|   |   bottom-right-square = o: negative (4.0)
+|   |   bottom-right-square = x
+|   |   |   top-right-square = b
+|   |   |   |   bottom-left-square = b: positive (0.0)
+|   |   |   |   bottom-left-square = o: negative (3.0)
+|   |   |   |   bottom-left-square = x: positive (6.0)
+|   |   |   top-right-square = o
+|   |   |   |   top-middle-square = b: positive (3.0)
+|   |   |   |   top-middle-square = o: negative (7.0)
+|   |   |   |   top-middle-square = x: positive (3.0/1.0)
+|   |   |   top-right-square = x: positive (20.0/3.0)
+|   top-left-square = x
+|   |   bottom-right-square = b: positive (20.0)
+|   |   bottom-right-square = o
+|   |   |   top-right-square = b
+|   |   |   |   bottom-left-square = b: positive (0.0)
+|   |   |   |   bottom-left-square = o: negative (3.0)
+|   |   |   |   bottom-left-square = x: positive (6.0)
+|   |   |   top-right-square = o
+|   |   |   |   middle-right-square = b: positive (3.0)
+|   |   |   |   middle-right-square = o: negative (7.0)
+|   |   |   |   middle-right-square = x: positive (3.0/1.0)
+|   |   |   top-right-square = x: positive (20.0/3.0)
+|   |   bottom-right-square = x: positive (16.0)
+middle-middle-square = o
+|   top-left-square = b
+|   |   top-middle-square = b: positive (18.0/7.0)
+|   |   top-middle-square = o
+|   |   |   bottom-middle-square = b: positive (3.0)
+|   |   |   bottom-middle-square = o: negative (12.0)
+|   |   |   bottom-middle-square = x: positive (10.0/1.0)
+|   |   top-middle-square = x: negative (26.0/5.0)
+|   top-left-square = o
+|   |   bottom-right-square = b: negative (5.0)
+|   |   bottom-right-square = o: negative (50.0)
+|   |   bottom-right-square = x
+|   |   |   top-middle-square = b: positive (15.0/1.0)
+|   |   |   top-middle-square = o
+|   |   |   |   top-right-square = b: positive (3.0/1.0)
+|   |   |   |   top-right-square = o: negative (2.0)
+|   |   |   |   top-right-square = x: positive (8.0/1.0)
+|   |   |   top-middle-square = x
+|   |   |   |   bottom-left-square = b: positive (3.0/1.0)
+|   |   |   |   bottom-left-square = o: negative (8.0/2.0)
+|   |   |   |   bottom-left-square = x
+|   |   |   |   |   bottom-middle-square = b: negative (1.0)
+|   |   |   |   |   bottom-middle-square = o: negative (3.0/1.0)
+|   |   |   |   |   bottom-middle-square = x: positive (5.0)
+|   top-left-square = x
+|   |   top-right-square = b
+|   |   |   bottom-left-square = b: negative (6.0)
+|   |   |   bottom-left-square = o: negative (3.0)
+|   |   |   bottom-left-square = x
+|   |   |   |   middle-left-square = b: negative (3.0/1.0)
+|   |   |   |   middle-left-square = o: negative (7.0/1.0)
+|   |   |   |   middle-left-square = x: positive (14.0)
+|   |   top-right-square = o
+|   |   |   bottom-left-square = b: negative (3.0)
+|   |   |   bottom-left-square = o: negative (30.0)
+|   |   |   bottom-left-square = x
+|   |   |   |   middle-left-square = b: negative (4.0/2.0)
+|   |   |   |   middle-left-square = o: negative (6.0/2.0)
+|   |   |   |   middle-left-square = x: positive (17.0)
+|   |   top-right-square = x
+|   |   |   top-middle-square = b
+|   |   |   |   middle-left-square = b: positive (1.0)
+|   |   |   |   middle-left-square = o
+|   |   |   |   |   middle-right-square = b: negative (0.0)
+|   |   |   |   |   middle-right-square = o: negative (6.0)
+|   |   |   |   |   middle-right-square = x: positive (2.0)
+|   |   |   |   middle-left-square = x: positive (4.0/1.0)
+|   |   |   top-middle-square = o
+|   |   |   |   bottom-middle-square = b: positive (5.0/1.0)
+|   |   |   |   bottom-middle-square = o: negative (12.0)
+|   |   |   |   bottom-middle-square = x: negative (7.0/2.0)
+|   |   |   top-middle-square = x: positive (38.0)
+middle-middle-square = x
+|   top-left-square = b
+|   |   bottom-right-square = b: positive (30.0)
+|   |   bottom-right-square = o
+|   |   |   middle-right-square = b
+|   |   |   |   bottom-left-square = b: positive (2.0)
+|   |   |   |   bottom-left-square = o
+|   |   |   |   |   bottom-middle-square = b: negative (0.0)
+|   |   |   |   |   bottom-middle-square = o: negative (3.0)
+|   |   |   |   |   bottom-middle-square = x: positive (3.0)
+|   |   |   |   bottom-left-square = x: positive (7.0)
+|   |   |   middle-right-square = o
+|   |   |   |   top-right-square = b: positive (3.0)
+|   |   |   |   top-right-square = o: negative (7.0)
+|   |   |   |   top-right-square = x: positive (10.0/1.0)
+|   |   |   middle-right-square = x: positive (23.0/3.0)
+|   |   bottom-right-square = x: positive (20.0)
+|   top-left-square = o
+|   |   top-right-square = b
+|   |   |   middle-left-square = b: positive (7.0)
+|   |   |   middle-left-square = o
+|   |   |   |   bottom-left-square = b: positive (3.0)
+|   |   |   |   bottom-left-square = o: negative (7.0)
+|   |   |   |   bottom-left-square = x: positive (4.0)
+|   |   |   middle-left-square = x: positive (19.0)
+|   |   top-right-square = o
+|   |   |   top-middle-square = b: positive (11.0/2.0)
+|   |   |   top-middle-square = o: negative (21.0)
+|   |   |   top-middle-square = x: positive (26.0/4.0)
+|   |   top-right-square = x
+|   |   |   bottom-left-square = b: positive (9.0)
+|   |   |   bottom-left-square = o: negative (26.0/10.0)
+|   |   |   bottom-left-square = x: positive (45.0)
+|   top-left-square = x
+|   |   bottom-right-square = b: positive (20.0)
+|   |   bottom-right-square = o
+|   |   |   top-right-square = b
+|   |   |   |   bottom-left-square = b: positive (2.0)
+|   |   |   |   bottom-left-square = o
+|   |   |   |   |   bottom-middle-square = b: positive (1.0)
+|   |   |   |   |   bottom-middle-square = o: negative (5.0)
+|   |   |   |   |   bottom-middle-square = x: positive (2.0)
+|   |   |   |   bottom-left-square = x: positive (3.0)
+|   |   |   top-right-square = o
+|   |   |   |   middle-right-square = b: positive (5.0/1.0)
+|   |   |   |   middle-right-square = o: negative (12.0)
+|   |   |   |   middle-right-square = x
+|   |   |   |   |   middle-left-square = b: negative (1.0)
+|   |   |   |   |   middle-left-square = o: negative (3.0/1.0)
+|   |   |   |   |   middle-left-square = x: positive (5.0)
+|   |   |   top-right-square = x
+|   |   |   |   bottom-left-square = b: positive (3.0)
+|   |   |   |   bottom-left-square = o
+|   |   |   |   |   top-middle-square = b: negative (3.0)
+|   |   |   |   |   top-middle-square = o: negative (4.0)
+|   |   |   |   |   top-middle-square = x: positive (3.0)
+|   |   |   |   bottom-left-square = x: positive (10.0)
+|   |   bottom-right-square = x: positive (90.0)
+
+Number of Leaves  : 	95
+
+Size of the tree : 	142
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         898               93.737  %
+Incorrectly Classified Instances        60                6.263  %
+Kappa statistic                          0.8611
+Mean absolute error                      0.0917
+Root mean squared error                  0.2142
+Relative absolute error                 20.2515 %
+Root relative squared error             45.0065 %
+Total Number of Instances              958     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.901     0.043      0.917     0.901     0.909      0.984    negative
+                 0.957     0.099      0.948     0.957     0.952      0.984    positive
+Weighted Avg.    0.937     0.08       0.937     0.937     0.937      0.984
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 299  33 |   a = negative
+  27 599 |   b = positive
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         810               84.5511 %
+Incorrectly Classified Instances       148               15.4489 %
+Kappa statistic                          0.6574
+Mean absolute error                      0.1695
+Root mean squared error                  0.3439
+Relative absolute error                 37.4049 %
+Root relative squared error             72.262  %
+Total Number of Instances              958     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.768     0.113      0.782     0.768     0.775      0.896    negative
+                 0.887     0.232      0.878     0.887     0.882      0.896    positive
+Weighted Avg.    0.846     0.191      0.845     0.846     0.845      0.896
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 255  77 |   a = negative
+  71 555 |   b = positive
+

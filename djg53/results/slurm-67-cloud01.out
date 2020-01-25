@@ -1,0 +1,102 @@
+ionosphere
+
+J48 pruned tree
+------------------
+
+a05 <= 0.0409: b (67.0)
+a05 > 0.0409
+|   a01 <= 0: b (19.0)
+|   a01 > 0
+|   |   a08 <= -0.67273
+|   |   |   a28 <= -0.21793
+|   |   |   |   a06 <= -1: b (2.0)
+|   |   |   |   a06 > -1: g (4.0)
+|   |   |   a28 > -0.21793: b (11.0)
+|   |   a08 > -0.67273
+|   |   |   a03 <= 0.26667
+|   |   |   |   a03 <= 0.10135: b (9.0)
+|   |   |   |   a03 > 0.10135: g (4.0)
+|   |   |   a03 > 0.26667
+|   |   |   |   a16 <= 0.86284
+|   |   |   |   |   a21 <= 0.67213
+|   |   |   |   |   |   a19 <= 0.79113
+|   |   |   |   |   |   |   a06 <= 0.21908
+|   |   |   |   |   |   |   |   a17 <= 0.19672
+|   |   |   |   |   |   |   |   |   a07 <= 0.21572: g (4.0)
+|   |   |   |   |   |   |   |   |   a07 > 0.21572: b (5.0)
+|   |   |   |   |   |   |   |   a17 > 0.19672
+|   |   |   |   |   |   |   |   |   a21 <= 0.57399: g (36.0)
+|   |   |   |   |   |   |   |   |   a21 > 0.57399
+|   |   |   |   |   |   |   |   |   |   a10 <= 0.09237: g (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   a10 > 0.09237: b (2.0)
+|   |   |   |   |   |   |   a06 > 0.21908: g (57.0)
+|   |   |   |   |   |   a19 > 0.79113
+|   |   |   |   |   |   |   a04 <= 0.04528: b (4.0)
+|   |   |   |   |   |   |   a04 > 0.04528: g (2.0)
+|   |   |   |   |   a21 > 0.67213: g (103.0)
+|   |   |   |   a16 > 0.86284
+|   |   |   |   |   a27 <= 0.36547: g (6.0)
+|   |   |   |   |   a27 > 0.36547: b (6.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	35
+
+
+Time taken to build model: 0.31 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         350               99.7151 %
+Incorrectly Classified Instances         1                0.2849 %
+Kappa statistic                          0.9938
+Mean absolute error                      0.0051
+Root mean squared error                  0.0506
+Relative absolute error                  1.1137 %
+Root relative squared error             10.556  %
+Total Number of Instances              351     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.992     0          1         0.992     0.996      1        b
+                 1         0.008      0.996     1         0.998      1        g
+Weighted Avg.    0.997     0.005      0.997     0.997     0.997      1    
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 125   1 |   a = b
+   0 225 |   b = g
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         321               91.453  %
+Incorrectly Classified Instances        30                8.547  %
+Kappa statistic                          0.8096
+Mean absolute error                      0.0938
+Root mean squared error                  0.2901
+Relative absolute error                 20.36   %
+Root relative squared error             60.4599 %
+Total Number of Instances              351     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.825     0.036      0.929     0.825     0.874      0.892    b
+                 0.964     0.175      0.908     0.964     0.935      0.892    g
+Weighted Avg.    0.915     0.125      0.915     0.915     0.913      0.892
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 104  22 |   a = b
+   8 217 |   b = g
+

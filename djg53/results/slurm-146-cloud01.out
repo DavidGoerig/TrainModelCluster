@@ -1,0 +1,72 @@
+solar-flare_2
+
+J48 pruned tree
+------------------
+: 0 (1066.0/5.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1061               99.531  %
+Incorrectly Classified Instances         5                0.469  %
+Kappa statistic                          0     
+Mean absolute error                      0.0062
+Root mean squared error                  0.0558
+Relative absolute error                 83.5128 %
+Root relative squared error             99.9723 %
+Total Number of Instances             1066     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.995     1         0.998      0.5      0
+                 0         0          0         0         0          0.5      1
+                 0         0          0         0         0          0.5      2
+Weighted Avg.    0.995     0.995      0.991     0.995     0.993      0.5  
+
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1061    0    0 |    a = 0
+    4    0    0 |    b = 1
+    1    0    0 |    c = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1061               99.531  %
+Incorrectly Classified Instances         5                0.469  %
+Kappa statistic                          0     
+Mean absolute error                      0.0062
+Root mean squared error                  0.0558
+Relative absolute error                 82.0206 %
+Root relative squared error             99.9662 %
+Total Number of Instances             1066     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.995     1         0.998      0.25     0
+                 0         0          0         0         0          0.2      1
+                 0         0          0         0         0          0.05     2
+Weighted Avg.    0.995     0.995      0.991     0.995     0.993      0.249
+
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1061    0    0 |    a = 0
+    4    0    0 |    b = 1
+    1    0    0 |    c = 2
+

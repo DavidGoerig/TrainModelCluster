@@ -1,0 +1,9 @@
+weka.core.UnsupportedAttributeTypeException: weka.classifiers.trees.RandomTree: Cannot handle numeric class!
+	at weka.core.Capabilities.test(Capabilities.java:954)
+	at weka.core.Capabilities.test(Capabilities.java:1110)
+	at weka.core.Capabilities.test(Capabilities.java:1023)
+	at weka.core.Capabilities.testWithFail(Capabilities.java:1302)
+	at weka.classifiers.trees.RandomForest.buildClassifier(RandomForest.java:496)
+	at weka.classifiers.Evaluation.evaluateModel(Evaluation.java:1149)
+	at weka.classifiers.Classifier.runClassifier(Classifier.java:315)
+	at weka.classifiers.trees.RandomForest.main(RandomForest.java:574)

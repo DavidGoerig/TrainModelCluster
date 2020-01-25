@@ -1,0 +1,104 @@
+hypothyroid
+
+J48 pruned tree
+------------------
+
+TSH <= 6: negative (3366.31/2.0)
+TSH > 6
+|   FTI <= 64
+|   |   TSH measured = t
+|   |   |   T4U measured = t
+|   |   |   |   thyroid surgery = f
+|   |   |   |   |   T3 <= 2.3: primary_hypothyroid (82.7)
+|   |   |   |   |   T3 > 2.3
+|   |   |   |   |   |   TSH <= 15: negative (2.06/0.06)
+|   |   |   |   |   |   TSH > 15: primary_hypothyroid (3.24)
+|   |   |   |   thyroid surgery = t
+|   |   |   |   |   TT4 <= 49: negative (3.0)
+|   |   |   |   |   TT4 > 49: primary_hypothyroid (2.0)
+|   |   |   T4U measured = f: compensated_hypothyroid (7.08/2.62)
+|   |   TSH measured = f: negative (6.24)
+|   FTI > 64
+|   |   on thyroxine = f
+|   |   |   TSH measured = t
+|   |   |   |   thyroid surgery = f
+|   |   |   |   |   TT4 <= 150
+|   |   |   |   |   |   TT4 <= 48
+|   |   |   |   |   |   |   T4U measured = t: negative (2.0/1.0)
+|   |   |   |   |   |   |   T4U measured = f: primary_hypothyroid (3.04/0.04)
+|   |   |   |   |   |   TT4 > 48: compensated_hypothyroid (191.5/3.06)
+|   |   |   |   |   TT4 > 150: negative (9.16/0.16)
+|   |   |   |   thyroid surgery = t: negative (6.74)
+|   |   |   TSH measured = f: negative (30.75)
+|   |   on thyroxine = t: negative (56.17)
+
+Number of Leaves  : 	15
+
+Size of the tree : 	29
+
+
+Time taken to build model: 0.37 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3765               99.8144 %
+Incorrectly Classified Instances         7                0.1856 %
+Kappa statistic                          0.9872
+Mean absolute error                      0.002 
+Root mean squared error                  0.0288
+Relative absolute error                  2.7772 %
+Root relative squared error             15.1421 %
+Total Number of Instances             3772     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.01       0.999     1         0.999      0.997    negative
+                 0.995     0.001      0.98      0.995     0.987      1        compensated_hypothyroid
+                 0.968     0          1         0.968     0.984      1        primary_hypothyroid
+                 0         0          0         0         0          0.597    secondary_hypothyroid
+Weighted Avg.    0.998     0.01       0.998     0.998     0.998      0.997
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3480    1    0    0 |    a = negative
+    1  193    0    0 |    b = compensated_hypothyroid
+    0    3   92    0 |    c = primary_hypothyroid
+    2    0    0    0 |    d = secondary_hypothyroid
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3756               99.5758 %
+Incorrectly Classified Instances        16                0.4242 %
+Kappa statistic                          0.9707
+Mean absolute error                      0.003 
+Root mean squared error                  0.0414
+Relative absolute error                  4.1612 %
+Root relative squared error             21.7445 %
+Total Number of Instances             3772     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.999     0.021      0.998     0.999     0.998      0.993    negative
+                 0.985     0.002      0.97      0.985     0.977      0.999    compensated_hypothyroid
+                 0.937     0.001      0.957     0.937     0.947      1        primary_hypothyroid
+                 0         0          0         0         0          0.197    secondary_hypothyroid
+Weighted Avg.    0.996     0.019      0.995     0.996     0.995      0.993
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3476    3    2    0 |    a = negative
+    1  191    2    0 |    b = compensated_hypothyroid
+    3    3   89    0 |    c = primary_hypothyroid
+    2    0    0    0 |    d = secondary_hypothyroid
+

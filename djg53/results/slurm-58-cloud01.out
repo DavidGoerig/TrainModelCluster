@@ -1,0 +1,130 @@
+heart-c
+
+J48 pruned tree
+------------------
+
+thal = fixed_defect
+|   ca <= 0
+|   |   exang = no: <50 (5.06)
+|   |   exang = yes: >50_1 (3.06/1.0)
+|   ca > 0: >50_1 (10.0)
+thal = normal
+|   ca <= 0: <50 (117.21/12.55)
+|   ca > 0
+|   |   cp = typ_angina
+|   |   |   trestbps <= 138: >50_1 (4.0/1.0)
+|   |   |   trestbps > 138: <50 (3.0)
+|   |   cp = asympt: >50_1 (20.0/3.0)
+|   |   cp = non_anginal: <50 (13.9/1.0)
+|   |   cp = atyp_angina
+|   |   |   restecg = left_vent_hyper
+|   |   |   |   exang = no: >50_1 (3.0)
+|   |   |   |   exang = yes: <50 (2.0)
+|   |   |   restecg = normal: <50 (4.0)
+|   |   |   restecg = st_t_wave_abnormality: <50 (0.0)
+thal = reversable_defect
+|   cp = typ_angina
+|   |   chol <= 229: <50 (3.0)
+|   |   chol > 229
+|   |   |   age <= 48: >50_1 (2.0)
+|   |   |   age > 48: <50 (3.0/1.0)
+|   cp = asympt
+|   |   oldpeak <= 0.6
+|   |   |   restecg = left_vent_hyper: >50_1 (8.0/1.0)
+|   |   |   restecg = normal
+|   |   |   |   trestbps <= 136
+|   |   |   |   |   ca <= 0: <50 (4.0)
+|   |   |   |   |   ca > 0
+|   |   |   |   |   |   thalach <= 151: <50 (2.0)
+|   |   |   |   |   |   thalach > 151: >50_1 (3.0)
+|   |   |   |   trestbps > 136: >50_1 (4.0)
+|   |   |   restecg = st_t_wave_abnormality: >50_1 (0.0)
+|   |   oldpeak > 0.6: >50_1 (57.39)
+|   cp = non_anginal
+|   |   slope = up: <50 (7.39/1.0)
+|   |   slope = flat
+|   |   |   ca <= 0
+|   |   |   |   trestbps <= 122: <50 (3.0)
+|   |   |   |   trestbps > 122: >50_1 (3.0)
+|   |   |   ca > 0: >50_1 (8.0/1.0)
+|   |   slope = down: <50 (1.0)
+|   cp = atyp_angina
+|   |   ca <= 0
+|   |   |   oldpeak <= 0.1: <50 (4.0)
+|   |   |   oldpeak > 0.1: >50_1 (2.75/0.75)
+|   |   ca > 0: >50_1 (2.25/0.25)
+
+Number of Leaves  : 	30
+
+Size of the tree : 	51
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         279               92.0792 %
+Incorrectly Classified Instances        24                7.9208 %
+Kappa statistic                          0.8396
+Mean absolute error                      0.0532
+Root mean squared error                  0.1624
+Relative absolute error                 26.5595 %
+Root relative squared error             51.542  %
+Total Number of Instances              303     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.952     0.116      0.908     0.952     0.929      0.952    <50
+                 0.884     0.048      0.938     0.884     0.91       0.952    >50_1
+                 0         0          0         0         0          ?        >50_2
+                 0         0          0         0         0          ?        >50_3
+                 0         0          0         0         0          ?        >50_4
+Weighted Avg.    0.921     0.085      0.922     0.921     0.921      0.952
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 157   8   0   0   0 |   a = <50
+  16 122   0   0   0 |   b = >50_1
+   0   0   0   0   0 |   c = >50_2
+   0   0   0   0   0 |   d = >50_3
+   0   0   0   0   0 |   e = >50_4
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         235               77.5578 %
+Incorrectly Classified Instances        68               22.4422 %
+Kappa statistic                          0.5443
+Mean absolute error                      0.1044
+Root mean squared error                  0.2725
+Relative absolute error                 52.0476 %
+Root relative squared error             86.5075 %
+Total Number of Instances              303     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.83      0.29       0.774     0.83      0.801      0.809    <50
+                 0.71      0.17       0.778     0.71      0.742      0.809    >50_1
+                 0         0          0         0         0          ?        >50_2
+                 0         0          0         0         0          ?        >50_3
+                 0         0          0         0         0          ?        >50_4
+Weighted Avg.    0.776     0.235      0.776     0.776     0.774      0.809
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 137  28   0   0   0 |   a = <50
+  40  98   0   0   0 |   b = >50_1
+   0   0   0   0   0 |   c = >50_2
+   0   0   0   0   0 |   d = >50_3
+   0   0   0   0   0 |   e = >50_4
+

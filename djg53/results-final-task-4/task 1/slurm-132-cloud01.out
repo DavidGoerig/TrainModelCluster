@@ -1,0 +1,235 @@
+primary-tumor
+
+J48 pruned tree
+------------------
+
+neck = yes
+|   axillar = yes
+|   |   abdominal = yes: stomach (3.0/1.0)
+|   |   abdominal = no: breast (6.0/2.0)
+|   axillar = no
+|   |   mediastinum = yes: lung (5.0/2.0)
+|   |   mediastinum = no
+|   |   |   bone = yes
+|   |   |   |   sex = male: lung (5.0/3.0)
+|   |   |   |   sex = female: head and neck (2.0/1.0)
+|   |   |   bone = no: head and neck (23.0/4.0)
+neck = no
+|   axillar = yes
+|   |   sex = male: lung (6.08/2.0)
+|   |   sex = female: breast (18.0/2.0)
+|   axillar = no
+|   |   sex = male
+|   |   |   liver = yes
+|   |   |   |   mediastinum = yes: lung (16.0/4.0)
+|   |   |   |   mediastinum = no
+|   |   |   |   |   skin = yes: lung (3.0/2.0)
+|   |   |   |   |   skin = no
+|   |   |   |   |   |   histologic-type = epidermoid: lung (2.16/0.16)
+|   |   |   |   |   |   histologic-type = adeno
+|   |   |   |   |   |   |   pleura = yes: colon (4.0/2.0)
+|   |   |   |   |   |   |   pleura = no
+|   |   |   |   |   |   |   |   age = <30: colon (0.92)
+|   |   |   |   |   |   |   |   age = 30-59
+|   |   |   |   |   |   |   |   |   abdominal = yes: stomach (4.0/2.0)
+|   |   |   |   |   |   |   |   |   abdominal = no: pancreas (7.92/3.92)
+|   |   |   |   |   |   |   |   age = >=60
+|   |   |   |   |   |   |   |   |   abdominal = yes: pancreas (5.0/2.0)
+|   |   |   |   |   |   |   |   |   abdominal = no: stomach (3.0/1.0)
+|   |   |   |   |   |   histologic-type = anaplastic: pancreas (0.0)
+|   |   |   liver = no
+|   |   |   |   pleura = yes
+|   |   |   |   |   lung = yes
+|   |   |   |   |   |   abdominal = yes: stomach (3.0/2.0)
+|   |   |   |   |   |   abdominal = no: kidney (3.0/1.0)
+|   |   |   |   |   lung = no: lung (9.0/3.0)
+|   |   |   |   pleura = no
+|   |   |   |   |   histologic-type = epidermoid: lung (10.82/2.14)
+|   |   |   |   |   histologic-type = adeno
+|   |   |   |   |   |   bone = yes: kidney (25.41/14.67)
+|   |   |   |   |   |   bone = no: stomach (19.68/12.21)
+|   |   |   |   |   histologic-type = anaplastic: lung (5.47/1.57)
+|   |   sex = female
+|   |   |   bone = yes
+|   |   |   |   peritoneum = yes
+|   |   |   |   |   pleura = yes: lung (2.0/1.0)
+|   |   |   |   |   pleura = no: stomach (2.0/1.0)
+|   |   |   |   peritoneum = no
+|   |   |   |   |   abdominal = yes: thyroid (5.0/4.0)
+|   |   |   |   |   abdominal = no
+|   |   |   |   |   |   lung = yes
+|   |   |   |   |   |   |   pleura = yes: lung (2.0)
+|   |   |   |   |   |   |   pleura = no: thyroid (7.0/2.0)
+|   |   |   |   |   |   lung = no: lung (13.0/6.0)
+|   |   |   bone = no
+|   |   |   |   mediastinum = yes
+|   |   |   |   |   abdominal = yes
+|   |   |   |   |   |   lung = yes
+|   |   |   |   |   |   |   peritoneum = yes: lung (2.0/1.0)
+|   |   |   |   |   |   |   peritoneum = no: colon (6.0/3.0)
+|   |   |   |   |   |   lung = no
+|   |   |   |   |   |   |   age = <30: lung (0.0)
+|   |   |   |   |   |   |   age = 30-59: ovary (2.0/1.0)
+|   |   |   |   |   |   |   age = >=60: lung (5.0/3.0)
+|   |   |   |   |   abdominal = no: lung (10.55/1.55)
+|   |   |   |   mediastinum = no
+|   |   |   |   |   supraclavicular = yes: stomach (7.0/4.0)
+|   |   |   |   |   supraclavicular = no
+|   |   |   |   |   |   age = <30: kidney (1.0)
+|   |   |   |   |   |   age = 30-59
+|   |   |   |   |   |   |   lung = yes: pancreas (6.0/4.0)
+|   |   |   |   |   |   |   lung = no
+|   |   |   |   |   |   |   |   abdominal = yes
+|   |   |   |   |   |   |   |   |   liver = yes: pancreas (6.0/2.0)
+|   |   |   |   |   |   |   |   |   liver = no: ovary (8.0/4.0)
+|   |   |   |   |   |   |   |   abdominal = no: ovary (26.0/7.0)
+|   |   |   |   |   |   age = >=60
+|   |   |   |   |   |   |   pleura = yes
+|   |   |   |   |   |   |   |   abdominal = yes: liver (3.0/2.0)
+|   |   |   |   |   |   |   |   abdominal = no: lung (2.0/1.0)
+|   |   |   |   |   |   |   pleura = no
+|   |   |   |   |   |   |   |   peritoneum = yes: pancreas (8.0/3.0)
+|   |   |   |   |   |   |   |   peritoneum = no: gallbladder (25.0/15.0)
+
+Number of Leaves  : 	47
+
+Size of the tree : 	88
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         208               61.3569 %
+Incorrectly Classified Instances       131               38.6431 %
+Kappa statistic                          0.5554
+Mean absolute error                      0.0485
+Root mean squared error                  0.1551
+Relative absolute error                 59.7643 %
+Root relative squared error             77.116  %
+Total Number of Instances              339     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.869     0.149      0.658     0.869     0.749      0.918    lung
+                 1         0.016      0.8       1         0.889      0.993    head and neck
+                 0         0          0         0         0          0.92     esophagus
+                 0.429     0.018      0.5       0.429     0.462      0.948    thyroid
+                 0.436     0.057      0.5       0.436     0.466      0.86     stomach
+                 0         0          0         0         0          0.964    duoden and sm.int
+                 0.429     0.015      0.545     0.429     0.48       0.949    colon
+                 0         0          0         0         0          0.933    rectum
+                 0         0          0         0         0          ?        anus
+                 0         0          0         0         0          0.996    salivary glands
+                 0.643     0.048      0.545     0.643     0.59       0.943    pancreas
+                 0.625     0.046      0.4       0.625     0.488      0.962    gallbladder
+                 0.143     0.006      0.333     0.143     0.2        0.956    liver
+                 0.542     0.038      0.52      0.542     0.531      0.938    kidney
+                 0         0          0         0         0          0.967    bladder
+                 0         0          0         0         0          0.997    testis
+                 0         0          0         0         0          0.926    prostate
+                 0.828     0.039      0.667     0.828     0.738      0.976    ovary
+                 0         0          0         0         0          0.971    corpus uteri
+                 0         0          0         0         0          0.987    cervix uteri
+                 0         0          0         0         0          0.999    vagina
+                 0.833     0.013      0.833     0.833     0.833      0.99     breast
+Weighted Avg.    0.614     0.059      0.535     0.614     0.566      0.938
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v   <-- classified as
+ 73  1  0  1  4  0  0  0  0  0  0  1  0  2  0  0  0  1  0  0  0  1 |  a = lung
+  0 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = head and neck
+  3  2  0  0  1  0  0  0  0  0  1  0  0  1  0  0  0  0  0  0  0  1 |  c = esophagus
+  6  0  0  6  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  1 |  d = thyroid
+  4  0  0  1 17  0  0  0  0  0  5  4  0  2  0  0  0  5  0  0  0  1 |  e = stomach
+  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 |  f = duoden and sm.int
+  0  0  0  0  2  0  6  0  0  0  2  3  0  0  0  0  0  1  0  0  0  0 |  g = colon
+  1  1  0  0  1  0  1  0  0  0  0  1  0  0  0  0  0  1  0  0  0  0 |  h = rectum
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = anus
+  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = salivary glands
+  3  0  0  1  1  0  2  0  0  0 18  2  0  0  0  0  0  1  0  0  0  0 |  k = pancreas
+  4  0  0  0  0  0  0  0  0  0  1 10  0  0  0  0  0  1  0  0  0  0 |  l = gallbladder
+  4  0  0  0  1  0  0  0  0  0  0  1  1  0  0  0  0  0  0  0  0  0 |  m = liver
+  3  0  0  1  3  0  1  0  0  0  1  1  1 13  0  0  0  0  0  0  0  0 |  n = kidney
+  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  o = bladder
+  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 |  p = testis
+  2  1  0  0  1  0  0  0  0  0  1  0  0  5  0  0  0  0  0  0  0  0 |  q = prostate
+  1  0  0  0  0  0  0  0  0  0  3  1  0  0  0  0  0 24  0  0  0  0 |  r = ovary
+  1  0  0  1  0  0  0  0  0  0  1  0  1  0  0  0  0  2  0  0  0  0 |  s = corpus uteri
+  0  0  0  1  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  t = cervix uteri
+  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  u = vagina
+  2  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 20 |  v = breast
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         135               39.823  %
+Incorrectly Classified Instances       204               60.177  %
+Kappa statistic                          0.3056
+Mean absolute error                      0.0623
+Root mean squared error                  0.1966
+Relative absolute error                 76.7109 %
+Root relative squared error             97.7484 %
+Total Number of Instances              339     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.631     0.275      0.431     0.631     0.512      0.73     lung
+                 0.9       0.022      0.72      0.9       0.8        0.963    head and neck
+                 0         0.003      0         0         0          0.508    esophagus
+                 0.286     0.018      0.4       0.286     0.333      0.76     thyroid
+                 0.026     0.07       0.045     0.026     0.033      0.549    stomach
+                 0         0.012      0         0         0          0.482    duoden and sm.int
+                 0         0.037      0         0         0          0.465    colon
+                 0         0.003      0         0         0          0.59     rectum
+                 0         0          0         0         0          ?        anus
+                 0         0.003      0         0         0          0.741    salivary glands
+                 0.25      0.068      0.25      0.25      0.25       0.711    pancreas
+                 0.563     0.046      0.375     0.563     0.45       0.786    gallbladder
+                 0         0.009      0         0         0          0.434    liver
+                 0.292     0.041      0.35      0.292     0.318      0.668    kidney
+                 0         0          0         0         0          0.46     bladder
+                 0         0          0         0         0          0.475    testis
+                 0         0.012      0         0         0          0.599    prostate
+                 0.655     0.058      0.514     0.655     0.576      0.864    ovary
+                 0         0          0         0         0          0.491    corpus uteri
+                 0         0.006      0         0         0          0.476    cervix uteri
+                 0         0          0         0         0          0.496    vagina
+                 0.708     0.016      0.773     0.708     0.739      0.877    breast
+Weighted Avg.    0.398     0.097      0.333     0.398     0.358      0.704
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v   <-- classified as
+ 53  3  0  4  4  0  3  0  0  1  3  3  1  4  0  0  2  1  0  1  0  1 |  a = lung
+  2 18  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = head and neck
+  6  1  0  0  1  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0 |  c = esophagus
+  7  0  0  4  0  0  0  0  0  0  0  0  0  1  0  0  1  0  0  0  0  1 |  d = thyroid
+ 14  0  0  0  1  0  1  1  0  0  6  4  0  3  0  0  0  6  0  0  0  3 |  e = stomach
+  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 |  f = duoden and sm.int
+  3  0  0  0  2  1  0  0  0  0  2  3  0  1  0  0  0  2  0  0  0  0 |  g = colon
+  0  1  0  0  1  1  1  0  0  0  1  0  0  0  0  0  0  1  0  0  0  0 |  h = rectum
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = anus
+  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = salivary glands
+  4  0  0  1  5  0  3  0  0  0  7  3  0  0  0  0  0  5  0  0  0  0 |  k = pancreas
+  3  0  0  0  0  0  1  0  0  0  1  9  0  0  0  0  0  1  0  1  0  0 |  l = gallbladder
+  4  0  0  0  0  1  1  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0 |  m = liver
+  9  0  0  0  2  1  2  0  0  0  1  0  0  7  0  0  1  1  0  0  0  0 |  n = kidney
+  1  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  o = bladder
+  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0 |  p = testis
+  4  1  0  0  1  0  0  0  0  0  1  0  0  3  0  0  0  0  0  0  0  0 |  q = prostate
+  4  0  0  0  0  0  0  0  0  0  5  1  0  0  0  0  0 19  0  0  0  0 |  r = ovary
+  2  0  0  1  1  0  0  0  0  0  0  0  1  0  0  0  0  1  0  0  0  0 |  s = corpus uteri
+  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  t = cervix uteri
+  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  u = vagina
+  3  0  1  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 17 |  v = breast
+

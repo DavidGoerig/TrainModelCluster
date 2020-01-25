@@ -1,0 +1,90 @@
+flags
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.6443
+
+
+
+Time taken to build model: 6.77 seconds
+Time taken to test model on training data: 0.97 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         194              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0701
+Root mean squared error                  0.1137
+Relative absolute error                 36.6725 %
+Root relative squared error             36.8889 %
+Total Number of Instances              194     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        black
+                 1         0          1         1         1          1        blue
+                 1         0          1         1         1          1        brown
+                 1         0          1         1         1          1        gold
+                 1         0          1         1         1          1        green
+                 1         0          1         1         1          1        orange
+                 1         0          1         1         1          1        red
+                 1         0          1         1         1          1        white
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+  9  0  0  0  0  0  0  0 |  a = black
+  0 47  0  0  0  0  0  0 |  b = blue
+  0  0  2  0  0  0  0  0 |  c = brown
+  0  0  0  9  0  0  0  0 |  d = gold
+  0  0  0  0 40  0  0  0 |  e = green
+  0  0  0  0  0  1  0  0 |  f = orange
+  0  0  0  0  0  0 69  0 |  g = red
+  0  0  0  0  0  0  0 17 |  h = white
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          69               35.567  %
+Incorrectly Classified Instances       125               64.433  %
+Kappa statistic                          0     
+Mean absolute error                      0.1901
+Root mean squared error                  0.3084
+Relative absolute error                 99.342  %
+Root relative squared error             99.988  %
+Total Number of Instances              194     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.442    black
+                 0         0          0         0         0          0.47     blue
+                 0         0          0         0         0          0.099    brown
+                 0         0          0         0         0          0.443    gold
+                 0         0          0         0         0          0.492    green
+                 0         0          0         0         0          0.047    orange
+                 1         1          0.356     1         0.525      0.483    red
+                 0         0          0         0         0          0.429    white
+Weighted Avg.    0.356     0.356      0.127     0.356     0.187      0.467
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+  0  0  0  0  0  0  9  0 |  a = black
+  0  0  0  0  0  0 47  0 |  b = blue
+  0  0  0  0  0  0  2  0 |  c = brown
+  0  0  0  0  0  0  9  0 |  d = gold
+  0  0  0  0  0  0 40  0 |  e = green
+  0  0  0  0  0  0  1  0 |  f = orange
+  0  0  0  0  0  0 69  0 |  g = red
+  0  0  0  0  0  0 17  0 |  h = white
+

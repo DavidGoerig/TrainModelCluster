@@ -1,0 +1,94 @@
+breast-w
+
+J48 pruned tree
+------------------
+
+Cell_Size_Uniformity <= 2
+|   Bare_Nuclei <= 3: benign (405.39/2.0)
+|   Bare_Nuclei > 3
+|   |   Clump_Thickness <= 3: benign (11.55)
+|   |   Clump_Thickness > 3
+|   |   |   Bland_Chromatin <= 2
+|   |   |   |   Marginal_Adhesion <= 3: malignant (2.0)
+|   |   |   |   Marginal_Adhesion > 3: benign (2.0)
+|   |   |   Bland_Chromatin > 2: malignant (8.06/0.06)
+Cell_Size_Uniformity > 2
+|   Cell_Shape_Uniformity <= 2
+|   |   Clump_Thickness <= 5: benign (19.0/1.0)
+|   |   Clump_Thickness > 5: malignant (4.0)
+|   Cell_Shape_Uniformity > 2
+|   |   Cell_Size_Uniformity <= 4
+|   |   |   Bare_Nuclei <= 2
+|   |   |   |   Marginal_Adhesion <= 3: benign (11.41/1.21)
+|   |   |   |   Marginal_Adhesion > 3: malignant (3.0)
+|   |   |   Bare_Nuclei > 2
+|   |   |   |   Clump_Thickness <= 6
+|   |   |   |   |   Cell_Size_Uniformity <= 3: malignant (13.0/2.0)
+|   |   |   |   |   Cell_Size_Uniformity > 3
+|   |   |   |   |   |   Marginal_Adhesion <= 5: benign (5.79/1.0)
+|   |   |   |   |   |   Marginal_Adhesion > 5: malignant (5.0)
+|   |   |   |   Clump_Thickness > 6: malignant (31.79/1.0)
+|   |   Cell_Size_Uniformity > 4: malignant (177.0/5.0)
+
+Number of Leaves  : 	14
+
+Size of the tree : 	27
+
+
+Time taken to build model: 0.17 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         686               98.1402 %
+Incorrectly Classified Instances        13                1.8598 %
+Kappa statistic                          0.959 
+Mean absolute error                      0.0355
+Root mean squared error                  0.1324
+Relative absolute error                  7.8614 %
+Root relative squared error             27.8462 %
+Total Number of Instances              699     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.983     0.021      0.989     0.983     0.986      0.989    benign
+                 0.979     0.017      0.967     0.979     0.973      0.989    malignant
+Weighted Avg.    0.981     0.02       0.981     0.981     0.981      0.989
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 450   8 |   a = benign
+   5 236 |   b = malignant
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         661               94.5637 %
+Incorrectly Classified Instances        38                5.4363 %
+Kappa statistic                          0.8799
+Mean absolute error                      0.0694
+Root mean squared error                  0.2229
+Relative absolute error                 15.352  %
+Root relative squared error             46.8927 %
+Total Number of Instances              699     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.956     0.075      0.961     0.956     0.958      0.955    benign
+                 0.925     0.044      0.918     0.925     0.921      0.955    malignant
+Weighted Avg.    0.946     0.064      0.946     0.946     0.946      0.955
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 438  20 |   a = benign
+  18 223 |   b = malignant
+

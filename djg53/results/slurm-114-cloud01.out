@@ -1,0 +1,132 @@
+molecular-biology_promoters
+
+J48 pruned tree
+------------------
+
+p-17 = a
+|   p2 = a
+|   |   p-46 = a: t (1.0)
+|   |   p-46 = c: c (0.0)
+|   |   p-46 = g: c (3.0/1.0)
+|   |   p-46 = t: g (2.0)
+|   p2 = c: c (3.0)
+|   p2 = g: c (2.0/1.0)
+|   p2 = t
+|   |   p-33 = a: t (1.0)
+|   |   p-33 = c: t (5.0)
+|   |   p-33 = g: g (2.0)
+|   |   p-33 = t: t (0.0)
+p-17 = c
+|   p-45 = a: a (8.0/1.0)
+|   p-45 = c
+|   |   p-19 = a: g (2.0)
+|   |   p-19 = c: g (0.0)
+|   |   p-19 = g: g (0.0)
+|   |   p-19 = t: t (2.0)
+|   p-45 = g: g (4.0/1.0)
+|   p-45 = t
+|   |   p-28 = a: g (2.0)
+|   |   p-28 = c: a (3.0)
+|   |   p-28 = g: a (1.0)
+|   |   p-28 = t: a (0.0)
+p-17 = g
+|   p-1 = a
+|   |   p-43 = a: t (2.0)
+|   |   p-43 = c: c (2.0)
+|   |   p-43 = g: c (0.0)
+|   |   p-43 = t: a (2.0/1.0)
+|   p-1 = c
+|   |   p-19 = a: c (2.0/1.0)
+|   |   p-19 = c: t (3.0)
+|   |   p-19 = g: g (2.0)
+|   |   p-19 = t: t (1.0)
+|   p-1 = g
+|   |   p-41 = a: c (3.0)
+|   |   p-41 = c: g (1.0)
+|   |   p-41 = g: c (0.0)
+|   |   p-41 = t: g (2.0/1.0)
+|   p-1 = t: a (6.0/1.0)
+p-17 = t
+|   p-36 = a
+|   |   p-29 = a: t (2.0)
+|   |   p-29 = c: t (1.0)
+|   |   p-29 = g: a (5.0/1.0)
+|   |   p-29 = t: g (2.0/1.0)
+|   p-36 = c: g (3.0)
+|   p-36 = g
+|   |   p-31 = a: a (0.0)
+|   |   p-31 = c: c (1.0)
+|   |   p-31 = g: a (4.0/1.0)
+|   |   p-31 = t: g (2.0)
+|   p-36 = t: t (19.0/7.0)
+
+Number of Leaves  : 	43
+
+Size of the tree : 	57
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          88               83.0189 %
+Incorrectly Classified Instances        18               16.9811 %
+Kappa statistic                          0.7688
+Mean absolute error                      0.1173
+Root mean squared error                  0.2422
+Relative absolute error                 31.8333 %
+Root relative squared error             56.4388 %
+Total Number of Instances              106     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.889     0.063      0.828     0.889     0.857      0.965    a
+                 0.765     0.034      0.813     0.765     0.788      0.961    c
+                 0.75      0.038      0.875     0.75      0.808      0.958    g
+                 0.882     0.097      0.811     0.882     0.845      0.967    t
+Weighted Avg.    0.83      0.063      0.832     0.83      0.829      0.963
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 24  0  1  2 |  a = a
+  1 13  0  3 |  b = c
+  3  2 21  2 |  c = g
+  1  1  2 30 |  d = t
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          23               21.6981 %
+Incorrectly Classified Instances        83               78.3019 %
+Kappa statistic                         -0.0481
+Mean absolute error                      0.3834
+Root mean squared error                  0.5723
+Relative absolute error                103.9143 %
+Root relative squared error            133.2111 %
+Total Number of Instances              106     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.222     0.241      0.24      0.222     0.231      0.5      a
+                 0.176     0.247      0.12      0.176     0.143      0.498    c
+                 0.179     0.282      0.185     0.179     0.182      0.433    g
+                 0.265     0.278      0.31      0.265     0.286      0.493    t
+Weighted Avg.    0.217     0.265      0.229     0.217     0.221      0.48 
+
+
+=== Confusion Matrix ===
+
+ a b c d   <-- classified as
+ 6 4 9 8 | a = a
+ 4 3 4 6 | b = c
+ 8 9 5 6 | c = g
+ 7 9 9 9 | d = t
+

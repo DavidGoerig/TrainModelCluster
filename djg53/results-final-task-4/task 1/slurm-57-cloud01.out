@@ -1,0 +1,96 @@
+hayes-roth_train
+
+J48 pruned tree
+------------------
+
+age <= 3
+|   educational_level <= 3
+|   |   marital_status <= 3
+|   |   |   age <= 1
+|   |   |   |   educational_level <= 1: 1 (11.0)
+|   |   |   |   educational_level > 1
+|   |   |   |   |   marital_status <= 1: 1 (11.0)
+|   |   |   |   |   marital_status > 1
+|   |   |   |   |   |   educational_level <= 2: 2 (10.0)
+|   |   |   |   |   |   educational_level > 2: 1 (11.0/5.0)
+|   |   |   age > 1
+|   |   |   |   educational_level <= 1
+|   |   |   |   |   marital_status <= 1: 1 (11.0)
+|   |   |   |   |   marital_status > 1
+|   |   |   |   |   |   marital_status <= 2: 2 (10.0)
+|   |   |   |   |   |   marital_status > 2: 1 (11.0/5.0)
+|   |   |   |   educational_level > 1: 2 (27.0/6.0)
+|   |   marital_status > 3: 3 (8.0)
+|   educational_level > 3: 3 (10.0)
+age > 3: 3 (12.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         116               87.8788 %
+Incorrectly Classified Instances        16               12.1212 %
+Kappa statistic                          0.8135
+Mean absolute error                      0.0767
+Root mean squared error                  0.1958
+Relative absolute error                 23.4935 %
+Root relative squared error             48.5767 %
+Total Number of Instances              132     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.882     0.123      0.818     0.882     0.849      0.956    1
+                 0.804     0.074      0.872     0.804     0.837      0.956    2
+                 1         0          1         1         1          1        3
+                 0         0          0         0         0          ?        4
+Weighted Avg.    0.879     0.076      0.88      0.879     0.879      0.966
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 45  6  0  0 |  a = 1
+ 10 41  0  0 |  b = 2
+  0  0 30  0 |  c = 3
+  0  0  0  0 |  d = 4
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         106               80.303  %
+Incorrectly Classified Instances        26               19.697  %
+Kappa statistic                          0.6969
+Mean absolute error                      0.1014
+Root mean squared error                  0.2457
+Relative absolute error                 31.0609 %
+Root relative squared error             60.9449 %
+Total Number of Instances              132     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.725     0.148      0.755     0.725     0.74       0.877    1
+                 0.765     0.173      0.736     0.765     0.75       0.881    2
+                 1         0          1         1         1          1        3
+                 0         0          0         0         0          ?        4
+Weighted Avg.    0.803     0.124      0.803     0.803     0.803      0.906
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 37 14  0  0 |  a = 1
+ 12 39  0  0 |  b = 2
+  0  0 30  0 |  c = 3
+  0  0  0  0 |  d = 4
+

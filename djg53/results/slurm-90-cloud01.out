@@ -1,0 +1,118 @@
+kdd_synthetic_control
+
+J48 pruned tree
+------------------
+
+col_3 <= 36.289
+|   col_59 <= 35.9324
+|   |   col_54 <= 24.0535
+|   |   |   col_16 <= 24.2431: Decreasing_trend (54.0)
+|   |   |   col_16 > 24.2431
+|   |   |   |   col_19 <= 23.9112: Decreasing_trend (25.0)
+|   |   |   |   col_19 > 23.9112
+|   |   |   |   |   col_20 <= 23.7914: Decreasing_trend (10.0)
+|   |   |   |   |   col_20 > 23.7914
+|   |   |   |   |   |   col_5 <= 41.1317
+|   |   |   |   |   |   |   col_17 <= 24.585: Decreasing_trend (7.0/1.0)
+|   |   |   |   |   |   |   col_17 > 24.585
+|   |   |   |   |   |   |   |   col_13 <= 23.86: Decreasing_trend (3.0)
+|   |   |   |   |   |   |   |   col_13 > 23.86: Downward_shift (98.0/1.0)
+|   |   |   |   |   |   col_5 > 41.1317: Cyclic (2.0)
+|   |   col_54 > 24.0535
+|   |   |   col_4 <= 36.9632
+|   |   |   |   col_56 <= 36.7134
+|   |   |   |   |   col_35 <= 22.1357: Downward_shift (3.0/1.0)
+|   |   |   |   |   col_35 > 22.1357: Normal (100.0)
+|   |   |   |   col_56 > 36.7134: Upward_shift (4.0)
+|   |   |   col_4 > 36.9632: Cyclic (8.0)
+|   col_59 > 35.9324
+|   |   col_20 <= 35.776
+|   |   |   col_17 <= 35.5316
+|   |   |   |   col_15 <= 36.2212
+|   |   |   |   |   col_18 <= 35.9251
+|   |   |   |   |   |   col_5 <= 36.1714: Upward_shift (98.0/2.0)
+|   |   |   |   |   |   col_5 > 36.1714: Increasing_trend (2.0)
+|   |   |   |   |   col_18 > 35.9251: Increasing_trend (5.0)
+|   |   |   |   col_15 > 36.2212: Increasing_trend (10.0)
+|   |   |   col_17 > 35.5316: Increasing_trend (23.0/1.0)
+|   |   col_20 > 35.776: Increasing_trend (59.0)
+col_3 > 36.289: Cyclic (89.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	35
+
+
+Time taken to build model: 0.55 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         594               99      %
+Incorrectly Classified Instances         6                1      %
+Kappa statistic                          0.988 
+Mean absolute error                      0.006 
+Root mean squared error                  0.0549
+Relative absolute error                  2.1717 %
+Root relative squared error             14.7368 %
+Total Number of Instances              600     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.99      0          1         0.99      0.995      1        Cyclic
+                 0.98      0.002      0.99      0.98      0.985      0.999    Decreasing_trend
+                 0.99      0.004      0.98      0.99      0.985      0.999    Downward_shift
+                 0.98      0.002      0.99      0.98      0.985      0.998    Increasing_trend
+                 1         0          1         1         1          1        Normal
+                 1         0.004      0.98      1         0.99       0.998    Upward_shift
+Weighted Avg.    0.99      0.002      0.99      0.99      0.99       0.999
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+  99   0   0   1   0   0 |   a = Cyclic
+   0  98   2   0   0   0 |   b = Decreasing_trend
+   0   1  99   0   0   0 |   c = Downward_shift
+   0   0   0  98   0   2 |   d = Increasing_trend
+   0   0   0   0 100   0 |   e = Normal
+   0   0   0   0   0 100 |   f = Upward_shift
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         550               91.6667 %
+Incorrectly Classified Instances        50                8.3333 %
+Kappa statistic                          0.9   
+Mean absolute error                      0.0292
+Root mean squared error                  0.1635
+Relative absolute error                 10.515  %
+Root relative squared error             43.8622 %
+Total Number of Instances              600     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.91      0.008      0.958     0.91      0.933      0.955    Cyclic
+                 0.88      0.016      0.917     0.88      0.898      0.962    Decreasing_trend
+                 0.91      0.026      0.875     0.91      0.892      0.947    Downward_shift
+                 0.89      0.016      0.918     0.89      0.904      0.957    Increasing_trend
+                 1         0.01       0.952     1         0.976      0.995    Normal
+                 0.91      0.024      0.883     0.91      0.897      0.95     Upward_shift
+Weighted Avg.    0.917     0.017      0.917     0.917     0.917      0.961
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+  91   2   1   2   1   3 |   a = Cyclic
+   0  88  12   0   0   0 |   b = Decreasing_trend
+   2   6  91   0   1   0 |   c = Downward_shift
+   2   0   0  89   0   9 |   d = Increasing_trend
+   0   0   0   0 100   0 |   e = Normal
+   0   0   0   6   3  91 |   f = Upward_shift
+

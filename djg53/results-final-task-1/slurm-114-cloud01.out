@@ -1,0 +1,74 @@
+molecular-biology_promoters
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.6792
+
+
+
+Time taken to build model: 4.99 seconds
+Time taken to test model on training data: 0.62 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         106              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.1362
+Root mean squared error                  0.1587
+Relative absolute error                 36.9449 %
+Root relative squared error             36.9789 %
+Total Number of Instances              106     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        a
+                 1         0          1         1         1          1        c
+                 1         0          1         1         1          1        g
+                 1         0          1         1         1          1        t
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 27  0  0  0 |  a = a
+  0 17  0  0 |  b = c
+  0  0 28  0 |  c = g
+  0  0  0 34 |  d = t
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          34               32.0755 %
+Incorrectly Classified Instances        72               67.9245 %
+Kappa statistic                          0     
+Mean absolute error                      0.3687
+Root mean squared error                  0.4296
+Relative absolute error                 99.9321 %
+Root relative squared error            100.0042 %
+Total Number of Instances              106     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.455    a
+                 0         0          0         0         0          0.417    c
+                 0         0          0         0         0          0.461    g
+                 1         1          0.321     1         0.486      0.437    t
+Weighted Avg.    0.321     0.321      0.103     0.321     0.156      0.445
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+  0  0  0 27 |  a = a
+  0  0  0 17 |  b = c
+  0  0  0 28 |  c = g
+  0  0  0 34 |  d = t
+

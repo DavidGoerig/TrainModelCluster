@@ -1,0 +1,66 @@
+vote
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.0345
+
+
+
+Time taken to build model: 14.18 seconds
+Time taken to test model on training data: 3.11 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         432               99.3103 %
+Incorrectly Classified Instances         3                0.6897 %
+Kappa statistic                          0.9854
+Mean absolute error                      0.0317
+Root mean squared error                  0.088 
+Relative absolute error                  6.6888 %
+Root relative squared error             18.0682 %
+Total Number of Instances              435     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.996     0.012      0.993     0.996     0.994      1        democrat
+                 0.988     0.004      0.994     0.988     0.991      1        republican
+Weighted Avg.    0.993     0.009      0.993     0.993     0.993      1    
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 266   1 |   a = democrat
+   2 166 |   b = republican
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         420               96.5517 %
+Incorrectly Classified Instances        15                3.4483 %
+Kappa statistic                          0.927 
+Mean absolute error                      0.0627
+Root mean squared error                  0.1763
+Relative absolute error                 13.2236 %
+Root relative squared error             36.207  %
+Total Number of Instances              435     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.054      0.967     0.978     0.972      0.991    democrat
+                 0.946     0.022      0.964     0.946     0.955      0.991    republican
+Weighted Avg.    0.966     0.042      0.965     0.966     0.965      0.991
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 261   6 |   a = democrat
+   9 159 |   b = republican
+

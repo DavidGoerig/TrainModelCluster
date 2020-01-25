@@ -1,0 +1,68 @@
+cylinder-bands
+
+J48 pruned tree
+------------------
+: noband (540.0/228.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.12 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         312               57.7778 %
+Incorrectly Classified Instances       228               42.2222 %
+Kappa statistic                          0     
+Mean absolute error                      0.4879
+Root mean squared error                  0.4939
+Relative absolute error                 99.9909 %
+Root relative squared error            100      %
+Total Number of Instances              540     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.5      band
+                 1         1          0.578     1         0.732      0.5      noband
+Weighted Avg.    0.578     0.578      0.334     0.578     0.423      0.5  
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0 228 |   a = band
+   0 312 |   b = noband
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         312               57.7778 %
+Incorrectly Classified Instances       228               42.2222 %
+Kappa statistic                          0     
+Mean absolute error                      0.4879
+Root mean squared error                  0.4939
+Relative absolute error                 99.9898 %
+Root relative squared error            100      %
+Total Number of Instances              540     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.494    band
+                 1         1          0.578     1         0.732      0.494    noband
+Weighted Avg.    0.578     0.578      0.334     0.578     0.423      0.494
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0 228 |   a = band
+   0 312 |   b = noband
+

@@ -1,0 +1,160 @@
+flags
+
+J48 pruned tree
+------------------
+
+blue = 0
+|   green = 0: red (36.0/13.0)
+|   green = 1
+|   |   topleft = black: green (6.0)
+|   |   topleft = blue: green (0.0)
+|   |   topleft = gold: gold (2.0)
+|   |   topleft = green
+|   |   |   bars = 0: green (15.0/5.0)
+|   |   |   bars = 1: green (0.0)
+|   |   |   bars = 2: white (1.0)
+|   |   |   bars = 3
+|   |   |   |   red = 0: green (2.0/1.0)
+|   |   |   |   red = 1: red (6.0/2.0)
+|   |   |   bars = 5: green (0.0)
+|   |   topleft = orange: green (1.0)
+|   |   topleft = red
+|   |   |   black = 0
+|   |   |   |   animate = 0: green (10.0/2.0)
+|   |   |   |   animate = 1: red (3.0)
+|   |   |   black = 1
+|   |   |   |   gold = 0: black (5.0)
+|   |   |   |   gold = 1: green (4.0)
+|   |   topleft = white
+|   |   |   area <= 301: white (2.0)
+|   |   |   area > 301: green (2.0)
+blue = 1
+|   mainhue = black: blue (0.0)
+|   mainhue = blue
+|   |   triangle = 0
+|   |   |   text = 0: blue (28.0)
+|   |   |   text = 1
+|   |   |   |   crosses = 0: red (2.0)
+|   |   |   |   crosses = 1: blue (4.0)
+|   |   |   |   crosses = 2: blue (0.0)
+|   |   triangle = 1
+|   |   |   landmass = 1: blue (3.0)
+|   |   |   landmass = 2: blue (0.0)
+|   |   |   landmass = 3: blue (0.0)
+|   |   |   landmass = 4: green (1.0)
+|   |   |   landmass = 5: blue (0.0)
+|   |   |   landmass = 6: red (2.0)
+|   mainhue = brown: blue (1.0)
+|   mainhue = gold
+|   |   white = 0: red (4.0)
+|   |   white = 1: gold (2.0)
+|   mainhue = green
+|   |   religion = 0: green (1.0)
+|   |   religion = 1: green (3.0)
+|   |   religion = 2: green (0.0)
+|   |   religion = 3: green (0.0)
+|   |   religion = 4: green (0.0)
+|   |   religion = 5: blue (4.0/1.0)
+|   |   religion = 6: green (0.0)
+|   |   religion = 7: green (0.0)
+|   mainhue = orange: blue (2.0/1.0)
+|   mainhue = red: red (29.0/9.0)
+|   mainhue = white
+|   |   red = 0
+|   |   |   area <= 99: blue (3.0)
+|   |   |   area > 99: white (2.0)
+|   |   red = 1
+|   |   |   topleft = black: red (0.0)
+|   |   |   topleft = blue: red (3.0)
+|   |   |   topleft = gold: red (0.0)
+|   |   |   topleft = green: red (0.0)
+|   |   |   topleft = orange: red (0.0)
+|   |   |   topleft = red: red (0.0)
+|   |   |   topleft = white: white (5.0/1.0)
+
+Number of Leaves  : 	50
+
+Size of the tree : 	69
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         159               81.9588 %
+Incorrectly Classified Instances        35               18.0412 %
+Kappa statistic                          0.754 
+Mean absolute error                      0.0678
+Root mean squared error                  0.1841
+Relative absolute error                 35.4704 %
+Root relative squared error             59.7278 %
+Total Number of Instances              194     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.556     0          1         0.556     0.714      0.942    black
+                 0.915     0.014      0.956     0.915     0.935      0.991    blue
+                 0         0          0         0         0          0.935    brown
+                 0.444     0          1         0.444     0.615      0.933    gold
+                 0.925     0.052      0.822     0.925     0.871      0.981    green
+                 0         0          0         0         0          0.997    orange
+                 0.884     0.192      0.718     0.884     0.792      0.905    red
+                 0.529     0.006      0.9       0.529     0.667      0.938    white
+Weighted Avg.    0.82      0.083      0.828     0.82      0.808      0.948
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+  5  0  0  0  0  0  4  0 |  a = black
+  0 43  0  0  0  0  4  0 |  b = blue
+  0  0  0  0  0  0  2  0 |  c = brown
+  0  0  0  4  1  0  4  0 |  d = gold
+  0  1  0  0 37  0  2  0 |  e = green
+  0  0  0  0  1  0  0  0 |  f = orange
+  0  1  0  0  6  0 61  1 |  g = red
+  0  0  0  0  0  0  8  9 |  h = white
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         115               59.2784 %
+Incorrectly Classified Instances        79               40.7216 %
+Kappa statistic                          0.4491
+Mean absolute error                      0.1159
+Root mean squared error                  0.2782
+Relative absolute error                 60.5675 %
+Root relative squared error             90.1909 %
+Total Number of Instances              194     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.667     0.005      0.857     0.667     0.75       0.836    black
+                 0.766     0.082      0.75      0.766     0.758      0.91     blue
+                 0         0.005      0         0         0          0.414    brown
+                 0.111     0.011      0.333     0.111     0.167      0.817    gold
+                 0.575     0.136      0.523     0.575     0.548      0.8      green
+                 0         0          0         0         0          0.469    orange
+                 0.681     0.264      0.588     0.681     0.631      0.723    red
+                 0.118     0.051      0.182     0.118     0.143      0.687    white
+Weighted Avg.    0.593     0.147      0.57      0.593     0.576      0.786
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+  6  0  0  0  1  0  2  0 |  a = black
+  0 36  0  0  4  0  5  2 |  b = blue
+  0  0  0  0  0  0  2  0 |  c = brown
+  0  0  0  1  3  0  5  0 |  d = gold
+  0  5  1  0 23  0  9  2 |  e = green
+  0  0  0  0  1  0  0  0 |  f = orange
+  1  5  0  1 10  0 47  5 |  g = red
+  0  2  0  1  2  0 10  2 |  h = white
+

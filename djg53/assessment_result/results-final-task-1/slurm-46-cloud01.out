@@ -1,0 +1,90 @@
+ecoli
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.1696
+
+
+
+Time taken to build model: 25.01 seconds
+Time taken to test model on training data: 3.41 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         336              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0207
+Root mean squared error                  0.0637
+Relative absolute error                 11.329  %
+Root relative squared error             21.1202 %
+Total Number of Instances              336     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        cp
+                 1         0          1         1         1          1        im
+                 1         0          1         1         1          1        pp
+                 1         0          1         1         1          1        imU
+                 1         0          1         1         1          1        om
+                 1         0          1         1         1          1        omL
+                 1         0          1         1         1          1        imL
+                 1         0          1         1         1          1        imS
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+ 143   0   0   0   0   0   0   0 |   a = cp
+   0  77   0   0   0   0   0   0 |   b = im
+   0   0  52   0   0   0   0   0 |   c = pp
+   0   0   0  35   0   0   0   0 |   d = imU
+   0   0   0   0  20   0   0   0 |   e = om
+   0   0   0   0   0   5   0   0 |   f = omL
+   0   0   0   0   0   0   2   0 |   g = imL
+   0   0   0   0   0   0   0   2 |   h = imS
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         281               83.631  %
+Incorrectly Classified Instances        55               16.369  %
+Kappa statistic                          0.7723
+Mean absolute error                      0.0564
+Root mean squared error                  0.1735
+Relative absolute error                 30.8364 %
+Root relative squared error             57.5034 %
+Total Number of Instances              336     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.965     0.052      0.932     0.965     0.948      0.984    cp
+                 0.805     0.077      0.756     0.805     0.78       0.954    im
+                 0.827     0.042      0.782     0.827     0.804      0.955    pp
+                 0.543     0.037      0.633     0.543     0.585      0.932    imU
+                 0.75      0.006      0.882     0.75      0.811      0.99     om
+                 0.8       0          1         0.8       0.889      0.989    omL
+                 0         0          0         0         0          0.365    imL
+                 0         0          0         0         0          0.356    imS
+Weighted Avg.    0.836     0.05       0.824     0.836     0.829      0.96 
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+ 138   0   5   0   0   0   0   0 |   a = cp
+   2  62   1  11   1   0   0   0 |   b = im
+   6   2  43   0   1   0   0   0 |   c = pp
+   1  15   0  19   0   0   0   0 |   d = imU
+   1   1   3   0  15   0   0   0 |   e = om
+   0   0   1   0   0   4   0   0 |   f = omL
+   0   1   1   0   0   0   0   0 |   g = imL
+   0   1   1   0   0   0   0   0 |   h = imS
+

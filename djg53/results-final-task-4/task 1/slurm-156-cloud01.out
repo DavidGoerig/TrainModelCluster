@@ -1,0 +1,74 @@
+sponge
+
+J48 pruned tree
+------------------
+
+P.ALOJA_CANGREJO_ERMITANO = NO: DURO (74.0/4.0)
+P.ALOJA_CANGREJO_ERMITANO = SI: AMBOS (2.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          72               94.7368 %
+Incorrectly Classified Instances         4                5.2632 %
+Kappa statistic                          0.4847
+Mean absolute error                      0.0671
+Root mean squared error                  0.1832
+Relative absolute error                 59.8261 %
+Root relative squared error             82.1043 %
+Total Number of Instances               76     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.667     0          1         0.667     0.8        0.833    AMBOS
+                 0         0          0         0         0          0.514    BLANDO
+                 1         0.667      0.946     1         0.972      0.667    DURO
+Weighted Avg.    0.947     0.614      0.911     0.947     0.927      0.667
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  2  0  1 |  a = AMBOS
+  0  0  3 |  b = BLANDO
+  0  0 70 |  c = DURO
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          70               92.1053 %
+Incorrectly Classified Instances         6                7.8947 %
+Kappa statistic                          0     
+Mean absolute error                      0.0862
+Root mean squared error                  0.2241
+Relative absolute error                 75.5787 %
+Root relative squared error             99.6249 %
+Total Number of Instances               76     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.619    AMBOS
+                 0         0          0         0         0          0.144    BLANDO
+                 1         1          0.921     1         0.959      0.433    DURO
+Weighted Avg.    0.921     0.921      0.848     0.921     0.883      0.429
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  0  3 |  a = AMBOS
+  0  0  3 |  b = BLANDO
+  0  0 70 |  c = DURO
+

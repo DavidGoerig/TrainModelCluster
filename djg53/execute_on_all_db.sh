@@ -2,7 +2,7 @@
 
 
 #
-# desc: display the help and quit
+##      desc: display the help and quit
 #
 function display_help_and_quit {
 	(>&2 echo "Usage: ‘foldername $0‘ {1 arg  expected}")
@@ -13,8 +13,8 @@ function display_help_and_quit {
 }
 
 #
-#	arg: stdin arg number $#
-#	desc: check if arg number equal to 1
+##      arg: stdin arg number $#
+##      desc: check if arg number equal to 1
 #
 function check_arg_nbr {
 	if [ $1 -ne 1 ]
@@ -24,8 +24,8 @@ function check_arg_nbr {
 }
 
 #
-#	arg: first arg stdin
-#	desc: check if the first argument try
+##      arg: first arg stdin
+##      desc: check if the first argument try
 #
 function is_command_help {
 if [ "$1" = "-h" ]
@@ -35,8 +35,8 @@ fi
 }
 
 #
-#	arg: first arg stdin
-#	desc: if auto in argument set prefix path to uci-data
+##      arg: first arg stdin
+##      desc: if auto in argument set prefix path to uci-data
 #
 function check_prefix_auto {
         if [ "$1" = "auto" ]
@@ -46,7 +46,7 @@ function check_prefix_auto {
 }
 
 #
-#	desc: create result folder if it don't exist, clean it if exist
+##      desc: create result folder if it don't exist, clean it if exist
 #
 function check_result_folder {
         RESULTFOLDER=results
@@ -59,8 +59,8 @@ function check_result_folder {
 }
 
 #
-#	arg:	PREFIX, the folder name where to execute all jobs
-#	desc:	loop in the given file and execute all the jobs with several parameters (time limit, ram, partition, etc.)
+##      arg:	PREFIX, the folder name where to execute all jobs
+##      desc:	loop in the given file and execute all the jobs with several parameters (time limit, ram, partition, etc.)
 #
 function loop_and_execute {
         COUNTER=1
@@ -69,13 +69,15 @@ function loop_and_execute {
                 #       - time limit (--time) = 45 minutes
                 #       - 1GB of RAM (--rem = 1024MB)
                 #       - on the partition named cpu (--partition=cpu)
-                sbatch --time=00:45:00 --partition=cpu --mem=1024 -o results/slum-$COUNTER-cloud01.out -e results/slum-$counter-cloud01-cloud01.err runweka-sbatch.sh $file
+                sbatch --time=00:45:00 --partition=cpu --mem=1024 -o results/slurm-$COUNTER-cloud01.out -e results/slurm-$COUNTER-cloud01.err runweka-sbatch.sh $file
                 #increment the counter variable for the filenames (so they are in order)
                 COUNTER=$[COUNTER + 1]
         done
 }
 
-
+#
+##      MAIN
+#
 check_arg_nbr $#
 is_command_help $1
 PREFIX=$1

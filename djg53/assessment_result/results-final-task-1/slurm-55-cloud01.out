@@ -1,0 +1,66 @@
+haberman
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.3399
+
+
+
+Time taken to build model: 10.19 seconds
+Time taken to test model on training data: 2.36 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         300               98.0392 %
+Incorrectly Classified Instances         6                1.9608 %
+Kappa statistic                          0.9488
+Mean absolute error                      0.135 
+Root mean squared error                  0.1939
+Relative absolute error                 34.6216 %
+Root relative squared error             43.9395 %
+Total Number of Instances              306     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.996     0.062      0.978     0.996     0.987      0.999    1
+                 0.938     0.004      0.987     0.938     0.962      0.999    2
+Weighted Avg.    0.98      0.047      0.981     0.98      0.98       0.999
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 224   1 |   a = 1
+   5  76 |   b = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         207               67.6471 %
+Incorrectly Classified Instances        99               32.3529 %
+Kappa statistic                          0.1311
+Mean absolute error                      0.3437
+Root mean squared error                  0.4806
+Relative absolute error                 88.0978 %
+Root relative squared error            108.9206 %
+Total Number of Instances              306     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.804     0.679      0.767     0.804     0.785      0.642    1
+                 0.321     0.196      0.371     0.321     0.344      0.642    2
+Weighted Avg.    0.676     0.551      0.662     0.676     0.669      0.642
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 181  44 |   a = 1
+  55  26 |   b = 2
+

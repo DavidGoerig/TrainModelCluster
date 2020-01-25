@@ -1,0 +1,154 @@
+anneal.ORIG
+
+J48 pruned tree
+------------------
+
+hardness <= 70
+|   steel = R
+|   |   condition = S
+|   |   |   width <= 1320.1
+|   |   |   |   thick <= 0.799: 3 (98.41)
+|   |   |   |   thick > 0.799
+|   |   |   |   |   thick <= 2.3
+|   |   |   |   |   |   thick <= 0.801: 2 (31.16/5.16)
+|   |   |   |   |   |   thick > 0.801
+|   |   |   |   |   |   |   formability = 1: 3 (0.0)
+|   |   |   |   |   |   |   formability = 2
+|   |   |   |   |   |   |   |   thick <= 1.601: 3 (62.86/14.7)
+|   |   |   |   |   |   |   |   thick > 1.601: 2 (5.17)
+|   |   |   |   |   |   |   formability = 3
+|   |   |   |   |   |   |   |   len <= 614: 3 (5.55/1.29)
+|   |   |   |   |   |   |   |   len > 614: 2 (15.93/2.63)
+|   |   |   |   |   |   |   formability = 4: 3 (0.0)
+|   |   |   |   |   |   |   formability = 5: 3 (0.0)
+|   |   |   |   |   thick > 2.3: 3 (32.28)
+|   |   |   width > 1320.1: 2 (12.0)
+|   |   condition = A
+|   |   |   formability = 1: 5 (6.92/0.61)
+|   |   |   formability = 2: 3 (9.86/0.16)
+|   |   |   formability = 3: 3 (4.39/0.07)
+|   |   |   formability = 4: 3 (0.0)
+|   |   |   formability = 5: 3 (0.0)
+|   |   condition = X: 3 (0.0)
+|   steel = A
+|   |   formability = 1
+|   |   |   condition = S: 3 (25.05/0.4)
+|   |   |   condition = A: 5 (12.29/2.44)
+|   |   |   condition = X: 3 (0.0)
+|   |   formability = 2: 3 (251.09/4.04)
+|   |   formability = 3
+|   |   |   hardness <= 0
+|   |   |   |   carbon <= 0
+|   |   |   |   |   width <= 1250
+|   |   |   |   |   |   thick <= 1.4
+|   |   |   |   |   |   |   thick <= 0.6: 5 (27.0/6.0)
+|   |   |   |   |   |   |   thick > 0.6
+|   |   |   |   |   |   |   |   width <= 609.9
+|   |   |   |   |   |   |   |   |   thick <= 0.7: 3 (6.0)
+|   |   |   |   |   |   |   |   |   thick > 0.7: 5 (13.0/5.0)
+|   |   |   |   |   |   |   |   width > 609.9: 3 (15.0)
+|   |   |   |   |   |   thick > 1.4: 5 (22.62/3.62)
+|   |   |   |   |   width > 1250: 3 (12.26)
+|   |   |   |   carbon > 0: 3 (3.14/0.94)
+|   |   |   hardness > 0: 3 (40.6)
+|   |   formability = 4: 3 (0.0)
+|   |   formability = 5: 3 (16.51/0.27)
+|   steel = U: 3 (0.0)
+|   steel = K: 3 (56.68/1.78)
+|   steel = M
+|   |   strength <= 400: 3 (11.02/0.49)
+|   |   strength > 400: 2 (11.21)
+|   steel = S
+|   |   strength <= 0: 3 (6.01/0.25)
+|   |   strength > 0: 1 (5.1/0.1)
+|   steel = W: 3 (21.12/0.66)
+|   steel = V
+|   |   enamelability = 1: 3 (6.67/0.21)
+|   |   enamelability = 2: 2 (11.11/1.01)
+|   |   enamelability = 3: 2 (0.0)
+|   |   enamelability = 4: 2 (0.0)
+|   |   enamelability = 5: 2 (0.0)
+hardness > 70
+|   hardness <= 80
+|   |   shape = COIL: 3 (2.0)
+|   |   shape = SHEET: U (3.0)
+|   hardness > 80: U (35.0)
+
+Number of Leaves  : 	46
+
+Size of the tree : 	71
+
+
+Time taken to build model: 0.46 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         853               94.9889 %
+Incorrectly Classified Instances        45                5.0111 %
+Kappa statistic                          0.8727
+Mean absolute error                      0.0315
+Root mean squared error                  0.1145
+Relative absolute error                 23.4203 %
+Root relative squared error             44.3613 %
+Total Number of Instances              898     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.625     0          1         0.625     0.769      0.987    1
+                 0.768     0.008      0.927     0.768     0.84       0.989    2
+                 0.975     0.121      0.962     0.975     0.969      0.987    3
+                 0         0          0         0         0          ?        4
+                 1         0.016      0.838     1         0.912      0.994    5
+                 0.95      0          1         0.95      0.974      1        U
+Weighted Avg.    0.95      0.095      0.951     0.95      0.949      0.988
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   5   2   1   0   0   0 |   a = 1
+   0  76  23   0   0   0 |   b = 2
+   0   4 667   0  13   0 |   c = 3
+   0   0   0   0   0   0 |   d = 4
+   0   0   0   0  67   0 |   e = 5
+   0   0   2   0   0  38 |   f = U
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         817               90.98   %
+Incorrectly Classified Instances        81                9.02   %
+Kappa statistic                          0.7645
+Mean absolute error                      0.0433
+Root mean squared error                  0.1475
+Relative absolute error                 32.2285 %
+Root relative squared error             57.1311 %
+Total Number of Instances              898     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.5       0.001      0.8       0.5       0.615      0.892    1
+                 0.636     0.015      0.84      0.636     0.724      0.979    2
+                 0.958     0.243      0.926     0.958     0.942      0.965    3
+                 0         0          0         0         0          ?        4
+                 0.925     0.017      0.816     0.925     0.867      0.981    5
+                 0.825     0.002      0.943     0.825     0.88       0.973    U
+Weighted Avg.    0.91      0.188      0.908     0.91      0.907      0.967
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+   4   0   4   0   0   0 |   a = 1
+   0  63  36   0   0   0 |   b = 2
+   1  12 655   0  14   2 |   c = 3
+   0   0   0   0   0   0 |   d = 4
+   0   0   5   0  62   0 |   e = 5
+   0   0   7   0   0  33 |   f = U
+

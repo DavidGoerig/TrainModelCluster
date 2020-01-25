@@ -1,0 +1,86 @@
+zoo
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.5743
+
+
+
+Time taken to build model: 4.07 seconds
+Time taken to test model on training data: 0.57 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         101              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0789
+Root mean squared error                  0.1201
+Relative absolute error                 36.0692 %
+Root relative squared error             36.4458 %
+Total Number of Instances              101     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        mammal
+                 1         0          1         1         1          1        bird
+                 1         0          1         1         1          1        reptile
+                 1         0          1         1         1          1        fish
+                 1         0          1         1         1          1        amphibian
+                 1         0          1         1         1          1        insect
+                 1         0          1         1         1          1        invertebrate
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 41  0  0  0  0  0  0 |  a = mammal
+  0 20  0  0  0  0  0 |  b = bird
+  0  0  5  0  0  0  0 |  c = reptile
+  0  0  0 13  0  0  0 |  d = fish
+  0  0  0  0  4  0  0 |  e = amphibian
+  0  0  0  0  0  8  0 |  f = insect
+  0  0  0  0  0  0 10 |  g = invertebrate
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          43               42.5743 %
+Incorrectly Classified Instances        58               57.4257 %
+Kappa statistic                          0.045 
+Mean absolute error                      0.2138
+Root mean squared error                  0.3254
+Relative absolute error                 97.5165 %
+Root relative squared error             98.6452 %
+Total Number of Instances              101     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.967      0.414     1         0.586      0.483    mammal
+                 0         0          0         0         0          0.509    bird
+                 0         0          0         0         0          0.249    reptile
+                 0         0          0         0         0          0.42     fish
+                 0.5       0          1         0.5       0.667      0.594    amphibian
+                 0         0          0         0         0          0.407    insect
+                 0         0          0         0         0          0.505    invertebrate
+Weighted Avg.    0.426     0.392      0.208     0.426     0.264      0.469
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 41  0  0  0  0  0  0 |  a = mammal
+ 20  0  0  0  0  0  0 |  b = bird
+  5  0  0  0  0  0  0 |  c = reptile
+ 13  0  0  0  0  0  0 |  d = fish
+  2  0  0  0  2  0  0 |  e = amphibian
+  8  0  0  0  0  0  0 |  f = insect
+ 10  0  0  0  0  0  0 |  g = invertebrate
+

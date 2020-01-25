@@ -1,0 +1,270 @@
+vehicle
+
+J48 pruned tree
+------------------
+
+ELONGATEDNESS <= 41
+|   MAX.LENGTH ASPECT RATIO <= 7
+|   |   COMPACTNESS <= 95
+|   |   |   PR.AXIS ASPECT RATIO <= 67
+|   |   |   |   KURTOSIS ABOUT_MINOR <= 196
+|   |   |   |   |   COMPACTNESS <= 89: opel (6.0/1.0)
+|   |   |   |   |   COMPACTNESS > 89
+|   |   |   |   |   |   SKEWNESS ABOUT_MAJOR <= 72: saab (10.0)
+|   |   |   |   |   |   SKEWNESS ABOUT_MAJOR > 72: opel (2.0)
+|   |   |   |   KURTOSIS ABOUT_MINOR > 196: opel (3.0/1.0)
+|   |   |   PR.AXIS ASPECT RATIO > 67: bus (16.0)
+|   |   COMPACTNESS > 95: bus (70.0/1.0)
+|   MAX.LENGTH ASPECT RATIO > 7
+|   |   SCALED VARIANCE_MINOR <= 721
+|   |   |   HOLLOWS RATIO <= 195
+|   |   |   |   MAX.LENGTH ASPECT RATIO <= 8
+|   |   |   |   |   ELONGATEDNESS <= 37: opel (2.0)
+|   |   |   |   |   ELONGATEDNESS > 37
+|   |   |   |   |   |   DISTANCE CIRCULARITY <= 82: opel (2.0)
+|   |   |   |   |   |   DISTANCE CIRCULARITY > 82: saab (6.0/1.0)
+|   |   |   |   MAX.LENGTH ASPECT RATIO > 8
+|   |   |   |   |   KURTOSIS ABOUT_MINOR <= 185
+|   |   |   |   |   |   COMPACTNESS <= 102: opel (4.0)
+|   |   |   |   |   |   COMPACTNESS > 102: saab (2.0)
+|   |   |   |   |   KURTOSIS ABOUT_MINOR > 185: opel (23.0)
+|   |   |   HOLLOWS RATIO > 195
+|   |   |   |   COMPACTNESS <= 109
+|   |   |   |   |   SKEWNESS ABOUT_MAJOR <= 67
+|   |   |   |   |   |   PR.AXIS ASPECT RATIO <= 58: opel (6.0)
+|   |   |   |   |   |   PR.AXIS ASPECT RATIO > 58
+|   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR <= 61: saab (4.0)
+|   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR > 61
+|   |   |   |   |   |   |   |   HOLLOWS RATIO <= 203
+|   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY <= 78: saab (3.0)
+|   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY > 78
+|   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MAJOR <= 16
+|   |   |   |   |   |   |   |   |   |   |   HOLLOWS RATIO <= 198: opel (4.0)
+|   |   |   |   |   |   |   |   |   |   |   HOLLOWS RATIO > 198
+|   |   |   |   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO <= 59: opel (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO > 59
+|   |   |   |   |   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR <= 66
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HOLLOWS RATIO <= 201
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO <= 9: saab (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO > 9: opel (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HOLLOWS RATIO > 201: opel (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR > 66: saab (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MAJOR > 16: opel (12.0)
+|   |   |   |   |   |   |   |   HOLLOWS RATIO > 203
+|   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO <= 60: saab (8.0)
+|   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO > 60
+|   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MINOR <= 193: saab (5.0)
+|   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MINOR > 193
+|   |   |   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO <= 63
+|   |   |   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MINOR <= 196
+|   |   |   |   |   |   |   |   |   |   |   |   |   ELONGATEDNESS <= 33: opel (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ELONGATEDNESS > 33: saab (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MINOR > 196: opel (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO > 63
+|   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO <= 10: saab (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO > 10: opel (3.0/1.0)
+|   |   |   |   |   SKEWNESS ABOUT_MAJOR > 67
+|   |   |   |   |   |   COMPACTNESS <= 106
+|   |   |   |   |   |   |   HOLLOWS RATIO <= 198
+|   |   |   |   |   |   |   |   PR.AXIS RECTANGULARITY <= 24
+|   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR <= 72
+|   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MINOR <= 187
+|   |   |   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY <= 98: opel (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY > 98: saab (7.0)
+|   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MINOR > 187
+|   |   |   |   |   |   |   |   |   |   |   SCATTER RATIO <= 204
+|   |   |   |   |   |   |   |   |   |   |   |   HOLLOWS RATIO <= 197
+|   |   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO <= 9: saab (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO > 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CIRCULARITY <= 50: opel (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CIRCULARITY > 50: saab (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   HOLLOWS RATIO > 197
+|   |   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO <= 8: opel (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   RADIUS RATIO <= 193: saab (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   RADIUS RATIO > 193: opel (4.0)
+|   |   |   |   |   |   |   |   |   |   |   SCATTER RATIO > 204: opel (9.0)
+|   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MAJOR > 72: saab (12.0/1.0)
+|   |   |   |   |   |   |   |   PR.AXIS RECTANGULARITY > 24: opel (7.0)
+|   |   |   |   |   |   |   HOLLOWS RATIO > 198
+|   |   |   |   |   |   |   |   ELONGATEDNESS <= 34
+|   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY <= 98: opel (3.0)
+|   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY > 98
+|   |   |   |   |   |   |   |   |   |   COMPACTNESS <= 101
+|   |   |   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MINOR <= 3: saab (3.0)
+|   |   |   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MINOR > 3: opel (4.0)
+|   |   |   |   |   |   |   |   |   |   COMPACTNESS > 101: saab (15.0)
+|   |   |   |   |   |   |   |   ELONGATEDNESS > 34: saab (7.0)
+|   |   |   |   |   |   COMPACTNESS > 106: saab (24.0/1.0)
+|   |   |   |   COMPACTNESS > 109: saab (16.0)
+|   |   SCALED VARIANCE_MINOR > 721: opel (23.0/1.0)
+ELONGATEDNESS > 41
+|   MAX.LENGTH ASPECT RATIO <= 8
+|   |   SCALED VARIANCE_MINOR <= 305
+|   |   |   COMPACTNESS <= 82
+|   |   |   |   PR.AXIS RECTANGULARITY <= 18
+|   |   |   |   |   COMPACTNESS <= 81: opel (11.0)
+|   |   |   |   |   COMPACTNESS > 81: saab (5.0/1.0)
+|   |   |   |   PR.AXIS RECTANGULARITY > 18: saab (2.0)
+|   |   |   COMPACTNESS > 82
+|   |   |   |   MAX.LENGTH RECTANGULARITY <= 138
+|   |   |   |   |   PR.AXIS RECTANGULARITY <= 17
+|   |   |   |   |   |   SKEWNESS ABOUT_MINOR <= 18
+|   |   |   |   |   |   |   ELONGATEDNESS <= 58: van (30.0/3.0)
+|   |   |   |   |   |   |   ELONGATEDNESS > 58: saab (3.0)
+|   |   |   |   |   |   SKEWNESS ABOUT_MINOR > 18: opel (3.0/1.0)
+|   |   |   |   |   PR.AXIS RECTANGULARITY > 17
+|   |   |   |   |   |   PR.AXIS RECTANGULARITY <= 18
+|   |   |   |   |   |   |   MAX.LENGTH RECTANGULARITY <= 128
+|   |   |   |   |   |   |   |   HOLLOWS RATIO <= 186: saab (6.0)
+|   |   |   |   |   |   |   |   HOLLOWS RATIO > 186
+|   |   |   |   |   |   |   |   |   SCALED VARIANCE_MAJOR <= 164
+|   |   |   |   |   |   |   |   |   |   MAX.LENGTH RECTANGULARITY <= 124
+|   |   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MAJOR <= 27: saab (2.0)
+|   |   |   |   |   |   |   |   |   |   |   KURTOSIS ABOUT_MAJOR > 27: opel (3.0)
+|   |   |   |   |   |   |   |   |   |   MAX.LENGTH RECTANGULARITY > 124: opel (6.0)
+|   |   |   |   |   |   |   |   |   SCALED VARIANCE_MAJOR > 164: saab (2.0)
+|   |   |   |   |   |   |   MAX.LENGTH RECTANGULARITY > 128
+|   |   |   |   |   |   |   |   SCALED RADIUS OF GYRATION <= 138: van (19.0/2.0)
+|   |   |   |   |   |   |   |   SCALED RADIUS OF GYRATION > 138
+|   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO <= 53: van (2.0)
+|   |   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO > 53
+|   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO <= 5
+|   |   |   |   |   |   |   |   |   |   |   COMPACTNESS <= 84: opel (2.0)
+|   |   |   |   |   |   |   |   |   |   |   COMPACTNESS > 84: saab (4.0)
+|   |   |   |   |   |   |   |   |   |   MAX.LENGTH ASPECT RATIO > 5
+|   |   |   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY <= 66
+|   |   |   |   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MINOR <= 4: opel (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MINOR > 4: saab (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY > 66: opel (5.0)
+|   |   |   |   |   |   PR.AXIS RECTANGULARITY > 18: saab (3.0)
+|   |   |   |   MAX.LENGTH RECTANGULARITY > 138
+|   |   |   |   |   ELONGATEDNESS <= 47
+|   |   |   |   |   |   MAX.LENGTH RECTANGULARITY <= 143: saab (3.0/1.0)
+|   |   |   |   |   |   MAX.LENGTH RECTANGULARITY > 143: van (4.0)
+|   |   |   |   |   ELONGATEDNESS > 47: van (39.0/1.0)
+|   |   SCALED VARIANCE_MINOR > 305
+|   |   |   DISTANCE CIRCULARITY <= 76
+|   |   |   |   SKEWNESS ABOUT_MINOR <= 10
+|   |   |   |   |   SKEWNESS ABOUT_MAJOR <= 64
+|   |   |   |   |   |   CIRCULARITY <= 35: opel (2.0)
+|   |   |   |   |   |   CIRCULARITY > 35: saab (2.0)
+|   |   |   |   |   SKEWNESS ABOUT_MAJOR > 64
+|   |   |   |   |   |   SCATTER RATIO <= 143
+|   |   |   |   |   |   |   DISTANCE CIRCULARITY <= 70: bus (4.0)
+|   |   |   |   |   |   |   DISTANCE CIRCULARITY > 70: van (2.0)
+|   |   |   |   |   |   SCATTER RATIO > 143
+|   |   |   |   |   |   |   CIRCULARITY <= 41
+|   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO <= 62: saab (7.0)
+|   |   |   |   |   |   |   |   PR.AXIS ASPECT RATIO > 62
+|   |   |   |   |   |   |   |   |   SCALED VARIANCE_MAJOR <= 180: bus (19.0)
+|   |   |   |   |   |   |   |   |   SCALED VARIANCE_MAJOR > 180
+|   |   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY <= 74: saab (2.0)
+|   |   |   |   |   |   |   |   |   |   DISTANCE CIRCULARITY > 74: bus (2.0)
+|   |   |   |   |   |   |   CIRCULARITY > 41: bus (97.0)
+|   |   |   |   SKEWNESS ABOUT_MINOR > 10
+|   |   |   |   |   PR.AXIS ASPECT RATIO <= 62
+|   |   |   |   |   |   PR.AXIS RECTANGULARITY <= 19
+|   |   |   |   |   |   |   ELONGATEDNESS <= 43: saab (2.0)
+|   |   |   |   |   |   |   ELONGATEDNESS > 43
+|   |   |   |   |   |   |   |   SCALED VARIANCE_MAJOR <= 165: saab (2.0)
+|   |   |   |   |   |   |   |   SCALED VARIANCE_MAJOR > 165
+|   |   |   |   |   |   |   |   |   CIRCULARITY <= 42: opel (7.0)
+|   |   |   |   |   |   |   |   |   CIRCULARITY > 42
+|   |   |   |   |   |   |   |   |   |   RADIUS RATIO <= 151: saab (2.0)
+|   |   |   |   |   |   |   |   |   |   RADIUS RATIO > 151: opel (2.0)
+|   |   |   |   |   |   PR.AXIS RECTANGULARITY > 19: opel (2.0)
+|   |   |   |   |   PR.AXIS ASPECT RATIO > 62: bus (3.0)
+|   |   |   DISTANCE CIRCULARITY > 76
+|   |   |   |   PR.AXIS ASPECT RATIO <= 61
+|   |   |   |   |   PR.AXIS RECTANGULARITY <= 19
+|   |   |   |   |   |   SCALED RADIUS OF GYRATION <= 132: saab (3.0)
+|   |   |   |   |   |   SCALED RADIUS OF GYRATION > 132
+|   |   |   |   |   |   |   MAX.LENGTH RECTANGULARITY <= 145
+|   |   |   |   |   |   |   |   HOLLOWS RATIO <= 192
+|   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MINOR <= 8: saab (3.0)
+|   |   |   |   |   |   |   |   |   SKEWNESS ABOUT_MINOR > 8: opel (4.0)
+|   |   |   |   |   |   |   |   HOLLOWS RATIO > 192: opel (10.0)
+|   |   |   |   |   |   |   MAX.LENGTH RECTANGULARITY > 145: saab (2.0)
+|   |   |   |   |   PR.AXIS RECTANGULARITY > 19: saab (3.0/1.0)
+|   |   |   |   PR.AXIS ASPECT RATIO > 61
+|   |   |   |   |   SKEWNESS ABOUT_MINOR <= 5
+|   |   |   |   |   |   CIRCULARITY <= 38: opel (2.0)
+|   |   |   |   |   |   CIRCULARITY > 38: van (3.0)
+|   |   |   |   |   SKEWNESS ABOUT_MINOR > 5: saab (3.0)
+|   MAX.LENGTH ASPECT RATIO > 8
+|   |   HOLLOWS RATIO <= 189: bus (5.0/1.0)
+|   |   HOLLOWS RATIO > 189
+|   |   |   SKEWNESS ABOUT_MAJOR <= 63: saab (4.0/1.0)
+|   |   |   SKEWNESS ABOUT_MAJOR > 63: van (107.0/2.0)
+
+Number of Leaves  : 	98
+
+Size of the tree : 	195
+
+
+Time taken to build model: 0.36 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         820               96.9267 %
+Incorrectly Classified Instances        26                3.0733 %
+Kappa statistic                          0.959 
+Mean absolute error                      0.0257
+Root mean squared error                  0.1134
+Relative absolute error                  6.8625 %
+Root relative squared error             26.1965 %
+Total Number of Instances              846     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.948     0.009      0.971     0.948     0.959      0.996    opel
+                 0.954     0.016      0.954     0.954     0.954      0.996    saab
+                 0.982     0.003      0.991     0.982     0.986      0.999    bus
+                 0.995     0.012      0.961     0.995     0.978      0.997    van
+Weighted Avg.    0.969     0.01       0.969     0.969     0.969      0.997
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 201   8   1   2 |   a = opel
+   4 207   1   5 |   b = saab
+   2   1 214   1 |   c = bus
+   0   1   0 198 |   d = van
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         613               72.4586 %
+Incorrectly Classified Instances       233               27.5414 %
+Kappa statistic                          0.6328
+Mean absolute error                      0.1415
+Root mean squared error                  0.3355
+Relative absolute error                 37.7493 %
+Root relative squared error             77.4887 %
+Total Number of Instances              846     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.613     0.166      0.553     0.613     0.582      0.784    opel
+                 0.456     0.143      0.524     0.456     0.488      0.758    saab
+                 0.95      0.019      0.945     0.95      0.947      0.977    bus
+                 0.889     0.04       0.872     0.889     0.881      0.932    van
+Weighted Avg.    0.725     0.093      0.722     0.725     0.722      0.862
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 130  74   2   6 |   a = opel
+  96  99   6  16 |   b = saab
+   3   4 207   4 |   c = bus
+   6  12   4 177 |   d = van
+

@@ -1,0 +1,301 @@
+vowel
+
+J48 pruned tree
+------------------
+
+Feature 0 <= -3.356
+|   Feature 1 <= 2.138
+|   |   Feature 1 <= 0.458: hid (38.0)
+|   |   Feature 1 > 0.458
+|   |   |   Sex = Male
+|   |   |   |   Feature 4 <= -0.645
+|   |   |   |   |   Feature 5 <= 0.257: hod (6.0)
+|   |   |   |   |   Feature 5 > 0.257
+|   |   |   |   |   |   Feature 4 <= -1.495: hOd (2.0)
+|   |   |   |   |   |   Feature 4 > -1.495: hUd (15.0)
+|   |   |   |   Feature 4 > -0.645
+|   |   |   |   |   Feature 6 <= 0.005
+|   |   |   |   |   |   Feature 0 <= -3.594
+|   |   |   |   |   |   |   Feature 8 <= -0.98: hId (2.0)
+|   |   |   |   |   |   |   Feature 8 > -0.98: hud (24.0)
+|   |   |   |   |   |   Feature 0 > -3.594: hId (3.0/1.0)
+|   |   |   |   |   Feature 6 > 0.005: hed (13.0)
+|   |   |   Sex = Female
+|   |   |   |   Feature 3 <= 0.996
+|   |   |   |   |   Feature 1 <= 1.462: hAd (6.0)
+|   |   |   |   |   Feature 1 > 1.462
+|   |   |   |   |   |   Feature 3 <= 0.183: hed (5.0/1.0)
+|   |   |   |   |   |   Feature 3 > 0.183
+|   |   |   |   |   |   |   Feature 4 <= 0.289: had (9.0/1.0)
+|   |   |   |   |   |   |   Feature 4 > 0.289: hUd (4.0/1.0)
+|   |   |   |   Feature 3 > 0.996
+|   |   |   |   |   Feature 2 <= 0.643
+|   |   |   |   |   |   Feature 4 <= 0.223
+|   |   |   |   |   |   |   Feature 2 <= -0.605: hUd (2.0)
+|   |   |   |   |   |   |   Feature 2 > -0.605: hEd (7.0)
+|   |   |   |   |   |   Feature 4 > 0.223: hId (27.0/2.0)
+|   |   |   |   |   Feature 2 > 0.643
+|   |   |   |   |   |   Feature 3 <= 1.443: hId (2.0)
+|   |   |   |   |   |   Feature 3 > 1.443: hid (11.0)
+|   Feature 1 > 2.138
+|   |   Feature 0 <= -3.896
+|   |   |   Feature 0 <= -4.52
+|   |   |   |   Feature 5 <= -0.33: hid (3.0)
+|   |   |   |   Feature 5 > -0.33
+|   |   |   |   |   Feature 3 <= -0.69
+|   |   |   |   |   |   Feature 0 <= -4.805: hud (3.0)
+|   |   |   |   |   |   Feature 0 > -4.805: hUd (3.0)
+|   |   |   |   |   Feature 3 > -0.69: hud (34.0)
+|   |   |   Feature 0 > -4.52
+|   |   |   |   Feature 4 <= -1.103
+|   |   |   |   |   Feature 7 <= 0.242: hUd (2.0)
+|   |   |   |   |   Feature 7 > 0.242: hod (30.0)
+|   |   |   |   Feature 4 > -1.103
+|   |   |   |   |   Feature 1 <= 3.26
+|   |   |   |   |   |   Feature 3 <= -0.041
+|   |   |   |   |   |   |   Feature 2 <= -0.433: hOd (3.0)
+|   |   |   |   |   |   |   Feature 2 > -0.433
+|   |   |   |   |   |   |   |   Feature 6 <= -0.358: hed (2.0)
+|   |   |   |   |   |   |   |   Feature 6 > -0.358: hUd (14.0)
+|   |   |   |   |   |   Feature 3 > -0.041
+|   |   |   |   |   |   |   Feature 4 <= 0.419
+|   |   |   |   |   |   |   |   Feature 0 <= -4.169: hud (14.0/3.0)
+|   |   |   |   |   |   |   |   Feature 0 > -4.169: hUd (18.0/1.0)
+|   |   |   |   |   |   |   Feature 4 > 0.419: hud (16.0)
+|   |   |   |   |   Feature 1 > 3.26
+|   |   |   |   |   |   Feature 7 <= 0.336: hUd (9.0)
+|   |   |   |   |   |   Feature 7 > 0.336
+|   |   |   |   |   |   |   Train or Test = Train: hod (15.0)
+|   |   |   |   |   |   |   Train or Test = Test
+|   |   |   |   |   |   |   |   Feature 1 <= 3.661: hUd (8.0)
+|   |   |   |   |   |   |   |   Feature 1 > 3.661: hod (8.0)
+|   |   Feature 0 > -3.896
+|   |   |   Feature 1 <= 3.035
+|   |   |   |   Train or Test = Train
+|   |   |   |   |   Feature 6 <= 0.817
+|   |   |   |   |   |   Feature 9 <= -1.074: hUd (2.0)
+|   |   |   |   |   |   Feature 9 > -1.074: hOd (11.0)
+|   |   |   |   |   Feature 6 > 0.817: hYd (4.0)
+|   |   |   |   Train or Test = Test: hed (10.0)
+|   |   |   Feature 1 > 3.035
+|   |   |   |   Feature 7 <= -0.362: hOd (5.0)
+|   |   |   |   Feature 7 > -0.362
+|   |   |   |   |   Train or Test = Train
+|   |   |   |   |   |   Feature 8 <= -0.446: hOd (4.0)
+|   |   |   |   |   |   Feature 8 > -0.446: hod (8.0)
+|   |   |   |   |   Train or Test = Test
+|   |   |   |   |   |   Feature 5 <= 0.194: hUd (4.0/1.0)
+|   |   |   |   |   |   Feature 5 > 0.194: hod (22.0)
+Feature 0 > -3.356
+|   Feature 1 <= 1.222
+|   |   Feature 1 <= 0.256
+|   |   |   Feature 1 <= -0.137: hid (31.0)
+|   |   |   Feature 1 > -0.137
+|   |   |   |   Feature 8 <= -1.004: hid (7.0)
+|   |   |   |   Feature 8 > -1.004: hId (25.0)
+|   |   Feature 1 > 0.256
+|   |   |   Feature 8 <= 0.207
+|   |   |   |   Feature 3 <= 0.202
+|   |   |   |   |   Feature 0 <= -2.703: hed (7.0)
+|   |   |   |   |   Feature 0 > -2.703
+|   |   |   |   |   |   Sex = Male
+|   |   |   |   |   |   |   Feature 8 <= -0.123: hEd (14.0)
+|   |   |   |   |   |   |   Feature 8 > -0.123: hAd (5.0/1.0)
+|   |   |   |   |   |   Sex = Female: hAd (6.0)
+|   |   |   |   Feature 3 > 0.202
+|   |   |   |   |   Feature 5 <= 1.833
+|   |   |   |   |   |   Feature 0 <= -2.895
+|   |   |   |   |   |   |   Feature 3 <= 0.825: had (4.0/1.0)
+|   |   |   |   |   |   |   Feature 3 > 0.825
+|   |   |   |   |   |   |   |   Feature 1 <= 0.771: hId (18.0)
+|   |   |   |   |   |   |   |   Feature 1 > 0.771
+|   |   |   |   |   |   |   |   |   Sex = Male: hId (2.0)
+|   |   |   |   |   |   |   |   |   Sex = Female: hEd (10.0)
+|   |   |   |   |   |   Feature 0 > -2.895: hEd (44.0)
+|   |   |   |   |   Feature 5 > 1.833: hId (12.0)
+|   |   |   Feature 8 > 0.207
+|   |   |   |   Feature 2 <= 0.309: hed (11.0/1.0)
+|   |   |   |   Feature 2 > 0.309
+|   |   |   |   |   Feature 2 <= 0.562
+|   |   |   |   |   |   Feature 0 <= -2.85: hUd (3.0)
+|   |   |   |   |   |   Feature 0 > -2.85: had (3.0)
+|   |   |   |   |   Feature 2 > 0.562: hOd (8.0)
+|   Feature 1 > 1.222
+|   |   Feature 1 <= 2.62
+|   |   |   Feature 0 <= -2.52
+|   |   |   |   Feature 9 <= 0.084
+|   |   |   |   |   Feature 1 <= 1.856
+|   |   |   |   |   |   Feature 2 <= 0.096
+|   |   |   |   |   |   |   Feature 1 <= 1.272: hEd (3.0/1.0)
+|   |   |   |   |   |   |   Feature 1 > 1.272
+|   |   |   |   |   |   |   |   Train or Test = Train: hed (25.0/1.0)
+|   |   |   |   |   |   |   |   Train or Test = Test
+|   |   |   |   |   |   |   |   |   Feature 0 <= -3.032: hed (4.0)
+|   |   |   |   |   |   |   |   |   Feature 0 > -3.032: had (3.0)
+|   |   |   |   |   |   Feature 2 > 0.096
+|   |   |   |   |   |   |   Train or Test = Train: hYd (2.0)
+|   |   |   |   |   |   |   Train or Test = Test: had (5.0)
+|   |   |   |   |   Feature 1 > 1.856
+|   |   |   |   |   |   Feature 0 <= -3.165: hed (4.0)
+|   |   |   |   |   |   Feature 0 > -3.165
+|   |   |   |   |   |   |   Feature 2 <= 0.466
+|   |   |   |   |   |   |   |   Speaker Number = Andrew
+|   |   |   |   |   |   |   |   |   Feature 7 <= -0.198: had (6.0)
+|   |   |   |   |   |   |   |   |   Feature 7 > -0.198: hYd (6.0)
+|   |   |   |   |   |   |   |   Speaker Number = Bill: hYd (1.0)
+|   |   |   |   |   |   |   |   Speaker Number = David: hYd (0.0)
+|   |   |   |   |   |   |   |   Speaker Number = Mark: hYd (1.0)
+|   |   |   |   |   |   |   |   Speaker Number = Jo: hYd (6.0)
+|   |   |   |   |   |   |   |   Speaker Number = Kate: hYd (7.0/1.0)
+|   |   |   |   |   |   |   |   Speaker Number = Penny: hOd (1.0)
+|   |   |   |   |   |   |   |   Speaker Number = Rose: hYd (2.0)
+|   |   |   |   |   |   |   |   Speaker Number = Mike: hYd (2.0)
+|   |   |   |   |   |   |   |   Speaker Number = Nick
+|   |   |   |   |   |   |   |   |   Feature 1 <= 2.463: had (6.0)
+|   |   |   |   |   |   |   |   |   Feature 1 > 2.463: hYd (2.0)
+|   |   |   |   |   |   |   |   Speaker Number = Rich: had (1.0)
+|   |   |   |   |   |   |   |   Speaker Number = Tim: hYd (6.0)
+|   |   |   |   |   |   |   |   Speaker Number = Sarah: had (2.0)
+|   |   |   |   |   |   |   |   Speaker Number = Sue: hYd (0.0)
+|   |   |   |   |   |   |   |   Speaker Number = Wendy: hYd (0.0)
+|   |   |   |   |   |   |   Feature 2 > 0.466: hOd (4.0)
+|   |   |   |   Feature 9 > 0.084
+|   |   |   |   |   Sex = Male
+|   |   |   |   |   |   Feature 6 <= -0.478: hOd (9.0)
+|   |   |   |   |   |   Feature 6 > -0.478: hUd (4.0)
+|   |   |   |   |   Sex = Female
+|   |   |   |   |   |   Feature 8 <= -0.541
+|   |   |   |   |   |   |   Feature 7 <= 0.011
+|   |   |   |   |   |   |   |   Feature 8 <= -1.248: hed (2.0)
+|   |   |   |   |   |   |   |   Feature 8 > -1.248: had (9.0)
+|   |   |   |   |   |   |   Feature 7 > 0.011: hed (8.0)
+|   |   |   |   |   |   Feature 8 > -0.541
+|   |   |   |   |   |   |   Feature 2 <= -0.636
+|   |   |   |   |   |   |   |   Feature 3 <= 1.273: hAd (16.0)
+|   |   |   |   |   |   |   |   Feature 3 > 1.273: hEd (2.0)
+|   |   |   |   |   |   |   Feature 2 > -0.636: hEd (9.0/1.0)
+|   |   |   Feature 0 > -2.52
+|   |   |   |   Feature 7 <= 0.956
+|   |   |   |   |   Feature 0 <= -2.314
+|   |   |   |   |   |   Feature 2 <= -0.76: hAd (8.0)
+|   |   |   |   |   |   Feature 2 > -0.76
+|   |   |   |   |   |   |   Feature 2 <= 0.609: had (22.0)
+|   |   |   |   |   |   |   Feature 2 > 0.609: hYd (2.0)
+|   |   |   |   |   Feature 0 > -2.314: hAd (50.0)
+|   |   |   |   Feature 7 > 0.956
+|   |   |   |   |   Feature 0 <= -2.175: hYd (7.0/1.0)
+|   |   |   |   |   Feature 0 > -2.175: had (6.0)
+|   |   Feature 1 > 2.62
+|   |   |   Feature 0 <= -2.968
+|   |   |   |   Feature 9 <= 0.278: hOd (35.0/1.0)
+|   |   |   |   Feature 9 > 0.278: hYd (6.0)
+|   |   |   Feature 0 > -2.968
+|   |   |   |   Feature 4 <= -0.293
+|   |   |   |   |   Feature 3 <= -0.934: hOd (3.0)
+|   |   |   |   |   Feature 3 > -0.934
+|   |   |   |   |   |   Feature 8 <= -1.121: had (3.0/1.0)
+|   |   |   |   |   |   Feature 8 > -1.121
+|   |   |   |   |   |   |   Feature 2 <= 0.145: hYd (38.0/1.0)
+|   |   |   |   |   |   |   Feature 2 > 0.145: hOd (2.0)
+|   |   |   |   Feature 4 > -0.293
+|   |   |   |   |   Feature 1 <= 3.236: had (9.0)
+|   |   |   |   |   Feature 1 > 3.236: hOd (3.0/1.0)
+
+Number of Leaves  : 	106
+
+Size of the tree : 	198
+
+
+Time taken to build model: 0.26 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         967               97.6768 %
+Incorrectly Classified Instances        23                2.3232 %
+Kappa statistic                          0.9744
+Mean absolute error                      0.007 
+Root mean squared error                  0.059 
+Relative absolute error                  4.217  %
+Root relative squared error             20.5353 %
+Total Number of Instances              990     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        hid
+                 0.978     0.003      0.967     0.978     0.972      0.999    hId
+                 0.967     0.002      0.978     0.967     0.972      0.999    hEd
+                 1         0.001      0.989     1         0.994      1        hAd
+                 0.989     0.003      0.967     0.989     0.978      0.999    hYd
+                 0.944     0.003      0.966     0.944     0.955      0.998    had
+                 0.978     0.002      0.978     0.978     0.978      1        hOd
+                 0.989     0          1         0.989     0.994      1        hod
+                 0.944     0.003      0.966     0.944     0.955      0.999    hUd
+                 0.978     0.003      0.967     0.978     0.972      1        hud
+                 0.978     0.003      0.967     0.978     0.972      0.999    hed
+Weighted Avg.    0.977     0.002      0.977     0.977     0.977      0.999
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k   <-- classified as
+ 90  0  0  0  0  0  0  0  0  0  0 |  a = hid
+  0 88  0  1  0  0  0  0  1  0  0 |  b = hId
+  0  2 87  0  0  0  0  0  0  0  1 |  c = hEd
+  0  0  0 90  0  0  0  0  0  0  0 |  d = hAd
+  0  0  0  0 89  0  1  0  0  0  0 |  e = hYd
+  0  0  2  0  2 85  0  0  0  0  1 |  f = had
+  0  0  0  0  1  1 88  0  0  0  0 |  g = hOd
+  0  0  0  0  0  0  0 89  1  0  0 |  h = hod
+  0  0  0  0  0  2  0  0 85  3  0 |  i = hUd
+  0  0  0  0  0  0  0  0  1 88  1 |  j = hud
+  0  1  0  0  0  0  1  0  0  0 88 |  k = hed
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         807               81.5152 %
+Incorrectly Classified Instances       183               18.4848 %
+Kappa statistic                          0.7967
+Mean absolute error                      0.0362
+Root mean squared error                  0.1712
+Relative absolute error                 21.8777 %
+Root relative squared error             59.5369 %
+Total Number of Instances              990     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.922     0.004      0.954     0.922     0.938      0.965    hid
+                 0.822     0.016      0.841     0.822     0.831      0.942    hId
+                 0.867     0.019      0.821     0.867     0.843      0.953    hEd
+                 0.844     0.016      0.844     0.844     0.844      0.94     hAd
+                 0.733     0.03       0.71      0.733     0.721      0.924    hYd
+                 0.667     0.033      0.667     0.667     0.667      0.896    had
+                 0.856     0.019      0.819     0.856     0.837      0.965    hOd
+                 0.822     0.01       0.892     0.822     0.855      0.934    hod
+                 0.711     0.027      0.727     0.711     0.719      0.9      hUd
+                 0.911     0.014      0.863     0.911     0.886      0.956    hud
+                 0.811     0.016      0.839     0.811     0.825      0.906    hed
+Weighted Avg.    0.815     0.018      0.816     0.815     0.815      0.935
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k   <-- classified as
+ 83  2  0  0  0  0  0  0  1  4  0 |  a = hid
+  2 74  7  0  0  1  0  0  1  3  2 |  b = hId
+  0  6 78  4  0  0  0  0  0  0  2 |  c = hEd
+  0  1  3 76  1  8  0  0  0  0  1 |  d = hAd
+  0  0  3  2 66 12  5  0  1  0  1 |  e = hYd
+  0  0  2  5 17 60  1  0  3  0  2 |  f = had
+  0  2  0  0  7  0 77  2  2  0  0 |  g = hOd
+  0  0  0  0  0  0  6 74  9  1  0 |  h = hod
+  1  1  1  0  1  2  2  7 64  5  6 |  i = hUd
+  1  1  0  0  0  0  0  0  6 82  0 |  j = hud
+  0  1  1  3  1  7  3  0  1  0 73 |  k = hed
+

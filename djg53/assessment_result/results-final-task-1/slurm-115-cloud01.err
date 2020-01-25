@@ -1,0 +1,3 @@
+slurmstepd-legacy17: error: Job 110992 exceeded memory limit (1063756 > 1048576), being killed
+slurmstepd-legacy17: error: *** JOB 110992 ON legacy17 CANCELLED AT 2020-01-24T19:49:27 ***
+slurmstepd-legacy17: error: Exceeded job memory limit

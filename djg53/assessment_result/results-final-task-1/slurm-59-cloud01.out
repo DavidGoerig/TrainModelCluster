@@ -1,0 +1,78 @@
+heart-h
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.2143
+
+
+
+Time taken to build model: 19.53 seconds
+Time taken to test model on training data: 2.53 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         294              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0375
+Root mean squared error                  0.0884
+Relative absolute error                 20.0924 %
+Root relative squared error             29.0966 %
+Total Number of Instances              294     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        <50
+                 1         0          1         1         1          1        >50_1
+                 0         0          0         0         0          ?        >50_2
+                 0         0          0         0         0          ?        >50_3
+                 0         0          0         0         0          ?        >50_4
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 188   0   0   0   0 |   a = <50
+   0 106   0   0   0 |   b = >50_1
+   0   0   0   0   0 |   c = >50_2
+   0   0   0   0   0 |   d = >50_3
+   0   0   0   0   0 |   e = >50_4
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         229               77.8912 %
+Incorrectly Classified Instances        65               22.1088 %
+Kappa statistic                          0.5235
+Mean absolute error                      0.1006
+Root mean squared error                  0.2356
+Relative absolute error                 53.83   %
+Root relative squared error             77.5529 %
+Total Number of Instances              294     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.819     0.292      0.832     0.819     0.826      0.872    <50
+                 0.708     0.181      0.688     0.708     0.698      0.872    >50_1
+                 0         0          0         0         0          ?        >50_2
+                 0         0          0         0         0          ?        >50_3
+                 0         0          0         0         0          ?        >50_4
+Weighted Avg.    0.779     0.252      0.78      0.779     0.78       0.872
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 154  34   0   0   0 |   a = <50
+  31  75   0   0   0 |   b = >50_1
+   0   0   0   0   0 |   c = >50_2
+   0   0   0   0   0 |   d = >50_3
+   0   0   0   0   0 |   e = >50_4
+

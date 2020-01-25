@@ -1,0 +1,74 @@
+vehicle
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.2423
+
+
+
+Time taken to build model: 182.58 seconds
+Time taken to test model on training data: 11.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         846              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0544
+Root mean squared error                  0.099 
+Relative absolute error                 14.5151 %
+Root relative squared error             22.8631 %
+Total Number of Instances              846     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        opel
+                 1         0          1         1         1          1        saab
+                 1         0          1         1         1          1        bus
+                 1         0          1         1         1          1        van
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 212   0   0   0 |   a = opel
+   0 217   0   0 |   b = saab
+   0   0 218   0 |   c = bus
+   0   0   0 199 |   d = van
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         655               77.4232 %
+Incorrectly Classified Instances       191               22.5768 %
+Kappa statistic                          0.699 
+Mean absolute error                      0.1475
+Root mean squared error                  0.267 
+Relative absolute error                 39.347  %
+Root relative squared error             61.6841 %
+Total Number of Instances              846     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.557     0.103      0.645     0.557     0.597      0.887    opel
+                 0.613     0.141      0.599     0.613     0.606      0.873    saab
+                 0.968     0.014      0.959     0.968     0.963      0.996    bus
+                 0.97      0.043      0.873     0.97      0.919      0.993    van
+Weighted Avg.    0.774     0.076      0.768     0.774     0.77       0.937
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 118  83   2   9 |   a = opel
+  63 133   7  14 |   b = saab
+   1   1 211   5 |   c = bus
+   1   5   0 193 |   d = van
+

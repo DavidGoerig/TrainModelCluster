@@ -1,0 +1,146 @@
+glass
+
+J48 pruned tree
+------------------
+
+Ba <= 0.27
+|   Mg <= 2.41
+|   |   K <= 0.03
+|   |   |   Na <= 13.75: build wind non-float (3.0)
+|   |   |   Na > 13.75: tableware (9.0)
+|   |   K > 0.03
+|   |   |   Na <= 13.49
+|   |   |   |   RI <= 1.5241: containers (13.0/1.0)
+|   |   |   |   RI > 1.5241: build wind non-float (3.0)
+|   |   |   Na > 13.49: build wind non-float (7.0/1.0)
+|   Mg > 2.41
+|   |   Al <= 1.41
+|   |   |   RI <= 1.51707
+|   |   |   |   RI <= 1.51596: build wind float (3.0)
+|   |   |   |   RI > 1.51596
+|   |   |   |   |   Fe <= 0.12
+|   |   |   |   |   |   Mg <= 3.54: vehic wind float (5.0)
+|   |   |   |   |   |   Mg > 3.54
+|   |   |   |   |   |   |   RI <= 1.51667: build wind non-float (2.0)
+|   |   |   |   |   |   |   RI > 1.51667: vehic wind float (2.0)
+|   |   |   |   |   Fe > 0.12: build wind non-float (2.0)
+|   |   |   RI > 1.51707
+|   |   |   |   K <= 0.23
+|   |   |   |   |   Mg <= 3.34: build wind non-float (2.0)
+|   |   |   |   |   Mg > 3.34
+|   |   |   |   |   |   Si <= 72.64
+|   |   |   |   |   |   |   Na <= 14.01: build wind float (14.0)
+|   |   |   |   |   |   |   Na > 14.01
+|   |   |   |   |   |   |   |   RI <= 1.52211
+|   |   |   |   |   |   |   |   |   Na <= 14.32: vehic wind float (3.0)
+|   |   |   |   |   |   |   |   |   Na > 14.32: build wind float (2.0)
+|   |   |   |   |   |   |   |   RI > 1.52211: build wind float (3.0)
+|   |   |   |   |   |   Si > 72.64: vehic wind float (3.0)
+|   |   |   |   K > 0.23
+|   |   |   |   |   Mg <= 3.75
+|   |   |   |   |   |   Fe <= 0.14
+|   |   |   |   |   |   |   RI <= 1.52043: build wind float (36.0)
+|   |   |   |   |   |   |   RI > 1.52043: build wind non-float (2.0/1.0)
+|   |   |   |   |   |   Fe > 0.14
+|   |   |   |   |   |   |   Al <= 1.17: build wind non-float (5.0)
+|   |   |   |   |   |   |   Al > 1.17: build wind float (6.0/1.0)
+|   |   |   |   |   Mg > 3.75: build wind non-float (10.0)
+|   |   Al > 1.41
+|   |   |   Si <= 72.49
+|   |   |   |   Ca <= 8.28: build wind non-float (6.0)
+|   |   |   |   Ca > 8.28: vehic wind float (5.0/1.0)
+|   |   |   Si > 72.49
+|   |   |   |   RI <= 1.51732
+|   |   |   |   |   Fe <= 0.22: build wind non-float (30.0/1.0)
+|   |   |   |   |   Fe > 0.22
+|   |   |   |   |   |   RI <= 1.51629: build wind float (2.0)
+|   |   |   |   |   |   RI > 1.51629: build wind non-float (2.0)
+|   |   |   |   RI > 1.51732
+|   |   |   |   |   RI <= 1.51789: build wind float (3.0)
+|   |   |   |   |   RI > 1.51789: build wind non-float (2.0)
+Ba > 0.27
+|   Si <= 70.16: build wind non-float (2.0/1.0)
+|   Si > 70.16: headlamps (27.0/1.0)
+
+Number of Leaves  : 	30
+
+Size of the tree : 	59
+
+
+Time taken to build model: 0.15 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         206               96.2617 %
+Incorrectly Classified Instances         8                3.7383 %
+Kappa statistic                          0.9492
+Mean absolute error                      0.0169
+Root mean squared error                  0.092 
+Relative absolute error                  8.005  %
+Root relative squared error             28.364  %
+Total Number of Instances              214     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.971     0.007      0.986     0.971     0.978      0.994    build wind float
+                 0.974     0.029      0.949     0.974     0.961      0.996    build wind non-float
+                 1         0.005      0.944     1         0.971      0.999    vehic wind float
+                 0         0          0         0         0          ?        vehic wind non-float
+                 0.923     0.005      0.923     0.923     0.923      0.997    containers
+                 1         0          1         1         1          1        tableware
+                 0.897     0.005      0.963     0.897     0.929      0.994    headlamps
+Weighted Avg.    0.963     0.014      0.963     0.963     0.962      0.995
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 68  1  0  0  0  0  1 |  a = build wind float
+  1 74  1  0  0  0  0 |  b = build wind non-float
+  0  0 17  0  0  0  0 |  c = vehic wind float
+  0  0  0  0  0  0  0 |  d = vehic wind non-float
+  0  1  0  0 12  0  0 |  e = containers
+  0  0  0  0  0  9  0 |  f = tableware
+  0  2  0  0  1  0 26 |  g = headlamps
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         143               66.8224 %
+Incorrectly Classified Instances        71               33.1776 %
+Kappa statistic                          0.55  
+Mean absolute error                      0.1026
+Root mean squared error                  0.2897
+Relative absolute error                 48.4507 %
+Root relative squared error             89.2727 %
+Total Number of Instances              214     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.714     0.174      0.667     0.714     0.69       0.806    build wind float
+                 0.618     0.181      0.653     0.618     0.635      0.768    build wind non-float
+                 0.353     0.046      0.4       0.353     0.375      0.766    vehic wind float
+                 0         0          0         0         0          ?        vehic wind non-float
+                 0.769     0.01       0.833     0.769     0.8        0.872    containers
+                 0.778     0.029      0.538     0.778     0.636      0.93     tableware
+                 0.793     0.022      0.852     0.793     0.821      0.869    headlamps
+Weighted Avg.    0.668     0.13       0.67      0.668     0.668      0.807
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 50 15  3  0  0  1  1 |  a = build wind float
+ 16 47  6  0  2  3  2 |  b = build wind non-float
+  5  5  6  0  0  1  0 |  c = vehic wind float
+  0  0  0  0  0  0  0 |  d = vehic wind non-float
+  0  2  0  0 10  0  1 |  e = containers
+  1  1  0  0  0  7  0 |  f = tableware
+  3  2  0  0  0  1 23 |  g = headlamps
+

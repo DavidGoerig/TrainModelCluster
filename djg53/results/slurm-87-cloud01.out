@@ -1,0 +1,98 @@
+kdd_ipums_la_99-small
+
+J48 pruned tree
+------------------
+: Auto_truck_or_van (4062.0/568.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.75 seconds
+Time taken to test model on training data: 0.23 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3494               86.0167 %
+Incorrectly Classified Instances       568               13.9833 %
+Kappa statistic                          0     
+Mean absolute error                      0.0565
+Root mean squared error                  0.1681
+Relative absolute error                 99.4517 %
+Root relative squared error             99.9994 %
+Total Number of Instances             4062     
+Ignored Class Unknown Instances               4782     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.86      1         0.925      0.5      Auto_truck_or_van
+                 0         0          0         0         0          0.5      Bicycle
+                 0         0          0         0         0          0.5      Bus_or_trolley_bus
+                 0         0          0         0         0          0.5      Motorcycle
+                 0         0          0         0         0          0.5      Other
+                 0         0          0         0         0          0.5      Subway_or_elevated
+                 0         0          0         0         0          0.5      Taxicab
+                 0         0          0         0         0          0.5      Walked_only
+                 0         0          0         0         0          0.5      Worked_at_home
+Weighted Avg.    0.86      0.86       0.74      0.86      0.796      0.5  
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+ 3494    0    0    0    0    0    0    0    0 |    a = Auto_truck_or_van
+   27    0    0    0    0    0    0    0    0 |    b = Bicycle
+  255    0    0    0    0    0    0    0    0 |    c = Bus_or_trolley_bus
+   17    0    0    0    0    0    0    0    0 |    d = Motorcycle
+   34    0    0    0    0    0    0    0    0 |    e = Other
+    1    0    0    0    0    0    0    0    0 |    f = Subway_or_elevated
+    5    0    0    0    0    0    0    0    0 |    g = Taxicab
+  126    0    0    0    0    0    0    0    0 |    h = Walked_only
+  103    0    0    0    0    0    0    0    0 |    i = Worked_at_home
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3494               86.0167 %
+Incorrectly Classified Instances       568               13.9833 %
+Kappa statistic                          0     
+Mean absolute error                      0.0565
+Root mean squared error                  0.1681
+Relative absolute error                 99.3914 %
+Root relative squared error             99.9992 %
+Total Number of Instances             4062     
+Ignored Class Unknown Instances               4782     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.86      1         0.925      0.499    Auto_truck_or_van
+                 0         0          0         0         0          0.461    Bicycle
+                 0         0          0         0         0          0.495    Bus_or_trolley_bus
+                 0         0          0         0         0          0.438    Motorcycle
+                 0         0          0         0         0          0.465    Other
+                 0         0          0         0         0          0.05     Subway_or_elevated
+                 0         0          0         0         0          0.25     Taxicab
+                 0         0          0         0         0          0.49     Walked_only
+                 0         0          0         0         0          0.49     Worked_at_home
+Weighted Avg.    0.86      0.86       0.74      0.86      0.796      0.497
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+ 3494    0    0    0    0    0    0    0    0 |    a = Auto_truck_or_van
+   27    0    0    0    0    0    0    0    0 |    b = Bicycle
+  255    0    0    0    0    0    0    0    0 |    c = Bus_or_trolley_bus
+   17    0    0    0    0    0    0    0    0 |    d = Motorcycle
+   34    0    0    0    0    0    0    0    0 |    e = Other
+    1    0    0    0    0    0    0    0    0 |    f = Subway_or_elevated
+    5    0    0    0    0    0    0    0    0 |    g = Taxicab
+  126    0    0    0    0    0    0    0    0 |    h = Walked_only
+  103    0    0    0    0    0    0    0    0 |    i = Worked_at_home
+

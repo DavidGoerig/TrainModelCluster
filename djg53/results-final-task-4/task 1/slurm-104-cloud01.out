@@ -1,0 +1,109 @@
+lymph
+
+J48 pruned tree
+------------------
+
+lym_nodes_dimin <= 1
+|   changes_in_node = no
+|   |   defect_in_node = no: normal (3.0/1.0)
+|   |   defect_in_node = lacunar: malign_lymph (2.0)
+|   |   defect_in_node = lac_margin: normal (0.0)
+|   |   defect_in_node = lac_central: normal (0.0)
+|   changes_in_node = lacunar
+|   |   exclusion_of_no = no: metastases (10.0/1.0)
+|   |   exclusion_of_no = yes
+|   |   |   special_forms = no: metastases (3.0/1.0)
+|   |   |   special_forms = chalices
+|   |   |   |   lym_nodes_enlar <= 2: malign_lymph (3.0)
+|   |   |   |   lym_nodes_enlar > 2: metastases (2.0)
+|   |   |   special_forms = vesicles: malign_lymph (19.0/1.0)
+|   changes_in_node = lac_margin
+|   |   block_of_affere = no
+|   |   |   extravasates = no
+|   |   |   |   lymphatics = normal: metastases (0.0)
+|   |   |   |   lymphatics = arched
+|   |   |   |   |   early_uptake_in = no: metastases (5.0/1.0)
+|   |   |   |   |   early_uptake_in = yes: malign_lymph (4.0/1.0)
+|   |   |   |   lymphatics = deformed: metastases (5.0)
+|   |   |   |   lymphatics = displaced: malign_lymph (1.0)
+|   |   |   extravasates = yes: malign_lymph (4.0)
+|   |   block_of_affere = yes: metastases (56.0/3.0)
+|   changes_in_node = lac_central
+|   |   no_of_nodes_in <= 1
+|   |   |   block_of_affere = no: malign_lymph (3.0)
+|   |   |   block_of_affere = yes: metastases (2.0)
+|   |   no_of_nodes_in > 1: malign_lymph (20.0)
+lym_nodes_dimin > 1
+|   by_pass = no: metastases (2.0/1.0)
+|   by_pass = yes: fibrosis (4.0)
+
+Number of Leaves  : 	21
+
+Size of the tree : 	34
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         138               93.2432 %
+Incorrectly Classified Instances        10                6.7568 %
+Kappa statistic                          0.8722
+Mean absolute error                      0.0545
+Root mean squared error                  0.1651
+Relative absolute error                 20.3659 %
+Root relative squared error             45.3684 %
+Total Number of Instances              148     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.007      0.667     1         0.8        0.997    normal
+                 0.963     0.104      0.918     0.963     0.94       0.966    metastases
+                 0.885     0.023      0.964     0.885     0.923      0.967    malign_lymph
+                 1         0          1         1         1          1        fibrosis
+Weighted Avg.    0.932     0.067      0.936     0.932     0.933      0.968
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+  2  0  0  0 |  a = normal
+  1 78  2  0 |  b = metastases
+  0  7 54  0 |  c = malign_lymph
+  0  0  0  4 |  d = fibrosis
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         114               77.027  %
+Incorrectly Classified Instances        34               22.973  %
+Kappa statistic                          0.5736
+Mean absolute error                      0.1304
+Root mean squared error                  0.3151
+Relative absolute error                 48.619  %
+Root relative squared error             86.5138 %
+Total Number of Instances              148     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.014      0.5       1         0.667      0.991    normal
+                 0.79      0.194      0.831     0.79      0.81       0.788    metastases
+                 0.754     0.195      0.73      0.754     0.742      0.777    malign_lymph
+                 0.5       0.014      0.5       0.5       0.5        0.744    fibrosis
+Weighted Avg.    0.77      0.187      0.776     0.77      0.772      0.785
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+  2  0  0  0 |  a = normal
+  1 64 15  1 |  b = metastases
+  1 13 46  1 |  c = malign_lymph
+  0  0  2  2 |  d = fibrosis
+

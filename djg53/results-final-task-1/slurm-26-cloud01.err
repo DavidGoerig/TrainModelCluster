@@ -1,0 +1,3 @@
+slurmstepd-legacy03: error: Job 110903 exceeded memory limit (1064200 > 1048576), being killed
+slurmstepd-legacy03: error: Exceeded job memory limit
+slurmstepd-legacy03: error: *** JOB 110903 ON legacy03 CANCELLED AT 2020-01-24T19:49:26 ***

@@ -1,0 +1,102 @@
+heart-statlog
+
+J48 pruned tree
+------------------
+
+thal <= 3
+|   chest <= 3: absent (101.0/10.0)
+|   chest > 3
+|   |   number_of_major_vessels <= 0
+|   |   |   age <= 54: absent (17.0)
+|   |   |   age > 54
+|   |   |   |   exercise_induced_angina <= 0
+|   |   |   |   |   slope <= 1
+|   |   |   |   |   |   serum_cholestoral <= 288: absent (2.0)
+|   |   |   |   |   |   serum_cholestoral > 288: present (2.0)
+|   |   |   |   |   slope > 1: absent (5.0/1.0)
+|   |   |   |   exercise_induced_angina > 0
+|   |   |   |   |   slope <= 1: absent (2.0)
+|   |   |   |   |   slope > 1: present (3.0)
+|   |   number_of_major_vessels > 0
+|   |   |   sex <= 0
+|   |   |   |   slope <= 1: absent (2.0)
+|   |   |   |   slope > 1: present (4.0/1.0)
+|   |   |   sex > 0: present (14.0)
+thal > 3
+|   number_of_major_vessels <= 0
+|   |   exercise_induced_angina <= 0
+|   |   |   fasting_blood_sugar <= 0
+|   |   |   |   thal <= 6: absent (4.0)
+|   |   |   |   thal > 6
+|   |   |   |   |   age <= 52: present (9.0/2.0)
+|   |   |   |   |   age > 52: absent (11.0/2.0)
+|   |   |   fasting_blood_sugar > 0: absent (5.0)
+|   |   exercise_induced_angina > 0
+|   |   |   oldpeak <= 1.5
+|   |   |   |   serum_cholestoral <= 255: absent (6.0/1.0)
+|   |   |   |   serum_cholestoral > 255: present (4.0)
+|   |   |   oldpeak > 1.5: present (14.0)
+|   number_of_major_vessels > 0: present (65.0/6.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	35
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         247               91.4815 %
+Incorrectly Classified Instances        23                8.5185 %
+Kappa statistic                          0.8268
+Mean absolute error                      0.1484
+Root mean squared error                  0.2724
+Relative absolute error                 30.0442 %
+Root relative squared error             54.8151 %
+Total Number of Instances              270     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.94      0.117      0.91      0.94      0.925      0.942    absent
+                 0.883     0.06       0.922     0.883     0.902      0.942    present
+Weighted Avg.    0.915     0.091      0.915     0.915     0.915      0.942
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 141   9 |   a = absent
+  14 106 |   b = present
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         207               76.6667 %
+Incorrectly Classified Instances        63               23.3333 %
+Kappa statistic                          0.5271
+Mean absolute error                      0.274 
+Root mean squared error                  0.4601
+Relative absolute error                 55.4778 %
+Root relative squared error             92.5962 %
+Total Number of Instances              270     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.793     0.267      0.788     0.793     0.791      0.744    absent
+                 0.733     0.207      0.739     0.733     0.736      0.744    present
+Weighted Avg.    0.767     0.24       0.766     0.767     0.767      0.744
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 119  31 |   a = absent
+  32  88 |   b = present
+

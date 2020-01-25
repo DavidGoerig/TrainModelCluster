@@ -1,0 +1,68 @@
+solar-flare_1
+
+J48 pruned tree
+------------------
+: 0 (323.0/7.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         316               97.8328 %
+Incorrectly Classified Instances         7                2.1672 %
+Kappa statistic                          0     
+Mean absolute error                      0.0424
+Root mean squared error                  0.1456
+Relative absolute error                 93.7728 %
+Root relative squared error             99.9796 %
+Total Number of Instances              323     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.978     1         0.989      0.5      0
+                 0         0          0         0         0          0.5      1
+Weighted Avg.    0.978     0.978      0.957     0.978     0.968      0.5  
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 316   0 |   a = 0
+   7   0 |   b = 1
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         316               97.8328 %
+Incorrectly Classified Instances         7                2.1672 %
+Kappa statistic                          0     
+Mean absolute error                      0.0424
+Root mean squared error                  0.1458
+Relative absolute error                 93.1384 %
+Root relative squared error             99.976  %
+Total Number of Instances              323     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.978     1         0.989      0.345    0
+                 0         0          0         0         0          0.345    1
+Weighted Avg.    0.978     0.978      0.957     0.978     0.968      0.345
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 316   0 |   a = 0
+   7   0 |   b = 1
+

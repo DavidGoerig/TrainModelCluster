@@ -1,0 +1,66 @@
+shuttle-landing-control
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.0667
+
+
+
+Time taken to build model: 2.26 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          14               93.3333 %
+Incorrectly Classified Instances         1                6.6667 %
+Kappa statistic                          0     
+Mean absolute error                      0.1184
+Root mean squared error                  0.2434
+Relative absolute error                 70.203  %
+Root relative squared error             95.6136 %
+Total Number of Instances               15     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.933     1         0.966      0.714    1
+                 0         0          0         0         0          0.714    2
+Weighted Avg.    0.933     0.933      0.871     0.933     0.901      0.714
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  0 |  a = 1
+  1  0 |  b = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          14               93.3333 %
+Incorrectly Classified Instances         1                6.6667 %
+Kappa statistic                          0     
+Mean absolute error                      0.1271
+Root mean squared error                  0.2729
+Relative absolute error                 70.8397 %
+Root relative squared error            100.9764 %
+Total Number of Instances               15     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.933     1         0.966      0.036    1
+                 0         0          0         0         0          0.036    2
+Weighted Avg.    0.933     0.933      0.871     0.933     0.901      0.036
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  0 |  a = 1
+  1  0 |  b = 2
+

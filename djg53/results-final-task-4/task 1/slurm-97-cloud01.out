@@ -1,0 +1,126 @@
+kr-vs-kp
+
+J48 pruned tree
+------------------
+
+rimmx = t: won (584.0)
+rimmx = f
+|   bxqsq = t: nowin (743.0)
+|   bxqsq = f
+|   |   wknck = t
+|   |   |   r2ar8 = t
+|   |   |   |   wkovl = t: nowin (295.0)
+|   |   |   |   wkovl = f
+|   |   |   |   |   bkxcr = t: nowin (41.0)
+|   |   |   |   |   bkxcr = f
+|   |   |   |   |   |   bkona = t: nowin (19.0)
+|   |   |   |   |   |   bkona = f
+|   |   |   |   |   |   |   mulch = t: nowin (11.0)
+|   |   |   |   |   |   |   mulch = f
+|   |   |   |   |   |   |   |   bkon8 = t: nowin (3.0)
+|   |   |   |   |   |   |   |   bkon8 = f: won (8.0)
+|   |   |   r2ar8 = f
+|   |   |   |   bkxcr = t: nowin (77.0)
+|   |   |   |   bkxcr = f
+|   |   |   |   |   skrxp = t: nowin (34.0)
+|   |   |   |   |   skrxp = f
+|   |   |   |   |   |   mulch = t: nowin (18.0)
+|   |   |   |   |   |   mulch = f
+|   |   |   |   |   |   |   thrsk = t: nowin (7.0)
+|   |   |   |   |   |   |   thrsk = f
+|   |   |   |   |   |   |   |   bkona = t: nowin (6.0)
+|   |   |   |   |   |   |   |   bkona = f
+|   |   |   |   |   |   |   |   |   reskr = t: nowin (6.0)
+|   |   |   |   |   |   |   |   |   reskr = f
+|   |   |   |   |   |   |   |   |   |   blxwp = t: nowin (3.0)
+|   |   |   |   |   |   |   |   |   |   blxwp = f
+|   |   |   |   |   |   |   |   |   |   |   bkon8 = t: nowin (2.0)
+|   |   |   |   |   |   |   |   |   |   |   bkon8 = f
+|   |   |   |   |   |   |   |   |   |   |   |   skach = t: nowin (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   skach = f: won (38.0)
+|   |   wknck = f
+|   |   |   wkna8 = t: nowin (123.0/3.0)
+|   |   |   wkna8 = f
+|   |   |   |   hdchk = t: nowin (8.0)
+|   |   |   |   hdchk = f
+|   |   |   |   |   bkxbq = t: won (599.0)
+|   |   |   |   |   bkxbq = f
+|   |   |   |   |   |   wkpos = t
+|   |   |   |   |   |   |   katri = b
+|   |   |   |   |   |   |   |   bkblk = t: won (10.0/1.0)
+|   |   |   |   |   |   |   |   bkblk = f: nowin (20.0)
+|   |   |   |   |   |   |   katri = n
+|   |   |   |   |   |   |   |   rxmsq = t
+|   |   |   |   |   |   |   |   |   qxmsq = t: won (27.0)
+|   |   |   |   |   |   |   |   |   qxmsq = f: nowin (15.0)
+|   |   |   |   |   |   |   |   rxmsq = f: won (257.0/2.0)
+|   |   |   |   |   |   |   katri = w: won (49.0)
+|   |   |   |   |   |   wkpos = f
+|   |   |   |   |   |   |   bkblk = t: won (49.0/1.0)
+|   |   |   |   |   |   |   bkblk = f
+|   |   |   |   |   |   |   |   katri = b: nowin (15.0)
+|   |   |   |   |   |   |   |   katri = n: nowin (82.0/4.0)
+|   |   |   |   |   |   |   |   katri = w: won (45.0)
+
+Number of Leaves  : 	31
+
+Size of the tree : 	59
+
+
+Time taken to build model: 0.35 seconds
+Time taken to test model on training data: 0.15 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3185               99.6558 %
+Incorrectly Classified Instances        11                0.3442 %
+Kappa statistic                          0.9931
+Mean absolute error                      0.0066
+Root mean squared error                  0.0576
+Relative absolute error                  1.3287 %
+Root relative squared error             11.5271 %
+Total Number of Instances             3196     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.996     0.003      0.998     0.996     0.997      1        won
+                 0.997     0.004      0.995     0.997     0.996      1        nowin
+Weighted Avg.    0.997     0.003      0.997     0.997     0.997      1    
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1662    7 |    a = won
+    4 1523 |    b = nowin
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3178               99.4368 %
+Incorrectly Classified Instances        18                0.5632 %
+Kappa statistic                          0.9887
+Mean absolute error                      0.0089
+Root mean squared error                  0.0739
+Relative absolute error                  1.7863 %
+Root relative squared error             14.787  %
+Total Number of Instances             3196     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.996     0.007      0.993     0.996     0.995      0.999    won
+                 0.993     0.004      0.995     0.993     0.994      0.999    nowin
+Weighted Avg.    0.994     0.006      0.994     0.994     0.994      0.999
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1662    7 |    a = won
+   11 1516 |    b = nowin
+

@@ -1,0 +1,74 @@
+hypothyroid
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.0029
+
+
+
+Time taken to build model: 162.04 seconds
+Time taken to test model on training data: 13.69 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3772              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0011
+Root mean squared error                  0.015 
+Relative absolute error                  1.5361 %
+Root relative squared error              7.8768 %
+Total Number of Instances             3772     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        negative
+                 1         0          1         1         1          1        compensated_hypothyroid
+                 1         0          1         1         1          1        primary_hypothyroid
+                 1         0          1         1         1          1        secondary_hypothyroid
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3481    0    0    0 |    a = negative
+    0  194    0    0 |    b = compensated_hypothyroid
+    0    0   95    0 |    c = primary_hypothyroid
+    0    0    0    2 |    d = secondary_hypothyroid
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3761               99.7084 %
+Incorrectly Classified Instances        11                0.2916 %
+Kappa statistic                          0.98  
+Mean absolute error                      0.003 
+Root mean squared error                  0.0382
+Relative absolute error                  4.0512 %
+Root relative squared error             20.0851 %
+Total Number of Instances             3772     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.998     0.01       0.999     0.998     0.999      0.997    negative
+                 1         0.001      0.975     1         0.987      1        compensated_hypothyroid
+                 0.968     0.001      0.968     0.968     0.968      1        primary_hypothyroid
+                 0         0          0         0         0          0.723    secondary_hypothyroid
+Weighted Avg.    0.997     0.01       0.997     0.997     0.997      0.998
+
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3475    3    3    0 |    a = negative
+    0  194    0    0 |    b = compensated_hypothyroid
+    1    2   92    0 |    c = primary_hypothyroid
+    2    0    0    0 |    d = secondary_hypothyroid
+

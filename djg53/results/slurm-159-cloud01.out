@@ -1,0 +1,138 @@
+tae
+
+J48 pruned tree
+------------------
+
+Summer_or_regular_semester = 1
+|   Class_size <= 15
+|   |   Whether_of_not_the_TA_is_a_native_English_speaker = 1: 1 (2.0)
+|   |   Whether_of_not_the_TA_is_a_native_English_speaker = 2: 2 (3.0/1.0)
+|   Class_size > 15
+|   |   Course <= 13: 3 (16.0/2.0)
+|   |   Course > 13: 2 (2.0)
+Summer_or_regular_semester = 2
+|   Whether_of_not_the_TA_is_a_native_English_speaker = 1
+|   |   Course <= 5: 3 (12.0/2.0)
+|   |   Course > 5
+|   |   |   Course <= 15: 1 (3.0/1.0)
+|   |   |   Course > 15
+|   |   |   |   Course_instructor <= 14: 2 (2.0)
+|   |   |   |   Course_instructor > 14: 3 (3.0/1.0)
+|   Whether_of_not_the_TA_is_a_native_English_speaker = 2
+|   |   Course <= 5
+|   |   |   Course <= 4
+|   |   |   |   Class_size <= 25
+|   |   |   |   |   Course_instructor <= 9: 2 (3.0)
+|   |   |   |   |   Course_instructor > 9
+|   |   |   |   |   |   Course <= 1: 2 (3.0/1.0)
+|   |   |   |   |   |   Course > 1: 1 (11.0/2.0)
+|   |   |   |   Class_size > 25
+|   |   |   |   |   Course_instructor <= 21
+|   |   |   |   |   |   Course_instructor <= 8: 1 (7.0)
+|   |   |   |   |   |   Course_instructor > 8
+|   |   |   |   |   |   |   Course <= 1
+|   |   |   |   |   |   |   |   Class_size <= 30: 3 (3.0/1.0)
+|   |   |   |   |   |   |   |   Class_size > 30: 1 (5.0)
+|   |   |   |   |   |   |   Course > 1
+|   |   |   |   |   |   |   |   Course_instructor <= 20: 3 (4.0)
+|   |   |   |   |   |   |   |   Course_instructor > 20: 1 (2.0)
+|   |   |   |   |   Course_instructor > 21
+|   |   |   |   |   |   Class_size <= 35: 1 (2.0)
+|   |   |   |   |   |   Class_size > 35: 2 (4.0/1.0)
+|   |   |   Course > 4
+|   |   |   |   Course_instructor <= 13: 3 (3.0)
+|   |   |   |   Course_instructor > 13: 1 (2.0)
+|   |   Course > 5
+|   |   |   Course <= 20
+|   |   |   |   Course_instructor <= 17
+|   |   |   |   |   Class_size <= 38
+|   |   |   |   |   |   Class_size <= 14
+|   |   |   |   |   |   |   Course_instructor <= 8: 2 (4.0)
+|   |   |   |   |   |   |   Course_instructor > 8: 3 (3.0/1.0)
+|   |   |   |   |   |   Class_size > 14
+|   |   |   |   |   |   |   Class_size <= 36
+|   |   |   |   |   |   |   |   Course <= 9
+|   |   |   |   |   |   |   |   |   Course <= 7: 1 (2.0)
+|   |   |   |   |   |   |   |   |   Course > 7
+|   |   |   |   |   |   |   |   |   |   Course_instructor <= 14: 2 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Course_instructor > 14: 1 (2.0)
+|   |   |   |   |   |   |   |   Course > 9
+|   |   |   |   |   |   |   |   |   Class_size <= 30: 1 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   Class_size > 30: 3 (2.0)
+|   |   |   |   |   |   |   Class_size > 36: 2 (7.0/2.0)
+|   |   |   |   |   Class_size > 38
+|   |   |   |   |   |   Course_instructor <= 6
+|   |   |   |   |   |   |   Class_size <= 39: 3 (2.0)
+|   |   |   |   |   |   |   Class_size > 39: 2 (4.0)
+|   |   |   |   |   |   Course_instructor > 6: 3 (2.0)
+|   |   |   |   Course_instructor > 17: 2 (6.0)
+|   |   |   Course > 20
+|   |   |   |   Course <= 22: 3 (6.0)
+|   |   |   |   Course > 22: 2 (6.0/1.0)
+
+Number of Leaves  : 	34
+
+Size of the tree : 	67
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               88.0795 %
+Incorrectly Classified Instances        18               11.9205 %
+Kappa statistic                          0.821 
+Mean absolute error                      0.1221
+Root mean squared error                  0.247 
+Relative absolute error                 27.4717 %
+Root relative squared error             52.4136 %
+Total Number of Instances              151     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.857     0.039      0.913     0.857     0.884      0.976    1
+                 0.84      0.069      0.857     0.84      0.848      0.956    2
+                 0.942     0.071      0.875     0.942     0.907      0.978    3
+Weighted Avg.    0.881     0.06       0.881     0.881     0.88       0.97 
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 42  5  2 |  a = 1
+  3 42  5 |  b = 2
+  1  2 49 |  c = 3
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          90               59.6026 %
+Incorrectly Classified Instances        61               40.3974 %
+Kappa statistic                          0.3939
+Mean absolute error                      0.2929
+Root mean squared error                  0.4677
+Relative absolute error                 65.9158 %
+Root relative squared error             99.2168 %
+Total Number of Instances              151     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.592     0.216      0.569     0.592     0.58       0.754    1
+                 0.52      0.208      0.553     0.52      0.536      0.684    2
+                 0.673     0.182      0.66      0.673     0.667      0.795    3
+Weighted Avg.    0.596     0.201      0.595     0.596     0.595      0.745
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 29 10 10 |  a = 1
+ 16 26  8 |  b = 2
+  6 11 35 |  c = 3
+

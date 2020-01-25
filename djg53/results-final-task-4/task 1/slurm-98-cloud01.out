@@ -1,0 +1,72 @@
+labor
+
+J48 pruned tree
+------------------
+
+wage-increase-first-year <= 2.5: bad (15.27/2.27)
+wage-increase-first-year > 2.5
+|   statutory-holidays <= 10: bad (10.77/4.77)
+|   statutory-holidays > 10: good (30.96/1.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          50               87.7193 %
+Incorrectly Classified Instances         7               12.2807 %
+Kappa statistic                          0.745 
+Mean absolute error                      0.195 
+Root mean squared error                  0.304 
+Relative absolute error                 42.6664 %
+Root relative squared error             63.6959 %
+Total Number of Instances               57     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.95      0.162      0.76      0.95      0.844      0.918    bad
+                 0.838     0.05       0.969     0.838     0.899      0.918    good
+Weighted Avg.    0.877     0.089      0.896     0.877     0.88       0.918
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  1 |  a = bad
+  6 31 |  b = good
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          42               73.6842 %
+Incorrectly Classified Instances        15               26.3158 %
+Kappa statistic                          0.4415
+Mean absolute error                      0.3192
+Root mean squared error                  0.4669
+Relative absolute error                 69.7715 %
+Root relative squared error             97.7888 %
+Total Number of Instances               57     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.7       0.243      0.609     0.7       0.651      0.695    bad
+                 0.757     0.3        0.824     0.757     0.789      0.695    good
+Weighted Avg.    0.737     0.28       0.748     0.737     0.74       0.695
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = bad
+  9 28 |  b = good
+

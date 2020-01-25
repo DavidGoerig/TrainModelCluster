@@ -1,0 +1,66 @@
+solar-flare_1
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.0341
+
+
+
+Time taken to build model: 4.65 seconds
+Time taken to test model on training data: 1.16 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         322               99.6904 %
+Incorrectly Classified Instances         1                0.3096 %
+Kappa statistic                          0.9215
+Mean absolute error                      0.0166
+Root mean squared error                  0.069 
+Relative absolute error                 36.6873 %
+Root relative squared error             47.3979 %
+Total Number of Instances              323     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.143      0.997     1         0.998      1        0
+                 0.857     0          1         0.857     0.923      1        1
+Weighted Avg.    0.997     0.14       0.997     0.997     0.997      1    
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 316   0 |   a = 0
+   1   6 |   b = 1
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         311               96.2848 %
+Incorrectly Classified Instances        12                3.7152 %
+Kappa statistic                         -0.0184
+Mean absolute error                      0.0406
+Root mean squared error                  0.1638
+Relative absolute error                 89.161  %
+Root relative squared error            112.3471 %
+Total Number of Instances              323     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.984     1          0.978     0.984     0.981      0.722    0
+                 0         0.016      0         0         0          0.722    1
+Weighted Avg.    0.963     0.979      0.957     0.963     0.96       0.722
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 311   5 |   a = 0
+   7   0 |   b = 1
+

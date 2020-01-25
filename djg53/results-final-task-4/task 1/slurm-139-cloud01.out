@@ -1,0 +1,164 @@
+segment
+
+J48 pruned tree
+------------------
+
+region-centroid-row <= 155
+|   rawred-mean <= 27.2222
+|   |   hue-mean <= -1.89048
+|   |   |   hue-mean <= -2.24632: foliage (160.0/1.0)
+|   |   |   hue-mean > -2.24632
+|   |   |   |   saturation-mean <= 0.772831
+|   |   |   |   |   region-centroid-col <= 110
+|   |   |   |   |   |   rawred-mean <= 0.666667
+|   |   |   |   |   |   |   region-centroid-row <= 150: foliage (14.0/1.0)
+|   |   |   |   |   |   |   region-centroid-row > 150: window (2.0)
+|   |   |   |   |   |   rawred-mean > 0.666667
+|   |   |   |   |   |   |   exred-mean <= -15.7778: foliage (10.0/2.0)
+|   |   |   |   |   |   |   exred-mean > -15.7778
+|   |   |   |   |   |   |   |   hue-mean <= -2.03348
+|   |   |   |   |   |   |   |   |   rawblue-mean <= 31.6667
+|   |   |   |   |   |   |   |   |   |   region-centroid-row <= 120: window (27.0)
+|   |   |   |   |   |   |   |   |   |   region-centroid-row > 120
+|   |   |   |   |   |   |   |   |   |   |   exgreen-mean <= -7.11111: cement (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   exgreen-mean > -7.11111: window (13.0/1.0)
+|   |   |   |   |   |   |   |   |   rawblue-mean > 31.6667: cement (3.0)
+|   |   |   |   |   |   |   |   hue-mean > -2.03348
+|   |   |   |   |   |   |   |   |   vedge-mean <= 2.44444
+|   |   |   |   |   |   |   |   |   |   region-centroid-row <= 150: brickface (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   region-centroid-row > 150: window (2.0)
+|   |   |   |   |   |   |   |   |   vedge-mean > 2.44444: cement (3.0)
+|   |   |   |   |   region-centroid-col > 110
+|   |   |   |   |   |   exgreen-mean <= -14.3333: cement (11.0/1.0)
+|   |   |   |   |   |   exgreen-mean > -14.3333
+|   |   |   |   |   |   |   rawred-mean <= 24.7778: window (169.0/8.0)
+|   |   |   |   |   |   |   rawred-mean > 24.7778
+|   |   |   |   |   |   |   |   vedge-mean <= 1.72223: window (4.0)
+|   |   |   |   |   |   |   |   vedge-mean > 1.72223: cement (7.0)
+|   |   |   |   saturation-mean > 0.772831
+|   |   |   |   |   hue-mean <= -2.09121
+|   |   |   |   |   |   region-centroid-row <= 132: foliage (94.0)
+|   |   |   |   |   |   region-centroid-row > 132
+|   |   |   |   |   |   |   rawred-mean <= 0.444444
+|   |   |   |   |   |   |   |   hedge-mean <= 0.277778
+|   |   |   |   |   |   |   |   |   hedge-mean <= 0.166667: window (9.0/1.0)
+|   |   |   |   |   |   |   |   |   hedge-mean > 0.166667
+|   |   |   |   |   |   |   |   |   |   region-centroid-col <= 86: window (3.0)
+|   |   |   |   |   |   |   |   |   |   region-centroid-col > 86: foliage (4.0)
+|   |   |   |   |   |   |   |   hedge-mean > 0.277778: foliage (18.0/1.0)
+|   |   |   |   |   |   |   rawred-mean > 0.444444: window (9.0/1.0)
+|   |   |   |   |   hue-mean > -2.09121
+|   |   |   |   |   |   region-centroid-col <= 8: foliage (2.0)
+|   |   |   |   |   |   region-centroid-col > 8: window (34.0)
+|   |   hue-mean > -1.89048
+|   |   |   exgreen-mean <= -5
+|   |   |   |   vedge-mean <= 2.77778
+|   |   |   |   |   exgreen-mean <= -7: brickface (295.0/2.0)
+|   |   |   |   |   exgreen-mean > -7
+|   |   |   |   |   |   vedge-mean <= 0.888891: brickface (26.0)
+|   |   |   |   |   |   vedge-mean > 0.888891: window (4.0/1.0)
+|   |   |   |   vedge-mean > 2.77778
+|   |   |   |   |   region-centroid-row <= 107: brickface (6.0)
+|   |   |   |   |   region-centroid-row > 107: foliage (5.0/1.0)
+|   |   |   exgreen-mean > -5
+|   |   |   |   rawgreen-mean <= 11.7778
+|   |   |   |   |   region-centroid-col <= 115: foliage (7.0/1.0)
+|   |   |   |   |   region-centroid-col > 115: window (58.0)
+|   |   |   |   rawgreen-mean > 11.7778: grass (6.0)
+|   rawred-mean > 27.2222
+|   |   rawblue-mean <= 91.4444
+|   |   |   hue-mean <= -2.21924: foliage (18.0)
+|   |   |   hue-mean > -2.21924: cement (265.0)
+|   |   rawblue-mean > 91.4444: sky (330.0)
+region-centroid-row > 155
+|   exblue-mean <= 9.77778: grass (325.0/1.0)
+|   exblue-mean > 9.77778
+|   |   saturation-mean <= 0.386456
+|   |   |   region-centroid-row <= 159
+|   |   |   |   hedge-mean <= 8.5: cement (3.0)
+|   |   |   |   hedge-mean > 8.5: path (3.0)
+|   |   |   region-centroid-row > 159: path (327.0)
+|   |   saturation-mean > 0.386456: cement (14.0)
+
+Number of Leaves  : 	39
+
+Size of the tree : 	77
+
+
+Time taken to build model: 0.57 seconds
+Time taken to test model on training data: 0.18 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        2285               98.9177 %
+Incorrectly Classified Instances        25                1.0823 %
+Kappa statistic                          0.9874
+Mean absolute error                      0.0057
+Root mean squared error                  0.0533
+Relative absolute error                  2.3186 %
+Root relative squared error             15.2268 %
+Total Number of Instances             2310     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.002      0.991     1         0.995      1        brickface
+                 1         0          1         1         1          1        sky
+                 0.985     0.004      0.979     0.985     0.982      0.999    foliage
+                 0.964     0.001      0.994     0.964     0.978      0.997    cement
+                 0.976     0.006      0.964     0.976     0.97       0.998    window
+                 1         0          1         1         1          1        path
+                 1         0.001      0.997     1         0.998      1        grass
+Weighted Avg.    0.989     0.002      0.989     0.989     0.989      0.999
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   <-- classified as
+ 330   0   0   0   0   0   0 |   a = brickface
+   0 330   0   0   0   0   0 |   b = sky
+   1   0 325   1   3   0   0 |   c = foliage
+   1   0   1 318   9   0   1 |   d = cement
+   1   0   6   1 322   0   0 |   e = window
+   0   0   0   0   0 330   0 |   f = path
+   0   0   0   0   0   0 330 |   g = grass
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        2239               96.9264 %
+Incorrectly Classified Instances        71                3.0736 %
+Kappa statistic                          0.9641
+Mean absolute error                      0.0104
+Root mean squared error                  0.0914
+Relative absolute error                  4.2494 %
+Root relative squared error             26.1312 %
+Total Number of Instances             2310     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.982     0.004      0.979     0.982     0.98       0.993    brickface
+                 1         0.001      0.997     1         0.998      1        sky
+                 0.936     0.01       0.942     0.936     0.939      0.977    foliage
+                 0.948     0.006      0.966     0.948     0.957      0.976    cement
+                 0.921     0.016      0.907     0.921     0.914      0.97     window
+                 1         0.001      0.997     1         0.998      1        path
+                 0.997     0.001      0.997     0.997     0.997      0.998    grass
+Weighted Avg.    0.969     0.005      0.969     0.969     0.969      0.988
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   <-- classified as
+ 324   0   1   2   3   0   0 |   a = brickface
+   0 330   0   0   0   0   0 |   b = sky
+   2   1 309   3  15   0   0 |   c = foliage
+   3   0   0 313  13   0   1 |   d = cement
+   2   0  18   6 304   0   0 |   e = window
+   0   0   0   0   0 330   0 |   f = path
+   0   0   0   0   0   1 329 |   g = grass
+

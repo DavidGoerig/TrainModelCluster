@@ -1,0 +1,66 @@
+breast-cancer
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.3322
+
+
+
+Time taken to build model: 10.55 seconds
+Time taken to test model on training data: 2.65 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         280               97.9021 %
+Incorrectly Classified Instances         6                2.0979 %
+Kappa statistic                          0.9494
+Mean absolute error                      0.1434
+Root mean squared error                  0.1922
+Relative absolute error                 34.2842 %
+Root relative squared error             42.0621 %
+Total Number of Instances              286     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.99      0.047      0.98      0.99      0.985      0.999    no-recurrence-events
+                 0.953     0.01       0.976     0.953     0.964      0.999    recurrence-events
+Weighted Avg.    0.979     0.036      0.979     0.979     0.979      0.999
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 199   2 |   a = no-recurrence-events
+   4  81 |   b = recurrence-events
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         190               66.4336 %
+Incorrectly Classified Instances        96               33.5664 %
+Kappa statistic                          0.1252
+Mean absolute error                      0.3758
+Root mean squared error                  0.4795
+Relative absolute error                 89.8103 %
+Root relative squared error            104.91   %
+Total Number of Instances              286     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.821     0.706      0.733     0.821     0.775      0.616    no-recurrence-events
+                 0.294     0.179      0.41      0.294     0.342      0.616    recurrence-events
+Weighted Avg.    0.664     0.549      0.637     0.664     0.646      0.616
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 165  36 |   a = no-recurrence-events
+  60  25 |   b = recurrence-events
+

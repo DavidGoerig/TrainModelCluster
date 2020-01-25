@@ -1,0 +1,2 @@
+/var/lib/slurm-llnl/slurmd/job111032/slurm_script: line 21: 3425802 Killed                  java -Xmx1000M -cp weka-3-6-13/weka.jar weka.classifiers.trees.RandomForest -t $1 -i -I 10000 -K 100
+slurmstepd-legacy03: error: Step 111032.4294967294 hit memory+swap limit at least once during execution. This may or may not result in some failure.

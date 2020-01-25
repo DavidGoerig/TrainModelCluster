@@ -1,0 +1,66 @@
+breast-w
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.0386
+
+
+
+Time taken to build model: 29.38 seconds
+Time taken to test model on training data: 4.62 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         699              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0233
+Root mean squared error                  0.0646
+Relative absolute error                  5.1641 %
+Root relative squared error             13.5943 %
+Total Number of Instances              699     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        benign
+                 1         0          1         1         1          1        malignant
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 458   0 |   a = benign
+   0 241 |   b = malignant
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         670               95.8512 %
+Incorrectly Classified Instances        29                4.1488 %
+Kappa statistic                          0.9083
+Mean absolute error                      0.0635
+Root mean squared error                  0.1752
+Relative absolute error                 14.0595 %
+Root relative squared error             36.8569 %
+Total Number of Instances              699     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.967     0.058      0.969     0.967     0.968      0.99     benign
+                 0.942     0.033      0.938     0.942     0.94       0.99     malignant
+Weighted Avg.    0.959     0.049      0.959     0.959     0.959      0.99 
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 443  15 |   a = benign
+  14 227 |   b = malignant
+

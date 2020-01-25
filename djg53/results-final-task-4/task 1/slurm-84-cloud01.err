@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at weka.classifiers.Evaluation.<init>(Evaluation.java:367)
+	at weka.classifiers.Evaluation.evaluateModel(Evaluation.java:1087)
+	at weka.classifiers.Classifier.runClassifier(Classifier.java:315)
+	at weka.classifiers.trees.J48.main(J48.java:948)

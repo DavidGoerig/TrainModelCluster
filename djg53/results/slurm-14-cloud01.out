@@ -1,0 +1,174 @@
+balance-scale
+
+J48 pruned tree
+------------------
+
+left-weight <= 2
+|   right-weight <= 2
+|   |   left-distance <= 2
+|   |   |   right-distance <= 2
+|   |   |   |   left-weight <= 1
+|   |   |   |   |   left-distance <= 1: R (4.0/1.0)
+|   |   |   |   |   left-distance > 1: B (4.0/2.0)
+|   |   |   |   left-weight > 1
+|   |   |   |   |   left-distance <= 1: B (4.0/2.0)
+|   |   |   |   |   left-distance > 1: L (4.0/1.0)
+|   |   |   right-distance > 2: R (24.0/2.0)
+|   |   left-distance > 2
+|   |   |   right-distance <= 2: L (24.0/2.0)
+|   |   |   right-distance > 2
+|   |   |   |   left-weight <= 1
+|   |   |   |   |   right-weight <= 1
+|   |   |   |   |   |   left-distance <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-distance > 3
+|   |   |   |   |   |   |   right-distance <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-distance > 4: B (2.0/1.0)
+|   |   |   |   |   right-weight > 1: R (9.0)
+|   |   |   |   left-weight > 1
+|   |   |   |   |   right-weight <= 1: L (9.0)
+|   |   |   |   |   right-weight > 1
+|   |   |   |   |   |   left-distance <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-distance > 3
+|   |   |   |   |   |   |   right-distance <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-distance > 4: B (2.0/1.0)
+|   right-weight > 2
+|   |   right-distance <= 2
+|   |   |   left-distance <= 2: R (24.0/2.0)
+|   |   |   left-distance > 2
+|   |   |   |   left-weight <= 1
+|   |   |   |   |   right-distance <= 1
+|   |   |   |   |   |   left-distance <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-distance > 3
+|   |   |   |   |   |   |   right-weight <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-weight > 4: B (2.0/1.0)
+|   |   |   |   |   right-distance > 1: R (9.0)
+|   |   |   |   left-weight > 1
+|   |   |   |   |   right-distance <= 1: L (9.0)
+|   |   |   |   |   right-distance > 1
+|   |   |   |   |   |   left-distance <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-distance > 3
+|   |   |   |   |   |   |   right-weight <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-weight > 4: B (2.0/1.0)
+|   |   right-distance > 2: R (90.0/1.0)
+left-weight > 2
+|   left-distance <= 2
+|   |   right-weight <= 2
+|   |   |   right-distance <= 2: L (24.0/2.0)
+|   |   |   right-distance > 2
+|   |   |   |   left-distance <= 1
+|   |   |   |   |   right-weight <= 1
+|   |   |   |   |   |   left-weight <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-weight > 3
+|   |   |   |   |   |   |   right-distance <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-distance > 4: B (2.0/1.0)
+|   |   |   |   |   right-weight > 1: R (9.0)
+|   |   |   |   left-distance > 1
+|   |   |   |   |   right-weight <= 1: L (9.0)
+|   |   |   |   |   right-weight > 1
+|   |   |   |   |   |   left-weight <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-weight > 3
+|   |   |   |   |   |   |   right-distance <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-distance > 4: B (2.0/1.0)
+|   |   right-weight > 2
+|   |   |   right-distance <= 2
+|   |   |   |   left-distance <= 1
+|   |   |   |   |   right-distance <= 1
+|   |   |   |   |   |   left-weight <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-weight > 3
+|   |   |   |   |   |   |   right-weight <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-weight > 4: B (2.0/1.0)
+|   |   |   |   |   right-distance > 1: R (9.0)
+|   |   |   |   left-distance > 1
+|   |   |   |   |   right-distance <= 1: L (9.0)
+|   |   |   |   |   right-distance > 1
+|   |   |   |   |   |   left-weight <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-weight > 3
+|   |   |   |   |   |   |   right-weight <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-weight > 4: B (2.0/1.0)
+|   |   |   right-distance > 2: R (54.0/1.0)
+|   left-distance > 2
+|   |   right-weight <= 2: L (90.0/1.0)
+|   |   right-weight > 2
+|   |   |   right-distance <= 2: L (54.0/1.0)
+|   |   |   right-distance > 2
+|   |   |   |   left-weight <= 3
+|   |   |   |   |   right-weight <= 3
+|   |   |   |   |   |   left-distance <= 3: R (3.0/1.0)
+|   |   |   |   |   |   left-distance > 3
+|   |   |   |   |   |   |   right-distance <= 4: L (4.0/1.0)
+|   |   |   |   |   |   |   right-distance > 4: B (2.0/1.0)
+|   |   |   |   |   right-weight > 3: R (18.0/3.0)
+|   |   |   |   left-weight > 3
+|   |   |   |   |   right-weight <= 3: L (18.0/3.0)
+|   |   |   |   |   right-weight > 3
+|   |   |   |   |   |   right-distance <= 3: L (12.0/3.0)
+|   |   |   |   |   |   right-distance > 3
+|   |   |   |   |   |   |   left-distance <= 4: R (16.0/4.0)
+|   |   |   |   |   |   |   left-distance > 4: L (8.0/4.0)
+
+Number of Leaves  : 	52
+
+Size of the tree : 	103
+
+
+Time taken to build model: 0.22 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         563               90.08   %
+Incorrectly Classified Instances        62                9.92   %
+Kappa statistic                          0.8213
+Mean absolute error                      0.0979
+Root mean squared error                  0.2213
+Relative absolute error                 25.78   %
+Root relative squared error             50.7947 %
+Total Number of Instances              625     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.972     0.077      0.915     0.972     0.943      0.982    L
+                 0.265     0.023      0.5       0.265     0.347      0.913    B
+                 0.938     0.068      0.922     0.938     0.929      0.98     R
+Weighted Avg.    0.901     0.069      0.885     0.901     0.89       0.975
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 280   2   6 |   a = L
+  19  13  17 |   b = B
+   7  11 270 |   c = R
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         479               76.64   %
+Incorrectly Classified Instances       146               23.36   %
+Kappa statistic                          0.5773
+Mean absolute error                      0.1892
+Root mean squared error                  0.3699
+Relative absolute error                 49.8213 %
+Root relative squared error             84.9284 %
+Total Number of Instances              625     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.816     0.19       0.786     0.816     0.801      0.823    L
+                 0         0.038      0         0         0          0.454    B
+                 0.847     0.178      0.803     0.847     0.824      0.86     R
+Weighted Avg.    0.766     0.173      0.732     0.766     0.749      0.811
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 235  10  43 |   a = L
+  32   0  17 |   b = B
+  32  12 244 |   c = R
+

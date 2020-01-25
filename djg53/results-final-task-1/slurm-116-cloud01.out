@@ -1,0 +1,66 @@
+monks-problems-1_train
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.6774
+
+
+
+Time taken to build model: 4.54 seconds
+Time taken to test model on training data: 1.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         105               84.6774 %
+Incorrectly Classified Instances        19               15.3226 %
+Kappa statistic                          0.6902
+Mean absolute error                      0.278 
+Root mean squared error                  0.3218
+Relative absolute error                 56.1232 %
+Root relative squared error             64.6634 %
+Total Number of Instances              124     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.821     0.132      0.836     0.821     0.829      0.953    1
+                 0.868     0.179      0.855     0.868     0.861      0.953    2
+Weighted Avg.    0.847     0.158      0.847     0.847     0.847      0.953
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 46 10 |  a = 1
+  9 59 |  b = 2
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          43               34.6774 %
+Incorrectly Classified Instances        81               65.3226 %
+Kappa statistic                         -0.3293
+Mean absolute error                      0.5916
+Root mean squared error                  0.6362
+Relative absolute error                119.3639 %
+Root relative squared error            127.7754 %
+Total Number of Instances              124     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.232     0.559      0.255     0.232     0.243      0.271    1
+                 0.441     0.768      0.411     0.441     0.426      0.271    2
+Weighted Avg.    0.347     0.673      0.34      0.347     0.343      0.271
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13 43 |  a = 1
+ 38 30 |  b = 2
+

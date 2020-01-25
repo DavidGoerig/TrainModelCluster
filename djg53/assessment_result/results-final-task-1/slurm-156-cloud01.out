@@ -1,0 +1,70 @@
+sponge
+
+Options: -I 10000 -K 100 
+
+Random forest of 10000 trees, each constructed while considering 100 random features.
+Out of bag error: 0.0789
+
+
+
+Time taken to build model: 4.55 seconds
+Time taken to test model on training data: 0.38 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          76              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0367
+Root mean squared error                  0.0824
+Relative absolute error                 32.7242 %
+Root relative squared error             36.9199 %
+Total Number of Instances               76     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        AMBOS
+                 1         0          1         1         1          1        BLANDO
+                 1         0          1         1         1          1        DURO
+Weighted Avg.    1         0          1         1         1          1    
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  3  0  0 |  a = AMBOS
+  0  3  0 |  b = BLANDO
+  0  0 70 |  c = DURO
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          70               92.1053 %
+Incorrectly Classified Instances         6                7.8947 %
+Kappa statistic                          0     
+Mean absolute error                      0.0996
+Root mean squared error                  0.2244
+Relative absolute error                 87.3489 %
+Root relative squared error             99.7603 %
+Total Number of Instances               76     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.144    AMBOS
+                 0         0          0         0         0          0.144    BLANDO
+                 1         1          0.921     1         0.959      0.3      DURO
+Weighted Avg.    0.921     0.921      0.848     0.921     0.883      0.288
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  0  3 |  a = AMBOS
+  0  0  3 |  b = BLANDO
+  0  0 70 |  c = DURO
+
