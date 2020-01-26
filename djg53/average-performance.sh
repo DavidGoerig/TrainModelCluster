@@ -47,7 +47,7 @@ function loop_and_compute {
 		COUNTER=$[COUNTER + 1]
 	done <$1
 	# calc the mean total_percent/nbr_percent
-	average=$(echo "$total / $COUNTER" | bc)
+	average=$(echo "$total / $COUNTER" | bc -l)
 	# put it in the file result_main_task_3.txt (override the file with > and redirect in the file)
 	echo "$average" > result_main_task_3.txt
 }
